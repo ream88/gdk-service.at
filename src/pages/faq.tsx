@@ -17,6 +17,8 @@ const GROUPS: { id: string; title: string; qa: [string, string][] }[] = [
     title: 'Preis & Fixpreis',
     qa: [
       ['Wie viel kostet ein Einsatz?', 'Der Fixpreis richtet sich nach Schädling, Umfang und Bezirk. Sie erhalten ihn verbindlich am Telefon – inklusive Anfahrt, Präparate, Arbeitszeit und MwSt.'],
+      ['Was kostet mich der Anruf bzw. die Beratung?', 'Anruf, WhatsApp und das Fixpreis-Angebot am Telefon sind kostenlos und unverbindlich. Sie zahlen erst, wenn ich tatsächlich vor Ort tätig werde.'],
+      ['Kann ich vorab per Foto einen Fixpreis bekommen?', 'Ja. Schicken Sie mir ein Foto per WhatsApp (Wespennest, Spuren, Möbelkarton) – damit kann ich Aufwand und Fixpreis meist sofort einschätzen.'],
       ['Gibt es versteckte Zusatzkosten?', 'Nein. Der am Telefon genannte Preis ist der Endpreis. Wenn während des Einsatzes wider Erwarten mehr nötig sein sollte, sprechen wir das vorher ab.'],
       ['Was ist im Fixpreis enthalten?', 'An- und Abfahrt, alle eingesetzten Präparate, Arbeitszeit, gesetzliche MwSt.'],
       ['Zahlungsmöglichkeiten?', 'Bar, Bankomat oder Rechnung per Überweisung.'],
@@ -24,19 +26,28 @@ const GROUPS: { id: string; title: string; qa: [string, string][] }[] = [
   },
   {
     id: 'termin',
-    title: 'Termin & Ablauf',
+    title: 'Termin & Erreichbarkeit',
     qa: [
       ['Wie schnell bekomme ich einen Termin?', 'Bei akuten Fällen meist am selben Tag. Reguläre Termine innerhalb von 1–3 Tagen.'],
+      ['Wie schnell antworten Sie auf eine Formular-Anfrage?', 'Werktags meist innerhalb weniger Stunden. Wenn es eilig ist: direkt anrufen oder WhatsApp – damit erreichen Sie mich am schnellsten, oft Termin am selben Tag.'],
       ['Wie lange dauert ein Einsatz?', 'Wespen: 30–60 Minuten. Ameisen: 1–2 Stunden. Bettwanzen inkl. Möbelarbeit: 3–6 Stunden. Möbelmontage nach Aufwand.'],
       ['Muss ich anwesend sein?', 'Für die Besprechung ja, danach nicht zwingend. Bei Hausverwaltungen auch ohne Anwesenheit möglich.'],
+      ['Kommen Sie auch außerhalb von Niederösterreich?', 'Mein Sitz ist Siegersdorf, mein Einsatzgebiet ganz Niederösterreich. In begründeten Fällen komme ich auch über die Landesgrenze hinaus – einfach anrufen.'],
     ],
   },
   {
     id: 'methoden',
-    title: 'Methoden',
+    title: 'Methoden & Wirkung',
     qa: [
       ['Welche Mittel setzen Sie ein?', 'Nur behördlich zugelassene, professionelle Biozide. Immer so wenig wie möglich, so gezielt wie nötig.'],
       ['Sind die Mittel umweltschonend?', 'Ich arbeite mit dem Prinzip „minimaler toxischer Einsatz, maximale Wirkung" – abgestimmt auf das jeweilige Zieltier.'],
+      ['Ist das giftig?', 'Ja, natürlich. Genau deshalb darf es nur von geschulten, fachkundigen Personen ausgebracht werden – und genau deshalb gibt es Konzession, Schulung und die Norm EN 16636.'],
+      ['Wie lange dauert es, bis es wirkt?', 'Hängt vom Mittel ab. Antikoagulanzien (Nagetierköder) wirken bewusst zeitverzögert 3–7 Tage – das verhindert Köderscheu bei sozialen Nagern. Insektizide wirken meist binnen Minuten bis Stunden. Generell gilt: je mehr und je öfter das Zieltier aufnimmt, desto schneller die Wirkung.'],
+      ['Sind Ameisen im Garten überhaupt schädlich – muss ich bekämpfen?', 'Oft nicht. Ameisen sind wichtige Bestandteile des Ökosystems – ich bekämpfe nur dort, wo wirklich ein Schaden droht. Hausmittel wie gründliches Wischen mit Desinfektionsmittel entlang der Ameisenstraße können vorab helfen.'],
+      ['Muss ich bei einem Wespennest sofort handeln?', 'Nur wenn Gefahr in Verzug ist – z. B. Allergiker im Haushalt oder Nest in einem stark frequentierten Bereich. Sonst können Sie die Saison abwarten und im Oktober/November an einem kühlen Tag das Einflugloch mit Silikon verschließen; das Volk stirbt im Winter ohnehin ab.'],
+      ['Warum fliegen nach der Wespenbehandlung noch Wespen vor dem Einflugloch?', 'Heimkehrende Arbeiterinnen sind irritiert und suchen alternative Wege – es entsteht ein „Stau", der je nach Population mehrere Stunden bis 1–2 Tage dauert. Den Bereich in dieser Zeit bitte meiden.'],
+      ['Helfen Hausmittel oder Detektoren gegen Bettwanzen?', 'Nein. Eigenexperimente kosten nur Zeit, und im Internet angebotene Bettwanzen-Detektoren oder DNA-Tests funktionieren nachweislich nicht. Auch in ein anderes Zimmer umziehen bringt nichts – die Bettwanzen folgen Ihnen.'],
+      ['Warum reichen bei Bettwanzen nicht einfach Insektizide?', 'Viele Stämme sind heute resistent. Außerdem verstecken sich Bettwanzen in Steckdosen, Bilderrahmen, hinter Sockelleisten – ohne Demontage und Hitze (z. B. der ThermoFlexBox, die auch Eier abtötet) keine vernünftige Bekämpfung.'],
     ],
   },
   {
@@ -44,7 +55,11 @@ const GROUPS: { id: string; title: string; qa: [string, string][] }[] = [
     title: 'Haustiere & Hygiene',
     qa: [
       ['Können Haustiere im Haus bleiben?', 'Das hängt vom Mittel und Zieltier ab. Ich berate Sie vor Ort und gebe eine klare Empfehlung zu Sperrfristen.'],
-      ['Können Kinder zuhause sein?', 'Nach einem Einsatz empfehlen wir meist einige Stunden Lüften, bevor Kinder wieder in den behandelten Raum kommen.'],
+      ['Können Kinder zuhause sein?', 'Nach einem Einsatz empfehle ich meist einige Stunden Lüften, bevor Kinder wieder in den behandelten Raum kommen.'],
+      ['Was tun, wenn mein Haustier einen Köder gefressen hat?', 'Sofort die Vergiftungsinformationszentrale (VIZ) unter 01/406 43 43 anrufen und den Tierarzt aufsuchen – mit der Info, welches Präparat aufgenommen wurde. Als Antidot wirkt Vitamin K1.'],
+      ['Was, wenn ich die Köderbox berühre?', 'Die Box selbst ist aus Kunststoff oder Metall – unbedenklich. Bei Kontakt mit dem Köder selbst: Hände waschen und mich verständigen.'],
+      ['Darf ich nach einer Sprühbehandlung den Boden wischen?', 'Bitte nicht – Aufwischen neutralisiert den Insektizid-Belag und macht ihn wirkungslos. Erst nach Abschluss der Wirkphase wird gereinigt, das ist dann genau die Methode zum Neutralisieren.'],
+      ['Was tun, wenn ich im Hotel Bettwanzen vermute?', 'Gepäck ins Badezimmer stellen, Lattenrost und Steckdosen prüfen. Bei Blutspuren am Bettbezug: sofort das Hotel wechseln.'],
     ],
   },
   {
@@ -54,6 +69,14 @@ const GROUPS: { id: string; title: string; qa: [string, string][] }[] = [
       ['Welche Möbel montieren Sie?', 'Alles mit Bauanleitung: IKEA, XXXLutz, Mömax, Maßmöbel, Küchenmodule. Auch Wandmontagen.'],
       ['Entsorgen Sie auch das Verpackungsmaterial?', 'Auf Wunsch, gegen einen kleinen Aufpreis, nehme ich Kartons & Styropor mit.'],
       ['Können Sie auch Möbel demontieren?', 'Ja. Vor allem bei Umzügen oder Bettwanzeneinsätzen gehört das Abbauen, Behandeln und Wieder-Aufbauen zum Standard.'],
+    ],
+  },
+  {
+    id: 'b2b',
+    title: 'Hausverwaltungen & Verträge',
+    qa: [
+      ['Bieten Sie Rahmenverträge für Hausverwaltungen und Hotels?', 'Ja. Konditionen werden fix vereinbart, Einsätze sind auf Abruf verfügbar, bei Bewohner- oder Gast-Beschwerden komme ich noch am selben Tag. Abrechnung sauber pro Objekt/Top oder direkt mit dem Bewohner.'],
+      ['Bekomme ich nach dem Einsatz eine Dokumentation?', 'Für B2B-Kunden standardmäßig ja – Einsatzberichte mit Fotos, Maßnahmen und Empfehlungen. Im EN-16636-Ablauf gehört die formelle Bestätigung des Erfolgs zum Abschluss jeder Dienstleistung.'],
     ],
   },
 ];
@@ -102,7 +125,7 @@ export default function FaqPage() {
         </div>
       </Section>
 
-      <Section>
+      <Section className="border-y border-line bg-bg-panel">
         <CTABlock variant="standard" />
       </Section>
 

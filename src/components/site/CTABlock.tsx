@@ -38,7 +38,7 @@ export function CTABlock({ variant = 'standard', eyebrow, title, description, ac
     >
       <div>
         <Eyebrow accent>{eyebrow ?? preset.eyebrow}</Eyebrow>
-        <h2 className="max-w-[26ch] font-display text-[clamp(28px,3.5vw,40px)] font-[550] leading-[1.05] tracking-[-0.022em] text-dark-ink text-balance">
+        <h2 className="mt-4 max-w-[26ch] font-display text-[clamp(28px,3.5vw,40px)] font-[550] leading-[1.05] tracking-[-0.022em] text-dark-ink text-balance">
           {title ?? preset.title}
         </h2>
         <p className="mt-3.5 max-w-[58ch] opacity-75">{description ?? preset.description}</p>

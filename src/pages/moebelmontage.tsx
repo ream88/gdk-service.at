@@ -3,6 +3,7 @@ import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
 import { CTABlock } from '@/components/site/CTABlock';
+import { FeatureRow } from '@/components/site/FeatureRow';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -48,6 +49,7 @@ export default function FurniturePage() {
       <Section
         cols="1fr 1.2fr"
         reverse
+        align="stretch"
         gap="gap-12"
         collapseBelow={800}
         eyebrow="Warum mit mir?"
@@ -57,36 +59,30 @@ export default function FurniturePage() {
             <p className="mt-4 text-ink-soft">
               Ein IKEA-Schrank kostet Sie selbst 3–5 Stunden – und manchmal eine Beziehungskrise. Ich montiere ihn in einem Bruchteil der Zeit, mit dem richtigen Werkzeug und dem Auge eines Profis.
             </p>
-            <div className="mt-6 grid grid-cols-2 gap-3 max-[520px]:grid-cols-1">
+            <div className="mt-8 grid grid-cols-2 gap-8 max-[520px]:grid-cols-1">
               {WHY.map(([icon, head, body]) => (
-                <div key={head} className="flex gap-3 rounded-lg border border-line bg-bg-raised p-4">
-                  <div className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-accent-soft text-base text-accent" aria-hidden="true"><i className={`ph-fill ${icon}`} /></div>
-                  <div>
-                    <strong className="block font-semibold text-brand">{head}</strong>
-                    <span className="text-sm text-ink-soft">{body}</span>
-                  </div>
-                </div>
+                <FeatureRow key={head} layout="horizontal" icon={icon} title={head} body={body} />
               ))}
             </div>
           </>
         }
       >
-        <Placeholder ratio="4/3" tone="dark" label="Möbelmontage · heller Raum" />
+        <Placeholder fill tone="dark" label="Möbelmontage · heller Raum" />
       </Section>
 
-      <Section className="border-b border-t border-line bg-bg-panel">
-        <div className="max-w-[36rem]">
-          <Eyebrow>Typische Aufträge</Eyebrow>
-          <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Das baue ich am häufigsten auf.</h2>
-        </div>
-        <div className="mt-8 grid grid-cols-3 gap-3 max-[720px]:grid-cols-2 max-[480px]:grid-cols-1">
+      <Section
+        className="border-b border-t border-line bg-bg-panel"
+        eyebrow="Typische Aufträge"
+        title="Das baue ich am häufigsten auf."
+      >
+        <div className="grid grid-cols-3 gap-4 max-[720px]:grid-cols-2 max-[480px]:grid-cols-1">
           {JOBS.map(j => (
-            <div key={j} className="rounded-sm border border-line bg-bg-raised px-4 py-3.5 text-sm text-ink-soft">{j}</div>
+            <div key={j} className="rounded-lg border border-line bg-bg-raised px-6 py-5 font-display text-[18px] font-[550] text-brand">{j}</div>
           ))}
         </div>
       </Section>
 
-      <Section>
+      <Section className="border-y border-line bg-bg-panel">
         <CTABlock variant="standard" />
       </Section>
 

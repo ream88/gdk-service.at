@@ -38,12 +38,8 @@ export default function HausverwaltungenPage() {
         </div>
       </section>
 
-      <Section>
-        <div className="max-w-[40rem]">
-          <Eyebrow>Leistungen für B2B</Eyebrow>
-          <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Was Sie von mir bekommen.</h2>
-        </div>
-        <div className="mt-10 grid grid-cols-4 gap-4 max-[900px]:grid-cols-2 max-[520px]:grid-cols-1">
+      <Section eyebrow="Leistungen für B2B" title="Was Sie von mir bekommen.">
+        <div className="grid grid-cols-4 gap-4 max-[900px]:grid-cols-2 max-[520px]:grid-cols-1">
           {SERVICES.map(([sym, head, body]) => (
             <div key={head} className="rounded-lg border border-line bg-bg-raised p-6">
               <span className="mb-3 inline-grid h-9 w-9 place-items-center rounded-sm bg-accent-soft font-mono text-sm text-accent" aria-hidden="true">{sym}</span>
@@ -54,7 +50,7 @@ export default function HausverwaltungenPage() {
         </div>
       </Section>
 
-      <Section>
+      <Section className="border-y border-line bg-bg-panel">
         <CTABlock variant="standard" />
       </Section>
 

@@ -10,7 +10,8 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 
 const CONTACT_CARD = 'block rounded-lg border border-line bg-bg-raised p-6 transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card';
-const FIELD       = 'block w-full rounded-sm border border-line bg-bg px-3 py-2.5 text-sm text-ink focus:border-brand focus:outline-none';
+const FIELD       = 'block h-11 w-full rounded-sm border border-line bg-bg px-3 text-sm text-ink focus:border-brand focus:outline-none';
+const TEXTAREA    = 'block w-full rounded-sm border border-line bg-bg px-3 py-2.5 text-sm text-ink focus:border-brand focus:outline-none';
 const LABEL       = 'mb-1.5 block text-sm font-medium text-brand';
 
 export default function ContactPage() {
@@ -97,7 +98,7 @@ export default function ContactPage() {
               </div>
               <div className="col-span-2">
                 <label className={LABEL}>Nachricht</label>
-                <textarea className={`${FIELD} min-h-[120px]`} name="nachricht" placeholder="Was haben Sie beobachtet? Wo? Seit wann?"></textarea>
+                <textarea className={`${TEXTAREA} min-h-[120px]`} name="nachricht" placeholder="Was haben Sie beobachtet? Wo? Seit wann?"></textarea>
               </div>
             </div>
             <button

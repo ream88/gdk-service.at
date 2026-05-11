@@ -1,4 +1,4 @@
-import { PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, ADDRESS, HOURS, COMPANY } from './SiteHeader';
+import { COMPANY } from './SiteHeader';
 
 const FOOTER_GROUPS = [
   {
@@ -25,13 +25,13 @@ const FOOTER_GROUPS = [
 ];
 
 const WRAP = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
-const H4   = 'mb-3.5 font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-dark-ink/60';
+const H4   = 'mb-3.5 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-accent';
 const UL   = 'm-0 flex list-none flex-col gap-2.5 p-0 text-sm';
 
 export function SiteFooter() {
   return (
     <footer
-      className="mt-20 bg-[linear-gradient(180deg,var(--dark)_0%,color-mix(in_oklch,var(--dark)_92%,black)_100%)] py-[72px] text-dark-ink"
+      className="bg-[linear-gradient(180deg,var(--dark)_0%,color-mix(in_oklch,var(--dark)_92%,black)_100%)] py-[72px] text-dark-ink"
     >
       <div className={WRAP}>
         <div className="grid grid-cols-[1.3fr_1fr_1fr_1fr] gap-10 max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
@@ -60,16 +60,6 @@ export function SiteFooter() {
               </ul>
             </div>
           ))}
-
-          <div>
-            <h4 className={H4}>Direkt</h4>
-            <ul className={UL}>
-              <li><a href={PHONE_HREF} className="hover:text-accent">{PHONE}</a></li>
-              <li><a href={EMAIL_HREF} className="hover:text-accent">{EMAIL}</a></li>
-              <li className="opacity-70">{ADDRESS}</li>
-              <li className="mt-2 opacity-[0.55]">{HOURS}</li>
-            </ul>
-          </div>
 
           <div>
             <h4 className={H4}>Unternehmen</h4>

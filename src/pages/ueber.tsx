@@ -38,7 +38,7 @@ export default function AboutPage() {
       <Section
         cols="0.85fr 1.1fr"
         reverse
-        align="start"
+        align="stretch"
         gap="gap-12"
         primary={
           <>
@@ -62,10 +62,10 @@ export default function AboutPage() {
           </>
         }
       >
-        <Placeholder ratio="3/4" tone="dark" label="Portrait · Gerhard Klosterer" />
+        <Placeholder fill tone="dark" label="Portrait · Gerhard Klosterer" />
       </Section>
 
-      <Section>
+      <Section className="border-y border-line bg-bg-panel">
         <CTABlock variant="standard" />
       </Section>
 

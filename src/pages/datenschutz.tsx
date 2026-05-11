@@ -2,13 +2,13 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
+import { Prose } from '@/components/site/Prose';
 import { Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
 const SECTION = 'py-20';
 const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
-const PROSE   = 'flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand';
 
 export default function DatenschutzPage() {
   return (
@@ -22,7 +22,7 @@ export default function DatenschutzPage() {
         </div>
       </section>
       <Section innerClassName="max-w-[48rem]">
-        <div className={PROSE}>
+        <Prose>
             <h3>1. Verantwortlicher</h3>
             <p>Gerhard Klosterer, Weidengasse 11, 3041 Siegersdorf<br />Telefon: 0670/199 55 44 · E-Mail: gerhard@gdk-service.at</p>
             <h3>2. Zwecke und Rechtsgrundlagen der Verarbeitung</h3>
@@ -45,7 +45,7 @@ export default function DatenschutzPage() {
             <p>Geeignete technische und organisatorische Maßnahmen schützen Ihre Daten vor Verlust, Zugriff und Missbrauch und werden laufend dem Stand der Technik angepasst.</p>
             <h3>11. Kontakt</h3>
             <p>Bei Fragen zur Datenverarbeitung kontaktieren Sie bitte die oben genannten Kontaktdaten.</p>
-        </div>
+        </Prose>
       </Section>
       <SiteFooter />
       <script src="/chrome.js" />

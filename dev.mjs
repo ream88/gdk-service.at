@@ -6,6 +6,7 @@ import { existsSync, statSync } from 'node:fs';
 import { readFile, readdir } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { networkInterfaces } from 'node:os';
 import path from 'node:path';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
@@ -35,6 +36,17 @@ const sockets = new Set();
 let building = false;
 let pending = false;
 
+function lanAddresses() {
+  const ifaces = networkInterfaces();
+  const out = [];
+  for (const list of Object.values(ifaces)) {
+    for (const iface of list ?? []) {
+      if (iface.family === 'IPv4' && !iface.internal) out.push(iface.address);
+    }
+  }
+  return out;
+}
+
 function runBuild() {
   if (building) { pending = true; return; }
   building = true;
@@ -44,6 +56,9 @@ function runBuild() {
     building = false;
     if (code === 0) {
       console.log(`[dev] ready · http://localhost:${port}`);
+      for (const ip of lanAddresses()) {
+        console.log(`[dev]         http://${ip}:${port}`);
+      }
       for (const ws of sockets) try { ws.send('reload'); } catch {}
     } else {
       console.log('[dev] build failed (code', code + ')');

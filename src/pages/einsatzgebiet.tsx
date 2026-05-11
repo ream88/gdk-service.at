@@ -28,37 +28,36 @@ export default function EinsatzgebietPage() {
 
       <Section
         cols={true}
-        align="start"
+        align="stretch"
         gap="gap-12"
         collapseBelow={800}
+        eyebrow="Kernbezirke (< 45 min)"
+        title="Wien-Umland & Industrieviertel"
+        titleSize="compact"
         primary={
-          <div>
-            <Eyebrow>Kernbezirke (&lt; 45 min)</Eyebrow>
-            <h2 className="mt-2 text-[clamp(24px,2.6vw,32px)]">Wien-Umland &amp; Industrieviertel</h2>
+          <>
             <ul className="m-0 mt-5 grid list-none grid-cols-2 gap-2 p-0">
               {['Baden', 'Bruck an der Leitha', 'Mödling', 'Wiener Neustadt', 'Neunkirchen', 'Wien-Umgebung', 'Sankt Pölten', 'Tulln'].map(n => (
                 <li key={n} className="flex items-center gap-2 rounded-sm border border-line bg-bg-raised px-3.5 py-2.5 text-sm"><i className="ph-fill ph-map-pin text-accent" aria-hidden="true" />{n}</li>
               ))}
             </ul>
             <div className="mt-10"><Eyebrow>Weitere Bezirke</Eyebrow></div>
-            <div className="mt-5 flex flex-wrap gap-2">
+            <ul className="m-0 mt-5 grid list-none grid-cols-3 gap-1.5 p-0 max-[480px]:grid-cols-2">
               {['Amstetten', 'Gänserndorf', 'Hollabrunn', 'Horn', 'Korneuburg', 'Krems', 'Lilienfeld', 'Melk', 'Mistelbach', 'Scheibbs', 'Waidhofen/Ybbs', 'Zwettl'].map(n => (
-                <span key={n} className="rounded-full border border-line bg-bg-panel px-3.5 py-1.5 text-[13px] text-brand">{n}</span>
+                <li key={n} className="flex items-center gap-1.5 rounded-sm border border-line bg-bg-raised px-2.5 py-1.5 text-[13px] text-ink-soft"><i className="ph-fill ph-map-pin text-xs text-accent/80" aria-hidden="true" />{n}</li>
               ))}
+            </ul>
+            <div className="mt-8 rounded-lg bg-bg-panel p-5 text-sm text-ink-soft [&_strong]:mb-1.5 [&_strong]:block [&_strong]:text-brand">
+              <strong>Nicht aufgeführt?</strong>
+              Rufen Sie trotzdem an – in begründeten Fällen komme ich auch über die Landesgrenze hinaus.
             </div>
-          </div>
+          </>
         }
       >
-        <div>
-          <Placeholder ratio="4/5" tone="dark" label="Karte · Niederösterreich mit Pins" />
-          <div className="mt-6 rounded-lg bg-bg-panel p-5 text-sm text-ink-soft [&_strong]:mb-1.5 [&_strong]:block [&_strong]:text-brand">
-            <strong>Nicht aufgeführt?</strong>
-            Rufen Sie trotzdem an – in begründeten Fällen komme ich auch über die Landesgrenze hinaus.
-          </div>
-        </div>
+        <Placeholder fill tone="dark" label="Karte · Niederösterreich mit Pins" />
       </Section>
 
-      <Section>
+      <Section className="border-y border-line bg-bg-panel">
         <CTABlock variant="standard" />
       </Section>
 

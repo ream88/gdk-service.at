@@ -24,7 +24,10 @@ export function Eyebrow({ children, accent, className, style, ...rest }: Eyebrow
 }
 
 interface PlaceholderProps {
+  /** CSS aspect-ratio. Ignored when `fill` is true. */
   ratio?: string;
+  /** Stretch to fill the parent height instead of constraining via aspect-ratio. */
+  fill?: boolean;
   tone?: 'default' | 'dark' | 'accent';
   label: string;
   className?: string;
@@ -42,13 +45,15 @@ const PILL = {
   accent:  'bg-black/25 text-white',
 } as const;
 
-export function Placeholder({ ratio = '4/5', tone = 'default', label, className }: PlaceholderProps) {
+export function Placeholder({ ratio, fill, tone = 'default', label, className }: PlaceholderProps) {
+  const effectiveRatio = fill ? undefined : (ratio ?? '4/5');
   return (
     <div
       data-tone={tone}
-      style={{ aspectRatio: ratio }}
+      style={effectiveRatio ? { aspectRatio: effectiveRatio } : undefined}
       className={clsx(
         'relative grid place-items-center overflow-hidden rounded-lg text-center font-mono text-xs tracking-[0.04em]',
+        fill && 'h-full min-h-[260px]',
         TONE[tone],
         className,
       )}

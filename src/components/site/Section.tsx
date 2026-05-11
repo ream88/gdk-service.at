@@ -15,7 +15,9 @@ interface SectionProps extends Omit<HTMLAttributes<HTMLElement>, 'title'> {
   /** Swap column order. */
   reverse?: boolean;
   /** Vertical alignment of columns. Default 'center'. */
-  align?: 'start' | 'center' | 'end';
+  align?: 'start' | 'center' | 'end' | 'stretch';
+  /** Title size: 'default' (clamp 30-48px, large) or 'compact' (clamp 26-36px, sub-sections). */
+  titleSize?: 'default' | 'compact';
   /** Gap utility (Tailwind class). Default 'gap-14'. */
   gap?: string;
   /** Below this width (px) the grid collapses to a single column. Default 900. */
@@ -37,14 +39,19 @@ interface SectionProps extends Omit<HTMLAttributes<HTMLElement>, 'title'> {
 }
 
 const DEFAULT_WRAP = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
-const DEFAULT_PADDING = 'py-20';
+const DEFAULT_PADDING = 'py-24';
 
-const TITLE_BASE = 'text-[clamp(30px,3.8vw,48px)] [&_em]:italic [&_em]:text-[color-mix(in_oklch,var(--brand)_80%,var(--accent))]';
+const TITLE_BASE_EM = '[&_em]:italic [&_em]:text-[color-mix(in_oklch,var(--brand)_80%,var(--accent))]';
+const TITLE_SIZE: Record<NonNullable<SectionProps['titleSize']>, string> = {
+  default: 'text-[clamp(30px,3.8vw,48px)]',
+  compact: 'text-[clamp(26px,3vw,36px)]',
+};
 const TITLE_ROW  = 'mt-3 max-w-[18ch]';
 const ALIGN: Record<NonNullable<SectionProps['align']>, string> = {
-  start:  'items-start',
-  center: 'items-center',
-  end:    'items-end',
+  start:   'items-start',
+  center:  'items-center',
+  end:     'items-end',
+  stretch: 'items-stretch',
 };
 // Pre-enumerated to keep Tailwind JIT happy — dynamic class names aren't scanned.
 const COLLAPSE: Record<number, string> = {
@@ -65,6 +72,7 @@ export function Section({
   cols,
   reverse,
   align = 'center',
+  titleSize = 'default',
   gap = 'gap-14',
   collapseBelow = 900,
   primary,
@@ -75,12 +83,13 @@ export function Section({
   innerClassName,
   ...rest
 }: SectionProps) {
+  const titleClass = clsx(TITLE_SIZE[titleSize], TITLE_BASE_EM);
   if (cols) {
     const template = cols === true ? '1fr 1fr' : cols;
     const headCol = (eyebrow || title || primary) && (
       <div>
         {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-        {title && <h2 className={clsx(TITLE_BASE, eyebrow ? 'mt-3' : undefined)}>{title}</h2>}
+        {title && <h2 className={clsx(titleClass, eyebrow ? 'mt-3' : undefined)}>{title}</h2>}
         {primary}
       </div>
     );
@@ -121,7 +130,7 @@ export function Section({
           <div className="mb-10 flex flex-wrap items-end justify-between gap-8">
             <div>
               {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-              {title && <h2 className={clsx(TITLE_BASE, TITLE_ROW)}>{title}</h2>}
+              {title && <h2 className={clsx(titleClass, TITLE_ROW)}>{title}</h2>}
             </div>
             {aside && <div className="max-w-[36ch] text-ink-soft">{aside}</div>}
           </div>

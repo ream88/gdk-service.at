@@ -4,14 +4,13 @@ import { SiteFooter } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
 import { Faq, FaqQuestion, FaqAnswer } from '@/components/site/Faq';
+import { Prose, Callout } from '@/components/site/Prose';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
 const SECTION = 'py-20';
 const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
-const PROSE = 'flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand [&_ul]:m-0 [&_ul]:flex [&_ul]:list-none [&_ul]:flex-col [&_ul]:gap-2 [&_ul]:p-0 [&_li]:relative [&_li]:pl-6 [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[10px] [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:rounded-full [&_li]:before:bg-accent [&_li]:before:content-[""] [&_h3]:mt-4 [&_h3]:text-xl';
-const CALLOUT = 'rounded-sm border-l-[3px] border-accent bg-accent-soft px-5 py-4 text-[15px]';
 
 export default function WirkungsweisePage() {
   return (
@@ -29,14 +28,12 @@ export default function WirkungsweisePage() {
         </div>
       </section>
 
-      <Section innerClassName="max-w-[50rem]">
-        <Eyebrow>Gruppeneinteilung</Eyebrow>
-        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Die zwei wichtigsten Klassen.</h2>
-        <div className={`${PROSE} mt-5`}>
+      <Section innerClassName="max-w-[50rem]" eyebrow="Gruppeneinteilung" title="Die zwei wichtigsten Klassen." titleSize="compact">
+        <Prose className="mt-5">
           <h3>1. Rodentizide (Nagetierbekämpfungsmittel)</h3>
           <p>Die moderne Nagetierbekämpfung stützt sich primär auf <strong>Antikoagulanzien</strong> (Blutgerinnungshemmer). Die Köderformulierung besteht meist zu <strong>99,995&nbsp;%</strong> aus Lock- und Zusatzstoffen, <strong>0,005&nbsp;%</strong> sind reiner Wirkstoff – Difenacoum, Brodifacoum, Bromadiolon.</p>
           <p>Sie wirken als Vitamin-K-Antagonisten und blockieren das Enzym Vitamin-K-Epoxid-Reduktase. Der Tod tritt <strong>zeitverzögert nach 3–7 Tagen</strong> ein, um Köderscheu bei sozialen Nagern zu vermeiden.</p>
-          <div className={CALLOUT}><strong>Antidot:</strong> Vitamin K1 dient als wirksames Gegengift bei Fehlvergiftungen.</div>
+          <Callout><strong>Antidot:</strong> Vitamin K1 dient als wirksames Gegengift bei Fehlvergiftungen.</Callout>
           <h3>2. Insektizide</h3>
           <p>Insektizide greifen meist das Nervensystem oder die körperliche Entwicklung (Häutung) an.</p>
           <ul>
@@ -46,12 +43,10 @@ export default function WirkungsweisePage() {
             <li><strong>IGRs (Insect Growth Regulators):</strong> Chitinsynthesehemmer verhindern den neuen Panzer während der Häutung.</li>
             <li><strong>Physikalisch wirkende Mittel</strong> wie Kieselgur (Diatomeenerde): scharfkantige Partikel verletzen die Wachsschicht – die Insekten trocknen aus.</li>
           </ul>
-        </div>
+        </Prose>
       </Section>
 
-      <Section className="border-b border-t border-line bg-bg-panel" innerClassName="max-w-[50rem]">
-        <Eyebrow>FAQs</Eyebrow>
-        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Häufig gefragt.</h2>
+      <Section className="border-b border-t border-line bg-bg-panel" innerClassName="max-w-[50rem]" eyebrow="FAQs" title="Häufig gefragt." titleSize="compact">
         <div className="mt-6">
           <Faq>
             <FaqQuestion>Ist das giftig?</FaqQuestion>
@@ -76,7 +71,7 @@ export default function WirkungsweisePage() {
         </div>
       </Section>
 
-      <Section>
+      <Section className="border-y border-line bg-bg-panel">
         <CTABlock variant="standard" />
       </Section>
 
