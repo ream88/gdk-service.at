@@ -62,6 +62,13 @@ async function buildCss() {
   void css;
 }
 
+const BASE_PATH = (process.env.BASE_PATH ?? '').replace(/\/+$/, '');
+
+function rewriteBase(html) {
+  if (!BASE_PATH) return html;
+  return html.replace(/\b(href|src|action)="\/(?!\/)/g, `$1="${BASE_PATH}/`);
+}
+
 async function main() {
   await rm(distDir, { recursive: true, force: true });
   await rm(tmpDir, { recursive: true, force: true });
@@ -69,7 +76,7 @@ async function main() {
   await mkdir(tmpDir, { recursive: true });
 
   const files = (await readdir(pagesDir)).filter((f) => /\.tsx?$/.test(f));
-  console.log(`Building ${files.length} page(s)…`);
+  console.log(`Building ${files.length} page(s)${BASE_PATH ? ` · base=${BASE_PATH}` : ''}…`);
 
   const slugs = [];
   for (const file of files) {
@@ -78,7 +85,7 @@ async function main() {
     const bundled = await bundlePage(file);
     const mod = await import(pathToFileURL(bundled).href);
     const Page = mod.default;
-    const html = '<!doctype html>\n' + renderToStaticMarkup(Page());
+    const html = rewriteBase('<!doctype html>\n' + renderToStaticMarkup(Page()));
     await writeFile(path.join(distDir, `${slug}.html`), html);
     console.log(`  ✓ ${slug}.html`);
   }

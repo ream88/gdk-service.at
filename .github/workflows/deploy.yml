@@ -24,6 +24,9 @@ jobs:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun run build
+        env:
+          BASE_PATH: /gdk-service.at
+          SITE_URL: https://ream88.github.io/gdk-service.at
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
