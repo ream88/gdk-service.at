@@ -170,10 +170,10 @@ export default function HomePage() {
               <a
                 key={label}
                 href={href}
-                className="group flex min-h-[84px] items-center justify-between gap-2.5 rounded-lg border border-line bg-bg-raised px-6 py-5 font-display text-[22px] font-[550] text-brand transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_35%,var(--line))] hover:shadow-card"
+                className="group flex min-h-[84px] items-center justify-between gap-2.5 rounded-lg border border-line bg-bg-raised px-6 py-5 font-display text-[22px] font-[550] text-brand transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.97] hover:border-[color-mix(in_oklch,var(--brand)_35%,var(--line))] hover:shadow-card"
               >
                 <span>{label}</span>
-                <span className="text-lg text-ink-mute transition-[transform,color] duration-200 group-hover:translate-x-1 group-hover:text-accent">→</span>
+                <span className="text-lg text-ink-mute transition-colors duration-200 group-hover:text-accent">→</span>
               </a>
             ))}
         </div>
@@ -242,11 +242,7 @@ export default function HomePage() {
 
       {/* FINAL CTA */}
       <Section>
-        <CTABlock
-          eyebrow="Schnelle Hilfe"
-          title={<>Akutes Problem?<br />Greifen Sie zum Hörer.</>}
-          description="Persönlich, diskret und meist noch heute vor Ort. Ein Anruf reicht."
-        />
+        <CTABlock variant="urgent" />
       </Section>
 
       <SiteFooter />
@@ -271,7 +267,7 @@ function ServiceCard({ href, badge, badgeAccent, photoTone = 'default', photoLab
   return (
     <a
       href={href}
-      className="group relative block overflow-hidden rounded-xl border border-line bg-bg-raised transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-lift"
+      className="group relative block overflow-hidden rounded-xl border border-line bg-bg-raised transition-[transform,box-shadow,border-color] duration-300 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-lift"
     >
       <Placeholder ratio="16/10" tone={photoTone} label={photoLabel} className="!rounded-none" />
       <span

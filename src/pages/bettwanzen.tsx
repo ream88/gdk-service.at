@@ -120,18 +120,7 @@ export default function BettwanzenPage() {
       </Section>
 
       <Section>
-        <CTABlock
-          eyebrow="Persönlich erreichbar"
-          title="Ein Anruf reicht."
-          description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter."
-          actions={(
-            <>
-              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-              <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
-            </>
-          )}
-        />
+        <CTABlock variant="urgent" />
       </Section>
 
       <SiteFooter />

@@ -9,7 +9,7 @@ const SECTION = 'py-20';
 const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 
-const CONTACT_CARD = 'block rounded-lg border border-line bg-bg-raised p-6 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card';
+const CONTACT_CARD = 'block rounded-lg border border-line bg-bg-raised p-6 transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card';
 const FIELD       = 'block w-full rounded-sm border border-line bg-bg px-3 py-2.5 text-sm text-ink focus:border-brand focus:outline-none';
 const LABEL       = 'mb-1.5 block text-sm font-medium text-brand';
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
             </div>
             <button
               type="submit"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-accent px-7 py-[18px] text-base font-semibold text-accent-ink shadow-cta transition-[transform,box-shadow,background] duration-200 hover:-translate-y-px hover:bg-[color-mix(in_oklch,var(--accent)_92%,black)]"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-accent px-7 py-[18px] text-base font-semibold text-accent-ink shadow-cta transition-[transform,box-shadow,background-color] duration-200 active:scale-[0.97] hover:shadow-[0_8px_32px_0_oklch(0.78_0.22_39_/_0.6)]"
             >
               Anfrage senden
             </button>

@@ -1,8 +1,8 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
-import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
+import { CTABlock } from '@/components/site/CTABlock';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -87,11 +87,7 @@ export default function FurniturePage() {
       </Section>
 
       <Section>
-        <CTABlock
-          eyebrow="Termin sichern"
-          title={<>Möbel liegen schon<br />bei Ihnen?</>}
-          description="Senden Sie mir per WhatsApp ein Foto der Verpackung – ich nenne Ihnen den Fixpreis und einen Termin."
-        />
+        <CTABlock variant="standard" />
       </Section>
 
       <SiteFooter />

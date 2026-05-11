@@ -1,9 +1,8 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
-import { SiteHeader, PHONE, PHONE_HREF, EMAIL_HREF } from '@/components/site/SiteHeader';
+import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
-import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
-import { Button, PhoneIcon } from '@/components/ui/Button';
+import { CTABlock } from '@/components/site/CTABlock';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -56,17 +55,7 @@ export default function HausverwaltungenPage() {
       </Section>
 
       <Section>
-        <CTABlock
-          eyebrow="Rahmenvertrag anfragen"
-          title="Gesprächstermin vereinbaren."
-          description="Wir klären Objekte, Umfang & Reaktionszeiten – ich lege Ihnen ein passgenaues Angebot vor."
-          actions={(
-            <>
-              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-              <Button href={EMAIL_HREF} variant="ghost">E-Mail senden</Button>
-            </>
-          )}
-        />
+        <CTABlock variant="standard" />
       </Section>
 
       <SiteFooter />

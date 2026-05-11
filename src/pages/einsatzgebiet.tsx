@@ -1,9 +1,8 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
-import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
+import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
-import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
-import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
+import { CTABlock } from '@/components/site/CTABlock';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -60,17 +59,7 @@ export default function EinsatzgebietPage() {
       </Section>
 
       <Section>
-        <CTABlock
-          eyebrow="Nicht sicher?"
-          title="Einfach kurz anrufen."
-          description="Ich sage Ihnen sofort, ob ich in Ihrem Bezirk fahre und was der Fixpreis ist."
-          actions={(
-            <>
-              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-            </>
-          )}
-        />
+        <CTABlock variant="standard" />
       </Section>
 
       <SiteFooter />

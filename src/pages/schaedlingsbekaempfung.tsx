@@ -141,12 +141,12 @@ export default function PestPage() {
       {/* Knowledge cross-link */}
       <Section className="border-b border-t border-line bg-bg-panel">
         <div className="grid grid-cols-2 gap-5 max-[720px]:grid-cols-1">
-          <a href="/wirkungsweise.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
+          <a href="/wirkungsweise.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
             <Eyebrow>Fachwissen</Eyebrow>
             <h3 className="mt-2 text-[22px]">Wirkungsweise von Schädlingsbekämpfungs&shy;mitteln →</h3>
             <p className="mt-2 text-ink-soft">Was wirkt wie – und warum es Profis braucht.</p>
           </a>
-          <a href="/gesetze-normen.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
+          <a href="/gesetze-normen.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
             <Eyebrow>Compliance</Eyebrow>
             <h3 className="mt-2 text-[22px]">Gesetze, Normen &amp; ihre Folgen →</h3>
             <p className="mt-2 text-ink-soft">EN 16636, BPV, IPM – Standards, an denen ich mitgearbeitet habe.</p>
@@ -187,11 +187,7 @@ export default function PestPage() {
 
       {/* Final CTA */}
       <Section>
-        <CTABlock
-          eyebrow="Akutfall?"
-          title={<>Same-day Service –<br />wenn's wirklich brennt.</>}
-          description="Bei akuten Wespennestern, plötzlichen Rattensichtungen oder Bettwanzenverdacht: einfach anrufen. Ich richte mich nach Ihrer Dringlichkeit."
-        />
+        <CTABlock variant="urgent" />
       </Section>
 
       <SiteFooter />

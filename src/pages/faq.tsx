@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
+import { CTABlock } from '@/components/site/CTABlock';
 import { Faq, FaqQuestion, FaqAnswer } from '@/components/site/Faq';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
@@ -99,6 +100,10 @@ export default function FaqPage() {
             </div>
           ))}
         </div>
+      </Section>
+
+      <Section>
+        <CTABlock variant="standard" />
       </Section>
 
       <SiteFooter />

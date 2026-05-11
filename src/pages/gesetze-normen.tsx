@@ -1,9 +1,8 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
-import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
+import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
-import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -90,18 +89,7 @@ export default function GesetzeNormenPage() {
       </Section>
 
       <Section>
-        <CTABlock
-          eyebrow="Persönlich erreichbar"
-          title="Ein Anruf reicht."
-          description="Mo–Fr 8:00–17:00. Sie sprechen mit mir – nicht mit einem Callcenter."
-          actions={(
-            <>
-              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-              <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
-            </>
-          )}
-        />
+        <CTABlock variant="standard" />
       </Section>
 
       <SiteFooter />

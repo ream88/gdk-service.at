@@ -63,11 +63,7 @@ export default function AboutPage() {
       </Section>
 
       <Section>
-        <CTABlock
-          eyebrow="Persönlich erreichbar"
-          title="Lieber direkt sprechen?"
-          description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Einfach anrufen – ich gehe ran."
-        />
+        <CTABlock variant="standard" />
       </Section>
 
       <SiteFooter />
