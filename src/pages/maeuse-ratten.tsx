@@ -12,7 +12,7 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 const PRINCIPLE_GRID = 'mt-6 grid grid-cols-3 gap-4 max-[720px]:grid-cols-1';
 const PRINCIPLE_CARD = 'rounded-lg border border-line bg-bg-raised p-6';
-const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent';
+const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft text-base text-accent';
 
 const VERSUS_GRID = 'mt-6 grid grid-cols-2 gap-8 max-[720px]:grid-cols-1';
 const VERSUS_CARD = 'rounded-sm border border-line bg-bg-panel p-7';
@@ -50,9 +50,9 @@ export default function MaeuseRattenPage() {
         <Eyebrow>Arbeitsweise</Eyebrow>
         <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
         <div className={PRINCIPLE_GRID}>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Präzise und auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Laufwege, Schmierspuren, Nagespuren – richtig gedeutet, führen sie zum Erfolg.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-clock-countdown" aria-hidden="true" /></div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Präzise und auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-shield-check" aria-hidden="true" /></div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-sparkle" aria-hidden="true" /></div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Laufwege, Schmierspuren, Nagespuren – richtig gedeutet, führen sie zum Erfolg.</p></div>
         </div>
       </Section>
 

@@ -57,7 +57,9 @@ export default function HomePage() {
           <div className="relative">
             <Placeholder ratio="5/4" tone="dark" label="Portrait · Gerhard am Kundenobjekt" className="rounded-xl shadow-lift" />
             <figure className="absolute -bottom-7 -left-5 m-0 max-w-[280px] rounded-lg border border-line bg-bg-raised p-[18px] shadow-lift">
-              <div className="tracking-[2px] text-accent" aria-label="5 von 5 Sternen">★★★★★</div>
+              <div className="flex gap-1 text-accent" aria-label="5 von 5 Sternen">
+                {Array.from({ length: 5 }, (_, i) => <i key={i} className="ph-fill ph-star" aria-hidden="true" />)}
+              </div>
               <blockquote className="my-2.5 font-display text-[15px] leading-[1.3] text-brand">„War noch am selben Tag da. Problem gelöst, Preis exakt wie besprochen."</blockquote>
               <figcaption className="text-xs text-ink-mute">— Familie M., St. Pölten</figcaption>
             </figure>
@@ -155,7 +157,7 @@ export default function HomePage() {
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
               <Button href={PHONE_HREF} variant="cta">Sofort anrufen</Button>
-              <Button href="/schaedlingsbekaempfung.html" variant="ghost">Leistungen ansehen →</Button>
+              <Button href="/schaedlingsbekaempfung.html" variant="ghost">Leistungen ansehen</Button>
             </div>
           </>
         }
@@ -170,10 +172,9 @@ export default function HomePage() {
               <a
                 key={label}
                 href={href}
-                className="group flex min-h-[84px] items-center justify-between gap-2.5 rounded-lg border border-line bg-bg-raised px-6 py-5 font-display text-[22px] font-[550] text-brand transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.97] hover:border-[color-mix(in_oklch,var(--brand)_35%,var(--line))] hover:shadow-card"
+                className="flex min-h-[84px] items-center rounded-lg border border-line bg-bg-raised px-6 py-5 font-display text-[22px] font-[550] text-brand transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.97] hover:border-[color-mix(in_oklch,var(--brand)_35%,var(--line))] hover:shadow-card"
               >
-                <span>{label}</span>
-                <span className="text-lg text-ink-mute transition-colors duration-200 group-hover:text-accent">→</span>
+                {label}
               </a>
             ))}
         </div>
@@ -218,7 +219,9 @@ export default function HomePage() {
         title="Was Kunden sagen."
         aside={
           <>
-            <span className="tracking-[2px] text-accent" aria-hidden="true">★★★★★</span>{' '}
+            <span className="inline-flex gap-1 align-middle text-accent" aria-hidden="true">
+              {Array.from({ length: 5 }, (_, i) => <i key={i} className="ph-fill ph-star" />)}
+            </span>{' '}
             <strong className="text-brand">4,9 / 5</strong> · über 60 Aufträge im letzten Jahr
           </>
         }
@@ -281,12 +284,13 @@ function ServiceCard({ href, badge, badgeAccent, photoTone = 'default', photoLab
         <p className="text-ink-soft">{lede}</p>
         <ul className="m-0 mt-4 flex list-none flex-col gap-2 p-0 text-sm">
           {ticks.map(t => (
-            <li key={t} className="relative pl-6 text-ink before:absolute before:left-0 before:font-bold before:text-accent before:content-['✓']">
-              {t}
+            <li key={t} className="flex items-baseline gap-2 text-ink">
+              <i className="ph-fill ph-check text-accent" aria-hidden="true" />
+              <span>{t}</span>
             </li>
           ))}
         </ul>
-        <span className="mt-6 inline-block text-sm font-semibold text-brand group-hover:text-accent">Mehr erfahren →</span>
+        <span className="mt-6 inline-block text-sm font-semibold text-brand group-hover:text-accent">Mehr erfahren</span>
       </div>
     </a>
   );

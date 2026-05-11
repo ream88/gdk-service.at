@@ -35,17 +35,17 @@ export default function ContactPage() {
         primary={
           <div className="flex flex-col gap-3">
             <a href={PHONE_HREF} className={`${CONTACT_CARD} border-accent bg-accent-soft`}>
-              <div className="font-mono text-xs uppercase tracking-[0.12em] text-accent">📞 Direkt anrufen (empfohlen)</div>
+              <div className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] text-accent"><i className="ph-fill ph-phone" aria-hidden="true" /> Direkt anrufen (empfohlen)</div>
               <h3 className="mt-2 text-2xl">{PHONE}</h3>
               <div className="mt-1.5 text-sm text-ink-soft">Schnellster Weg – meist Termin am gleichen Tag.</div>
             </a>
             <a href={WHATSAPP_HREF} className={CONTACT_CARD}>
-              <div className="font-mono text-xs uppercase tracking-[0.12em] text-wa">💬 WhatsApp</div>
+              <div className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] text-wa"><i className="ph-fill ph-whatsapp-logo" aria-hidden="true" /> WhatsApp</div>
               <h3 className="mt-2 text-xl">Foto schicken, Fixpreis bekommen</h3>
               <div className="mt-1.5 text-sm text-ink-soft">Ideal für Wespennester, Spuren, IKEA-Karton.</div>
             </a>
             <a href={EMAIL_HREF} className={CONTACT_CARD}>
-              <div className="font-mono text-xs uppercase tracking-[0.12em] text-ink-mute">✉ E-Mail</div>
+              <div className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] text-ink-mute"><i className="ph-fill ph-envelope" aria-hidden="true" /> E-Mail</div>
               <h3 className="mt-2 break-all text-lg">{EMAIL}</h3>
             </a>
             <div className="rounded-lg border border-line bg-bg-panel p-6">

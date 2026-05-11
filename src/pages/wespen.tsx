@@ -12,7 +12,7 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 const PRINCIPLE_GRID = 'mt-6 grid grid-cols-3 gap-4 max-[720px]:grid-cols-1';
 const PRINCIPLE_CARD = 'rounded-lg border border-line bg-bg-raised p-6';
-const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent';
+const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft text-base text-accent';
 const PROSE = 'flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand';
 const CALLOUT = 'rounded-sm border-l-[3px] border-accent bg-accent-soft px-5 py-4 text-[15px]';
 const PEST_BLOCK = 'mt-6 grid grid-cols-2 gap-6 max-[800px]:grid-cols-1';
@@ -44,9 +44,9 @@ export default function WespenPage() {
         <Eyebrow>Arbeitsweise</Eyebrow>
         <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
         <div className={PRINCIPLE_GRID}>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Egal ob Nest tief in der Bausubstanz versteckt oder frei zugänglich – ich arbeite punktgenau.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Diskretion ist immer wichtig. Bei Wespen zählt zudem die rasche, unkomplizierte Bekämpfung.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Nicht jede Wespe ist auch wirklich ein Schädling. Aber wenn notwendig, dann richtig.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-clock-countdown" aria-hidden="true" /></div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Egal ob Nest tief in der Bausubstanz versteckt oder frei zugänglich – ich arbeite punktgenau.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-shield-check" aria-hidden="true" /></div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Diskretion ist immer wichtig. Bei Wespen zählt zudem die rasche, unkomplizierte Bekämpfung.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-sparkle" aria-hidden="true" /></div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Nicht jede Wespe ist auch wirklich ein Schädling. Aber wenn notwendig, dann richtig.</p></div>
         </div>
       </Section>
 

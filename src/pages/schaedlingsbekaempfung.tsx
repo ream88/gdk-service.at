@@ -12,12 +12,12 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 const PRINCIPLE_GRID = 'mt-6 grid grid-cols-3 gap-4 max-[720px]:grid-cols-1';
 const PRINCIPLE_CARD = 'rounded-lg border border-line bg-bg-raised p-6';
-const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent';
+const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft text-base text-accent';
 const PEST_BLOCK = 'mt-8 grid grid-cols-2 gap-6 max-[800px]:grid-cols-1';
 const PEST_ARTICLE = 'rounded-lg border border-line bg-bg-raised p-7';
 const PEST_EMOJI = 'mr-2 inline-grid h-8 w-8 place-items-center rounded-sm bg-accent-soft align-middle font-mono text-sm text-accent';
 const TICKS = 'm-0 mt-3.5 flex list-none flex-col gap-2 p-0 text-sm';
-const TICK_LI = "relative pl-6 text-ink before:absolute before:left-0 before:font-bold before:text-accent before:content-['✓']";
+const TICK_LI = 'flex items-baseline gap-2 text-ink';
 
 const PESTS = [
   {
@@ -83,9 +83,9 @@ export default function PestPage() {
         <Eyebrow>Prinzipien</Eyebrow>
         <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Drei Worte. Drei Versprechen.</h2>
         <div className={PRINCIPLE_GRID}>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">24+ Jahre Praxis, ausgebildet im weltweit tätigen Konzern.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-clock-countdown" aria-hidden="true" /></div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-shield-check" aria-hidden="true" /></div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-sparkle" aria-hidden="true" /></div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">24+ Jahre Praxis, ausgebildet im weltweit tätigen Konzern.</p></div>
         </div>
       </Section>
 
@@ -102,11 +102,11 @@ export default function PestPage() {
               <h3 className="text-2xl"><span className={PEST_EMOJI}>{p.glyph}</span>{p.name}</h3>
               <p className="mt-3 text-ink-soft">{p.body}</p>
               <ul className={TICKS}>
-                {p.bullets.map(b => <li key={b} className={TICK_LI}>{b}</li>)}
+                {p.bullets.map(b => <li key={b} className={TICK_LI}><i className="ph-fill ph-check text-accent" aria-hidden="true" /><span>{b}</span></li>)}
               </ul>
               <p className="mt-5">
                 <a href={`/${p.id === 'maeuse' ? 'maeuse-ratten' : p.id}.html`} className="font-semibold text-accent hover:text-brand">
-                  Detailseite {p.name} →
+                  Detailseite {p.name}
                 </a>
               </p>
             </article>
@@ -143,12 +143,12 @@ export default function PestPage() {
         <div className="grid grid-cols-2 gap-5 max-[720px]:grid-cols-1">
           <a href="/wirkungsweise.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
             <Eyebrow>Fachwissen</Eyebrow>
-            <h3 className="mt-2 text-[22px]">Wirkungsweise von Schädlingsbekämpfungs&shy;mitteln →</h3>
+            <h3 className="mt-2 text-[22px]">Wirkungsweise von Schädlingsbekämpfungs&shy;mitteln</h3>
             <p className="mt-2 text-ink-soft">Was wirkt wie – und warum es Profis braucht.</p>
           </a>
           <a href="/gesetze-normen.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 active:scale-[0.98] hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
             <Eyebrow>Compliance</Eyebrow>
-            <h3 className="mt-2 text-[22px]">Gesetze, Normen &amp; ihre Folgen →</h3>
+            <h3 className="mt-2 text-[22px]">Gesetze, Normen &amp; ihre Folgen</h3>
             <p className="mt-2 text-ink-soft">EN 16636, BPV, IPM – Standards, an denen ich mitgearbeitet habe.</p>
           </a>
         </div>
@@ -169,7 +169,7 @@ export default function PestPage() {
             </p>
             <ul className="m-0 mt-5 flex list-none flex-col gap-2 p-0">
               {['Inklusive An- & Abfahrt', 'Inklusive aller Präparate', 'Inklusive Arbeitszeit', 'Inklusive MwSt.'].map(t => (
-                <li key={t} className="relative pl-6 before:absolute before:left-0 before:font-bold before:text-accent before:content-['✓']">{t}</li>
+                <li key={t} className="flex items-baseline gap-2"><i className="ph-fill ph-check text-accent" aria-hidden="true" /><span>{t}</span></li>
               ))}
             </ul>
           </>
@@ -180,7 +180,7 @@ export default function PestPage() {
           <h3 className="mt-3 text-2xl text-dark-ink">Beschreiben Sie Ihr Problem – Sie erhalten den Fixpreis sofort.</h3>
           <div className="mt-5 flex flex-col gap-2.5">
             <Button href={PHONE_HREF} variant="cta" size="xl">Jetzt Fixpreis erfragen</Button>
-            <Button href="/faq.html" variant="ghost" className="!text-dark-ink !border-white/20 hover:!border-white/60">Häufige Fragen →</Button>
+            <Button href="/faq.html" variant="ghost" className="!text-dark-ink !border-white/20 hover:!border-white/60">Häufige Fragen</Button>
           </div>
         </div>
       </Section>

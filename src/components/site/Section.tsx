@@ -10,7 +10,7 @@ interface SectionProps extends Omit<HTMLAttributes<HTMLElement>, 'title'> {
   /** Default mode: right-side content in the header row. Ignored in cols mode. */
   aside?: ReactNode;
 
-  /** Switches to 2-col layout. `true` ⇒ '1fr 1fr'. String ⇒ explicit grid-template-columns (e.g. '1.2fr 1fr'). */
+  /** Switches to 2-col layout. `true` → '1fr 1fr'. String → explicit grid-template-columns (e.g. '1.2fr 1fr'). */
   cols?: true | string;
   /** Swap column order. */
   reverse?: boolean;

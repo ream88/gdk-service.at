@@ -12,7 +12,7 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 const PRINCIPLE_GRID = 'mt-6 grid grid-cols-3 gap-4 max-[720px]:grid-cols-1';
 const PRINCIPLE_CARD = 'rounded-lg border border-line bg-bg-raised p-6';
-const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent';
+const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft text-base text-accent';
 const PROSE = 'flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand';
 
 const BW_METHODS: [string, string, string][] = [
@@ -26,7 +26,7 @@ const BW_METHODS: [string, string, string][] = [
 ];
 
 const TIP_LI =
-  "relative rounded-sm border border-line bg-bg-panel py-3.5 pl-11 pr-4 text-[15px] text-ink-soft before:absolute before:left-4 before:top-3.5 before:font-bold before:text-accent before:content-['✕'] [&_strong]:text-brand";
+  'flex items-start gap-3 rounded-sm border border-line bg-bg-panel py-3.5 px-4 text-[15px] text-ink-soft [&_strong]:text-brand';
 
 export default function BettwanzenPage() {
   return (
@@ -53,9 +53,9 @@ export default function BettwanzenPage() {
         <Eyebrow>Arbeitsweise</Eyebrow>
         <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
         <div className={PRINCIPLE_GRID}>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Bettwanzen sind nicht einfach zu bekämpfen. Punktgenau und mit allen verfügbaren Methoden.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Bei blutsaugenden Parasiten in Wohnung oder Hotel ist Diskretion höchstes Gebot.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Verhaltensmuster und Suchraster der Bettwanze sind die Basis erfolgreicher Bekämpfung.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-clock-countdown" aria-hidden="true" /></div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Bettwanzen sind nicht einfach zu bekämpfen. Punktgenau und mit allen verfügbaren Methoden.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-shield-check" aria-hidden="true" /></div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Bei blutsaugenden Parasiten in Wohnung oder Hotel ist Diskretion höchstes Gebot.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-sparkle" aria-hidden="true" /></div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Verhaltensmuster und Suchraster der Bettwanze sind die Basis erfolgreicher Bekämpfung.</p></div>
         </div>
       </Section>
 
@@ -111,11 +111,11 @@ export default function BettwanzenPage() {
         <Eyebrow>Tipps am Rande</Eyebrow>
         <h2 className="mt-2 text-[clamp(24px,2.8vw,30px)]">Was Sie nicht tun sollten.</h2>
         <ul className="m-0 mt-5 flex list-none flex-col gap-2.5 p-0">
-          <li className={TIP_LI}><strong>Nicht selbst versuchen</strong> – verlieren Sie keine Zeit mit Eigenexperimenten.</li>
-          <li className={TIP_LI}><strong>Niemals in ein anderes Zimmer umziehen</strong> – die Bettwanzen folgen Ihnen mit Sicherheit.</li>
-          <li className={TIP_LI}>Auf Reisen: Gepäck ins <strong>Badezimmer</strong>, Lattenrost &amp; Steckdosen prüfen.</li>
-          <li className={TIP_LI}>Blutspuren am Bettbezug? <strong>Hotel wechseln.</strong></li>
-          <li className={TIP_LI}>Im Internet angebotene Detektoren oder DNA-Tests: <strong>funktionieren nicht.</strong> Selbst getestet.</li>
+          <li className={TIP_LI}><i className="ph-fill ph-x mt-1 shrink-0 font-bold text-accent" aria-hidden="true" /><span><strong>Nicht selbst versuchen</strong> – verlieren Sie keine Zeit mit Eigenexperimenten.</span></li>
+          <li className={TIP_LI}><i className="ph-fill ph-x mt-1 shrink-0 font-bold text-accent" aria-hidden="true" /><span><strong>Niemals in ein anderes Zimmer umziehen</strong> – die Bettwanzen folgen Ihnen mit Sicherheit.</span></li>
+          <li className={TIP_LI}><i className="ph-fill ph-x mt-1 shrink-0 font-bold text-accent" aria-hidden="true" /><span>Auf Reisen: Gepäck ins <strong>Badezimmer</strong>, Lattenrost &amp; Steckdosen prüfen.</span></li>
+          <li className={TIP_LI}><i className="ph-fill ph-x mt-1 shrink-0 font-bold text-accent" aria-hidden="true" /><span>Blutspuren am Bettbezug? <strong>Hotel wechseln.</strong></span></li>
+          <li className={TIP_LI}><i className="ph-fill ph-x mt-1 shrink-0 font-bold text-accent" aria-hidden="true" /><span>Im Internet angebotene Detektoren oder DNA-Tests: <strong>funktionieren nicht.</strong> Selbst getestet.</span></li>
         </ul>
       </Section>
 

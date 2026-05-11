@@ -11,10 +11,10 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 
 const WHY: [string, string, string][] = [
-  ['⏱', 'Schnell', 'Bis zu 4× schneller als Eigenmontage.'],
-  ['🔧', 'Fachgerecht', 'Stabil verschraubt, Türen perfekt eingestellt.'],
-  ['✦', 'Sauber', 'Verpackung mitgenommen, Boden sauber.'],
-  ['+', 'Komplettservice', 'Auf Wunsch Demontage & Wandmontage.'],
+  ['ph-clock-countdown', 'Schnell', 'Bis zu 4× schneller als Eigenmontage.'],
+  ['ph-wrench', 'Fachgerecht', 'Stabil verschraubt, Türen perfekt eingestellt.'],
+  ['ph-sparkle', 'Sauber', 'Verpackung mitgenommen, Boden sauber.'],
+  ['ph-plus', 'Komplettservice', 'Auf Wunsch Demontage & Wandmontage.'],
 ];
 
 const JOBS = [
@@ -60,7 +60,7 @@ export default function FurniturePage() {
             <div className="mt-6 grid grid-cols-2 gap-3 max-[520px]:grid-cols-1">
               {WHY.map(([icon, head, body]) => (
                 <div key={head} className="flex gap-3 rounded-lg border border-line bg-bg-raised p-4">
-                  <div className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent" aria-hidden="true">{icon}</div>
+                  <div className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-accent-soft text-base text-accent" aria-hidden="true"><i className={`ph-fill ${icon}`} /></div>
                   <div>
                     <strong className="block font-semibold text-brand">{head}</strong>
                     <span className="text-sm text-ink-soft">{body}</span>

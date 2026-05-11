@@ -37,7 +37,7 @@ export default function EinsatzgebietPage() {
             <h2 className="mt-2 text-[clamp(24px,2.6vw,32px)]">Wien-Umland &amp; Industrieviertel</h2>
             <ul className="m-0 mt-5 grid list-none grid-cols-2 gap-2 p-0">
               {['Baden', 'Bruck an der Leitha', 'Mödling', 'Wiener Neustadt', 'Neunkirchen', 'Wien-Umgebung', 'Sankt Pölten', 'Tulln'].map(n => (
-                <li key={n} className="flex items-center gap-2 rounded-sm border border-line bg-bg-raised px-3.5 py-2.5 text-sm before:text-accent before:content-['◉']">{n}</li>
+                <li key={n} className="flex items-center gap-2 rounded-sm border border-line bg-bg-raised px-3.5 py-2.5 text-sm"><i className="ph-fill ph-map-pin text-accent" aria-hidden="true" />{n}</li>
               ))}
             </ul>
             <div className="mt-10"><Eyebrow>Weitere Bezirke</Eyebrow></div>

@@ -10,11 +10,12 @@ const SECTION = 'py-20';
 const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 
-const STATS: [string, string, string][] = [
-  ['24+', 'Jahre Erfahrung', 'Ausgebildet im internationalen Konzern.'],
-  ['◆', 'Diskretion garantiert', 'Nachbarn merken nichts. Hotels schätzen das.'],
-  ['☎', 'Persönlich', 'Sie sprechen mit mir – nicht mit einem Callcenter.'],
-  ['⌖', 'Lokal verankert', 'Niederösterreich kenne ich wie meine Werkzeugkiste.'],
+type StatSym = { text: string } | { icon: string };
+const STATS: [StatSym, string, string][] = [
+  [{ text: '24+' }, 'Jahre Erfahrung', 'Ausgebildet im internationalen Konzern.'],
+  [{ icon: 'ph-shield-check' }, 'Diskretion garantiert', 'Nachbarn merken nichts. Hotels schätzen das.'],
+  [{ icon: 'ph-phone' }, 'Persönlich', 'Sie sprechen mit mir – nicht mit einem Callcenter.'],
+  [{ icon: 'ph-crosshair' }, 'Lokal verankert', 'Niederösterreich kenne ich wie meine Werkzeugkiste.'],
 ];
 
 export default function AboutPage() {
@@ -50,7 +51,9 @@ export default function AboutPage() {
             <div className="mt-10 grid grid-cols-2 gap-4 max-[520px]:grid-cols-1">
               {STATS.map(([sym, head, body]) => (
                 <div key={head} className="rounded-lg border border-line bg-bg-raised p-5">
-                  <span className="mb-2 inline-grid h-9 w-9 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent" aria-hidden="true">{sym}</span>
+                  <span className="mb-2 inline-grid h-9 w-9 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent" aria-hidden="true">
+                    {'icon' in sym ? <i className={`ph-fill ${sym.icon}`} /> : sym.text}
+                  </span>
                   <strong className="block font-semibold text-brand">{head}</strong>
                   <span className="text-sm text-ink-soft">{body}</span>
                 </div>

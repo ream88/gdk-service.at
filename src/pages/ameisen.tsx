@@ -12,7 +12,7 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 const PRINCIPLE_GRID = 'mt-6 grid grid-cols-3 gap-4 max-[720px]:grid-cols-1';
 const PRINCIPLE_CARD = 'rounded-lg border border-line bg-bg-raised p-6';
-const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft font-mono text-base text-accent';
+const ICON_BOX = 'mb-3 grid h-10 w-10 place-items-center rounded-sm bg-accent-soft text-base text-accent';
 const PROSE = 'flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand';
 const CALLOUT = 'rounded-sm border-l-[3px] border-accent bg-accent-soft px-5 py-4 text-[15px]';
 
@@ -41,9 +41,9 @@ export default function AmeisenPage() {
         <Eyebrow>Arbeitsweise</Eyebrow>
         <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
         <div className={PRINCIPLE_GRID}>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Bei staatenbildenden Insekten muss man sich Gedanken um das Warum und Wo machen.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Ameisen sind ein wichtiger Bestandteil unseres Ökosystems. Bekämpfung nur, wo wirklich Schädling.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Wissen über Biologie, Arten, Nahrungspräferenzen und Verhaltensmuster ist der entscheidende Faktor.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-clock-countdown" aria-hidden="true" /></div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Bei staatenbildenden Insekten muss man sich Gedanken um das Warum und Wo machen.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-shield-check" aria-hidden="true" /></div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Ameisen sind ein wichtiger Bestandteil unseres Ökosystems. Bekämpfung nur, wo wirklich Schädling.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-sparkle" aria-hidden="true" /></div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Wissen über Biologie, Arten, Nahrungspräferenzen und Verhaltensmuster ist der entscheidende Faktor.</p></div>
         </div>
       </Section>
 
@@ -54,9 +54,9 @@ export default function AmeisenPage() {
           <p>Der Ameisenstaat wird durch ein <strong>komplexes Netzwerk aus chemischen Signalen</strong> gesteuert. Über hochempfindliche Antennen nehmen Ameisen Pheromone wahr, die fast alle sozialen Prozesse regeln.</p>
         </div>
         <div className={PRINCIPLE_GRID}>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>↗</div><h3 className="text-xl">Spuren</h3><p className="mt-1.5 text-ink-soft">Kundschafterinnen markieren Wege zu Futter. Je ergiebiger die Quelle, desto stärker die Duftspur.</p></div>
+          <div className={PRINCIPLE_CARD}><h3 className="text-xl">Spuren</h3><p className="mt-1.5 text-ink-soft">Kundschafterinnen markieren Wege zu Futter. Je ergiebiger die Quelle, desto stärker die Duftspur.</p></div>
           <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>!</div><h3 className="text-xl">Alarm</h3><p className="mt-1.5 text-ink-soft">Bei Gefahr werden Stoffe abgegeben, die den Staat in Kampfbereitschaft versetzen oder zur Flucht anregen.</p></div>
-          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◉</div><h3 className="text-xl">Geruch</h3><p className="mt-1.5 text-ink-soft">Jeder Staat hat ein chemisches Profil am Panzer. So unterscheiden Ameisen in Sekundenbruchteilen Freund von Feind.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}><i className="ph-fill ph-map-pin" aria-hidden="true" /></div><h3 className="text-xl">Geruch</h3><p className="mt-1.5 text-ink-soft">Jeder Staat hat ein chemisches Profil am Panzer. So unterscheiden Ameisen in Sekundenbruchteilen Freund von Feind.</p></div>
         </div>
       </Section>
 
