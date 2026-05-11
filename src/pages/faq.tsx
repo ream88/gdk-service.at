@@ -1,15 +1,14 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { Section } from '@/components/site/Section';
+import { Faq, FaqQuestion, FaqAnswer } from '@/components/site/Faq';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
 const SECTION = 'py-20';
 const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
-
-const FAQ_ITEM =
-  "border-b border-line py-4.5 [&[open]_summary::after]:rotate-45 [&_summary]:flex [&_summary]:cursor-pointer [&_summary]:list-none [&_summary]:items-center [&_summary]:justify-between [&_summary]:gap-5 [&_summary]:font-display [&_summary]:text-[19px] [&_summary]:font-[550] [&_summary]:text-brand [&_summary::after]:text-[22px] [&_summary::after]:text-accent [&_summary::after]:transition-transform [&_summary::after]:duration-200 [&_summary::after]:content-['+'] [&_summary::-webkit-details-marker]:hidden";
 
 const GROUPS: { id: string; title: string; qa: [string, string][] }[] = [
   {
@@ -74,29 +73,33 @@ export default function FaqPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={`${WRAP} grid grid-cols-[200px_1fr] gap-12 max-[800px]:grid-cols-1`}>
+      <Section
+        cols="200px 1fr"
+        align="start"
+        gap="gap-12"
+        collapseBelow={800}
+        primary={
           <nav className="sticky top-24 flex flex-col gap-2 self-start text-sm max-[800px]:static max-[800px]:flex-row max-[800px]:flex-wrap">
             {GROUPS.map(g => (
               <a key={g.id} href={`#${g.id}`} className="text-ink-soft hover:text-brand">{g.title}</a>
             ))}
           </nav>
-
-          <div>
-            {GROUPS.map(g => (
-              <div key={g.id} className="mb-12" id={g.id}>
-                <h2 className="mb-4 text-[clamp(24px,2.4vw,30px)]">{g.title}</h2>
-                {g.qa.map(([q, a]) => (
-                  <details key={q} className={FAQ_ITEM}>
-                    <summary>{q}</summary>
-                    <div className="mt-3.5 max-w-[64ch] text-[15px] leading-[1.65] text-ink-soft">{a}</div>
-                  </details>
-                ))}
-              </div>
-            ))}
-          </div>
+        }
+      >
+        <div>
+          {GROUPS.map(g => (
+            <div key={g.id} className="mb-12" id={g.id}>
+              <h2 className="mb-4 text-[clamp(24px,2.4vw,30px)]">{g.title}</h2>
+              {g.qa.map(([q, a]) => (
+                <Faq key={q}>
+                  <FaqQuestion>{q}</FaqQuestion>
+                  <FaqAnswer>{a}</FaqAnswer>
+                </Faq>
+              ))}
+            </div>
+          ))}
         </div>
-      </section>
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

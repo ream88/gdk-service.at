@@ -1,6 +1,7 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { Section } from '@/components/site/Section';
 import { Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -20,9 +21,8 @@ export default function AGBPage() {
           <p className="mt-2 text-sm text-ink-mute">Stand: 03/2026</p>
         </div>
       </section>
-      <section className={SECTION}>
-        <div className={`${WRAP} max-w-[48rem]`}>
-          <div className={PROSE}>
+      <Section innerClassName="max-w-[48rem]">
+        <div className={PROSE}>
             <h3>1. Geltungsbereich</h3>
             <p>Diese AGB gelten für alle Verträge zwischen Gerhard Klosterer e.U. / Weidengasse 11 / 3041 Siegersdorf (nachfolgend „Anbieter") und seinen Kunden über Leistungen in den Bereichen Schädlingsbekämpfung und Möbelmontage.</p>
             <h3>2. Vertragsschluss</h3>
@@ -47,9 +47,8 @@ export default function AGBPage() {
             <p>Es gilt das Recht der Republik Österreich unter Ausschluss des UN-Kaufrechts. Gerichtsstand ist, soweit zulässig, der Sitz des Anbieters.</p>
             <h3>12. Schlussbestimmungen</h3>
             <p>Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Änderungen und Ergänzungen bedürfen der Textform.</p>
-          </div>
         </div>
-      </section>
+      </Section>
       <SiteFooter />
       <MobileSticky />
       <script src="/chrome.js" />

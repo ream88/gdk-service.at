@@ -1,6 +1,7 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { Section } from '@/components/site/Section';
 import { Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -20,9 +21,8 @@ export default function DatenschutzPage() {
           <p className="mt-2 text-sm text-ink-mute">Stand: 04/2026</p>
         </div>
       </section>
-      <section className={SECTION}>
-        <div className={`${WRAP} max-w-[48rem]`}>
-          <div className={PROSE}>
+      <Section innerClassName="max-w-[48rem]">
+        <div className={PROSE}>
             <h3>1. Verantwortlicher</h3>
             <p>Gerhard Klosterer, Weidengasse 11, 3041 Siegersdorf<br />Telefon: 0670/199 55 44 · E-Mail: gerhard@gdk-service.at</p>
             <h3>2. Zwecke und Rechtsgrundlagen der Verarbeitung</h3>
@@ -45,9 +45,8 @@ export default function DatenschutzPage() {
             <p>Geeignete technische und organisatorische Maßnahmen schützen Ihre Daten vor Verlust, Zugriff und Missbrauch und werden laufend dem Stand der Technik angepasst.</p>
             <h3>11. Kontakt</h3>
             <p>Bei Fragen zur Datenverarbeitung kontaktieren Sie bitte die oben genannten Kontaktdaten.</p>
-          </div>
         </div>
-      </section>
+      </Section>
       <SiteFooter />
       <MobileSticky />
       <script src="/chrome.js" />

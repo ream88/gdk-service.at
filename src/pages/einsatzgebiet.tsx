@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
@@ -26,8 +27,12 @@ export default function EinsatzgebietPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={`${WRAP} grid grid-cols-2 gap-12 max-[800px]:grid-cols-1`}>
+      <Section
+        cols={true}
+        align="start"
+        gap="gap-12"
+        collapseBelow={800}
+        primary={
           <div>
             <Eyebrow>Kernbezirke (&lt; 45 min)</Eyebrow>
             <h2 className="mt-2 text-[clamp(24px,2.6vw,32px)]">Wien-Umland &amp; Industrieviertel</h2>
@@ -43,31 +48,30 @@ export default function EinsatzgebietPage() {
               ))}
             </div>
           </div>
-          <div>
-            <Placeholder ratio="4/5" tone="dark" label="Karte · Niederösterreich mit Pins" />
-            <div className="mt-6 rounded-lg bg-bg-panel p-5 text-sm text-ink-soft [&_strong]:mb-1.5 [&_strong]:block [&_strong]:text-brand">
-              <strong>Nicht aufgeführt?</strong>
-              Rufen Sie trotzdem an – in begründeten Fällen komme ich auch über die Landesgrenze hinaus.
-            </div>
+        }
+      >
+        <div>
+          <Placeholder ratio="4/5" tone="dark" label="Karte · Niederösterreich mit Pins" />
+          <div className="mt-6 rounded-lg bg-bg-panel p-5 text-sm text-ink-soft [&_strong]:mb-1.5 [&_strong]:block [&_strong]:text-brand">
+            <strong>Nicht aufgeführt?</strong>
+            Rufen Sie trotzdem an – in begründeten Fällen komme ich auch über die Landesgrenze hinaus.
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Nicht sicher?"
-            title="Einfach kurz anrufen."
-            description="Ich sage Ihnen sofort, ob ich in Ihrem Bezirk fahre und was der Fixpreis ist."
-            actions={(
-              <>
-                <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-                <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-              </>
-            )}
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Nicht sicher?"
+          title="Einfach kurz anrufen."
+          description="Ich sage Ihnen sofort, ob ich in Ihrem Bezirk fahre und was der Fixpreis ist."
+          actions={(
+            <>
+              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
+              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
+            </>
+          )}
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

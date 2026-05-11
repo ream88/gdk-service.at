@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
@@ -78,89 +79,89 @@ export default function PestPage() {
       </section>
 
       {/* Principles */}
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <Eyebrow>Prinzipien</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Drei Worte. Drei Versprechen.</h2>
-          <div className={PRINCIPLE_GRID}>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">24+ Jahre Praxis, ausgebildet im weltweit tätigen Konzern.</p></div>
-          </div>
+      <Section>
+        <Eyebrow>Prinzipien</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Drei Worte. Drei Versprechen.</h2>
+        <div className={PRINCIPLE_GRID}>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">24+ Jahre Praxis, ausgebildet im weltweit tätigen Konzern.</p></div>
         </div>
-      </section>
+      </Section>
 
       {/* Pest blocks */}
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`}>
-        <div className={WRAP}>
-          <div className="max-w-[36rem]">
-            <Eyebrow>Spezialisierungen</Eyebrow>
-            <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Welcher Schädling plagt Sie?</h2>
-            <p className="mt-3 text-ink-soft">Jede Art braucht ihre eigene Methode. Hier die häufigsten Einsätze:</p>
-          </div>
-          <div className={PEST_BLOCK}>
-            {PESTS.map(p => (
-              <article key={p.id} id={p.id} className={PEST_ARTICLE}>
-                <h3 className="text-2xl"><span className={PEST_EMOJI}>{p.glyph}</span>{p.name}</h3>
-                <p className="mt-3 text-ink-soft">{p.body}</p>
-                <ul className={TICKS}>
-                  {p.bullets.map(b => <li key={b} className={TICK_LI}>{b}</li>)}
-                </ul>
-                <p className="mt-5">
-                  <a href={`/${p.id === 'maeuse' ? 'maeuse-ratten' : p.id}.html`} className="font-semibold text-accent hover:text-brand">
-                    Detailseite {p.name} →
-                  </a>
-                </p>
-              </article>
-            ))}
-          </div>
+      <Section className="border-b border-t border-line bg-bg-panel">
+        <div className="max-w-[36rem]">
+          <Eyebrow>Spezialisierungen</Eyebrow>
+          <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Welcher Schädling plagt Sie?</h2>
+          <p className="mt-3 text-ink-soft">Jede Art braucht ihre eigene Methode. Hier die häufigsten Einsätze:</p>
         </div>
-      </section>
+        <div className={PEST_BLOCK}>
+          {PESTS.map(p => (
+            <article key={p.id} id={p.id} className={PEST_ARTICLE}>
+              <h3 className="text-2xl"><span className={PEST_EMOJI}>{p.glyph}</span>{p.name}</h3>
+              <p className="mt-3 text-ink-soft">{p.body}</p>
+              <ul className={TICKS}>
+                {p.bullets.map(b => <li key={b} className={TICK_LI}>{b}</li>)}
+              </ul>
+              <p className="mt-5">
+                <a href={`/${p.id === 'maeuse' ? 'maeuse-ratten' : p.id}.html`} className="font-semibold text-accent hover:text-brand">
+                  Detailseite {p.name} →
+                </a>
+              </p>
+            </article>
+          ))}
+        </div>
+      </Section>
 
       {/* Process */}
-      <section className={SECTION}>
-        <div className={`${WRAP} grid grid-cols-[1.2fr_1fr] items-start gap-12 max-[900px]:grid-cols-1`}>
-          <div>
-            <Eyebrow>So läuft's ab</Eyebrow>
-            <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">In 4 Schritten zur Lösung.</h2>
-            <ol className="m-0 mt-6 flex list-none flex-col gap-3.5 p-0">
-              {PROCESS.map(([title, body], i) => (
-                <li key={title} className="grid grid-cols-[44px_1fr] items-start gap-4 rounded-sm border border-line bg-bg-panel px-4.5 py-4">
-                  <span className="pt-0.5 font-display text-[22px] leading-none text-accent">{i + 1}</span>
-                  <div>
-                    <strong className="mb-1 block font-display text-[17px] text-brand">{title}</strong>
-                    <p className="text-ink-soft">{body}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-          <Placeholder ratio="4/5" tone="dark" label="Einsatz-Foto · Profil mit Werkzeug" />
-        </div>
-      </section>
+      <Section
+        cols="1.2fr 1fr"
+        align="start"
+        gap="gap-12"
+        eyebrow="So läuft's ab"
+        title="In 4 Schritten zur Lösung."
+        primary={
+          <ol className="m-0 mt-6 flex list-none flex-col gap-3.5 p-0">
+            {PROCESS.map(([title, body], i) => (
+              <li key={title} className="grid grid-cols-[44px_1fr] items-start gap-4 rounded-sm border border-line bg-bg-panel px-4.5 py-4">
+                <span className="pt-0.5 font-display text-[22px] leading-none text-accent">{i + 1}</span>
+                <div>
+                  <strong className="mb-1 block font-display text-[17px] text-brand">{title}</strong>
+                  <p className="text-ink-soft">{body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        }
+      >
+        <Placeholder ratio="4/5" tone="dark" label="Einsatz-Foto · Profil mit Werkzeug" />
+      </Section>
 
       {/* Knowledge cross-link */}
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`}>
-        <div className={WRAP}>
-          <div className="grid grid-cols-2 gap-5 max-[720px]:grid-cols-1">
-            <a href="/wirkungsweise.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
-              <Eyebrow>Fachwissen</Eyebrow>
-              <h3 className="mt-2 text-[22px]">Wirkungsweise von Schädlingsbekämpfungs&shy;mitteln →</h3>
-              <p className="mt-2 text-ink-soft">Was wirkt wie – und warum es Profis braucht.</p>
-            </a>
-            <a href="/gesetze-normen.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
-              <Eyebrow>Compliance</Eyebrow>
-              <h3 className="mt-2 text-[22px]">Gesetze, Normen &amp; ihre Folgen →</h3>
-              <p className="mt-2 text-ink-soft">EN 16636, BPV, IPM – Standards, an denen ich mitgearbeitet habe.</p>
-            </a>
-          </div>
+      <Section className="border-b border-t border-line bg-bg-panel">
+        <div className="grid grid-cols-2 gap-5 max-[720px]:grid-cols-1">
+          <a href="/wirkungsweise.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
+            <Eyebrow>Fachwissen</Eyebrow>
+            <h3 className="mt-2 text-[22px]">Wirkungsweise von Schädlingsbekämpfungs&shy;mitteln →</h3>
+            <p className="mt-2 text-ink-soft">Was wirkt wie – und warum es Profis braucht.</p>
+          </a>
+          <a href="/gesetze-normen.html" className="block rounded-lg border border-line bg-bg-raised p-7 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_oklch,var(--brand)_30%,var(--line))] hover:shadow-card">
+            <Eyebrow>Compliance</Eyebrow>
+            <h3 className="mt-2 text-[22px]">Gesetze, Normen &amp; ihre Folgen →</h3>
+            <p className="mt-2 text-ink-soft">EN 16636, BPV, IPM – Standards, an denen ich mitgearbeitet habe.</p>
+          </a>
         </div>
-      </section>
+      </Section>
 
       {/* Pricing band */}
-      <section className={`${SECTION} bg-[radial-gradient(circle_at_85%_0%,color-mix(in_oklch,var(--accent)_28%,transparent),transparent_55%),linear-gradient(135deg,var(--dark),color-mix(in_oklch,var(--dark)_92%,black))] text-dark-ink`}>
-        <div className={`${WRAP} grid grid-cols-[1.2fr_1fr] items-center gap-12 max-[800px]:grid-cols-1`}>
-          <div>
+      <Section
+        cols="1.2fr 1fr"
+        gap="gap-12"
+        collapseBelow={800}
+        className="bg-[radial-gradient(circle_at_85%_0%,color-mix(in_oklch,var(--accent)_28%,transparent),transparent_55%),linear-gradient(135deg,var(--dark),color-mix(in_oklch,var(--dark)_92%,black))] text-dark-ink"
+        primary={
+          <>
             <Eyebrow accent>Fixpreis-Garantie</Eyebrow>
             <h2 className="mt-2 text-[clamp(28px,3.4vw,42px)] text-dark-ink">Ein Auftrag. Ein Preis.<br />Ohne Kleingedrucktes.</h2>
             <p className="mt-4 max-w-[50ch] opacity-75">
@@ -171,28 +172,27 @@ export default function PestPage() {
                 <li key={t} className="relative pl-6 before:absolute before:left-0 before:font-bold before:text-accent before:content-['✓']">{t}</li>
               ))}
             </ul>
-          </div>
-          <div className="rounded-lg border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm">
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">KONKRETES ANGEBOT IN 2 MINUTEN</span>
-            <h3 className="mt-3 text-2xl text-dark-ink">Beschreiben Sie Ihr Problem – Sie erhalten den Fixpreis sofort.</h3>
-            <div className="mt-5 flex flex-col gap-2.5">
-              <Button href={PHONE_HREF} variant="cta" size="xl">Jetzt Fixpreis erfragen</Button>
-              <Button href="/faq.html" variant="ghost" className="!text-dark-ink !border-white/20 hover:!border-white/60">Häufige Fragen →</Button>
-            </div>
+          </>
+        }
+      >
+        <div className="rounded-lg border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm">
+          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">KONKRETES ANGEBOT IN 2 MINUTEN</span>
+          <h3 className="mt-3 text-2xl text-dark-ink">Beschreiben Sie Ihr Problem – Sie erhalten den Fixpreis sofort.</h3>
+          <div className="mt-5 flex flex-col gap-2.5">
+            <Button href={PHONE_HREF} variant="cta" size="xl">Jetzt Fixpreis erfragen</Button>
+            <Button href="/faq.html" variant="ghost" className="!text-dark-ink !border-white/20 hover:!border-white/60">Häufige Fragen →</Button>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Final CTA */}
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Akutfall?"
-            title={<>Same-day Service –<br />wenn's wirklich brennt.</>}
-            description="Bei akuten Wespennestern, plötzlichen Rattensichtungen oder Bettwanzenverdacht: einfach anrufen. Ich richte mich nach Ihrer Dringlichkeit."
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Akutfall?"
+          title={<>Same-day Service –<br />wenn's wirklich brennt.</>}
+          description="Bei akuten Wespennestern, plötzlichen Rattensichtungen oder Bettwanzenverdacht: einfach anrufen. Ich richte mich nach Ihrer Dringlichkeit."
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

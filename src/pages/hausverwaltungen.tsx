@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, EMAIL_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon } from '@/components/ui/Button';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
@@ -38,39 +39,35 @@ export default function HausverwaltungenPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <div className="max-w-[40rem]">
-            <Eyebrow>Leistungen für B2B</Eyebrow>
-            <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Was Sie von mir bekommen.</h2>
-          </div>
-          <div className="mt-10 grid grid-cols-4 gap-4 max-[900px]:grid-cols-2 max-[520px]:grid-cols-1">
-            {SERVICES.map(([sym, head, body]) => (
-              <div key={head} className="rounded-lg border border-line bg-bg-raised p-6">
-                <span className="mb-3 inline-grid h-9 w-9 place-items-center rounded-sm bg-accent-soft font-mono text-sm text-accent" aria-hidden="true">{sym}</span>
-                <h3 className="text-lg">{head}</h3>
-                <p className="mt-1.5 text-sm text-ink-soft">{body}</p>
-              </div>
-            ))}
-          </div>
+      <Section>
+        <div className="max-w-[40rem]">
+          <Eyebrow>Leistungen für B2B</Eyebrow>
+          <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Was Sie von mir bekommen.</h2>
         </div>
-      </section>
+        <div className="mt-10 grid grid-cols-4 gap-4 max-[900px]:grid-cols-2 max-[520px]:grid-cols-1">
+          {SERVICES.map(([sym, head, body]) => (
+            <div key={head} className="rounded-lg border border-line bg-bg-raised p-6">
+              <span className="mb-3 inline-grid h-9 w-9 place-items-center rounded-sm bg-accent-soft font-mono text-sm text-accent" aria-hidden="true">{sym}</span>
+              <h3 className="text-lg">{head}</h3>
+              <p className="mt-1.5 text-sm text-ink-soft">{body}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Rahmenvertrag anfragen"
-            title="Gesprächstermin vereinbaren."
-            description="Wir klären Objekte, Umfang & Reaktionszeiten – ich lege Ihnen ein passgenaues Angebot vor."
-            actions={(
-              <>
-                <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-                <Button href={EMAIL_HREF} variant="ghost">E-Mail senden</Button>
-              </>
-            )}
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Rahmenvertrag anfragen"
+          title="Gesprächstermin vereinbaren."
+          description="Wir klären Objekte, Umfang & Reaktionszeiten – ich lege Ihnen ein passgenaues Angebot vor."
+          actions={(
+            <>
+              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
+              <Button href={EMAIL_HREF} variant="ghost">E-Mail senden</Button>
+            </>
+          )}
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

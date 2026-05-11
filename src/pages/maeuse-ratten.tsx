@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
@@ -45,81 +46,73 @@ export default function MaeuseRattenPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <Eyebrow>Arbeitsweise</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
-          <div className={PRINCIPLE_GRID}>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Präzise und auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Laufwege, Schmierspuren, Nagespuren – richtig gedeutet, führen sie zum Erfolg.</p></div>
-          </div>
+      <Section>
+        <Eyebrow>Arbeitsweise</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
+        <div className={PRINCIPLE_GRID}>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Präzise und auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Laufwege, Schmierspuren, Nagespuren – richtig gedeutet, führen sie zum Erfolg.</p></div>
         </div>
-      </section>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <Eyebrow>Spezies-Vergleich</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Hausmaus vs. Wanderratte.</h2>
-          <div className={VERSUS_GRID}>
-            <article className={VERSUS_CARD}>
-              <span className={VS_LABEL}>No. 01</span>
-              <h3 className={VS_HEADING}>Hausmaus<br /><em>(Mus musculus)</em></h3>
-              <ul className={VS_STATS}>
-                <li className={VS_LI}><span>Körper</span><strong>7–10 cm + Schwanz</strong></li>
-                <li className={VS_LI}><span>Gewicht</span><strong>12–30 g</strong></li>
-                <li className={VS_LI}><span>Würfe/Jahr</span><strong>bis 8 (4–8 Junge)</strong></li>
-                <li className={VS_LI}><span>Suchradius</span><strong>wenige Meter</strong></li>
-              </ul>
-              <p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Klein, flink, extrem anpassungsfähig. Ursprünglich Steppen Zentralasiens, heute weltweit Begleiter des Menschen. Kommuniziert im <strong>Ultraschall</strong>, ausgezeichneter Geruchssinn, sehr <strong>neugierig (Neophilie)</strong>. Markiert mit Urin, verliert Kot beim Laufen.</p>
-              <p className="mt-2 text-ink-soft">Frisst alles. Wasserbedarf aus der Nahrung. Nistet nahe der Nahrungsquelle. Schon Öffnungen von wenigen Millimetern reichen zum Durchschlüpfen.</p>
-            </article>
-            <article className={VERSUS_CARD}>
-              <span className={VS_LABEL}>No. 02</span>
-              <h3 className={VS_HEADING}>Wanderratte<br /><em>(Rattus norvegicus)</em></h3>
-              <ul className={VS_STATS}>
-                <li className={VS_LI}><span>Körper</span><strong>20–27 cm</strong></li>
-                <li className={VS_LI}><span>Gewicht</span><strong>200–500 g</strong></li>
-                <li className={VS_LI}><span>Würfe/Jahr</span><strong>3–6 (8–12 Junge)</strong></li>
-                <li className={VS_LI}><span>Sozial</span><strong>Rudel bis 200</strong></li>
-              </ul>
-              <p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Größer, kräftiger, oft aggressiver. Hochintelligent, komplexe soziale Strukturen. Exzellenter <strong>Schwimmer</strong>, hervorragender Gräber – findet sich an Bachläufen, im Komposter, unter Sträuchern.</p>
-              <p className="mt-2 text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Misstrauisch gegenüber Neuem (<strong>Neophobie</strong>) – meidet Fallen oft tagelang. Lernfähig. Bevorzugt feuchte, kühle Umgebungen, in Städten Kanalisation, Keller, Mülldeponien. Der „Vorkoster" ist ein Mythos – die zeitverzögerte Wirkung dient dem Schutz von Nichtzieltieren.</p>
-            </article>
-          </div>
+      <Section>
+        <Eyebrow>Spezies-Vergleich</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Hausmaus vs. Wanderratte.</h2>
+        <div className={VERSUS_GRID}>
+          <article className={VERSUS_CARD}>
+            <span className={VS_LABEL}>No. 01</span>
+            <h3 className={VS_HEADING}>Hausmaus<br /><em>(Mus musculus)</em></h3>
+            <ul className={VS_STATS}>
+              <li className={VS_LI}><span>Körper</span><strong>7–10 cm + Schwanz</strong></li>
+              <li className={VS_LI}><span>Gewicht</span><strong>12–30 g</strong></li>
+              <li className={VS_LI}><span>Würfe/Jahr</span><strong>bis 8 (4–8 Junge)</strong></li>
+              <li className={VS_LI}><span>Suchradius</span><strong>wenige Meter</strong></li>
+            </ul>
+            <p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Klein, flink, extrem anpassungsfähig. Ursprünglich Steppen Zentralasiens, heute weltweit Begleiter des Menschen. Kommuniziert im <strong>Ultraschall</strong>, ausgezeichneter Geruchssinn, sehr <strong>neugierig (Neophilie)</strong>. Markiert mit Urin, verliert Kot beim Laufen.</p>
+            <p className="mt-2 text-ink-soft">Frisst alles. Wasserbedarf aus der Nahrung. Nistet nahe der Nahrungsquelle. Schon Öffnungen von wenigen Millimetern reichen zum Durchschlüpfen.</p>
+          </article>
+          <article className={VERSUS_CARD}>
+            <span className={VS_LABEL}>No. 02</span>
+            <h3 className={VS_HEADING}>Wanderratte<br /><em>(Rattus norvegicus)</em></h3>
+            <ul className={VS_STATS}>
+              <li className={VS_LI}><span>Körper</span><strong>20–27 cm</strong></li>
+              <li className={VS_LI}><span>Gewicht</span><strong>200–500 g</strong></li>
+              <li className={VS_LI}><span>Würfe/Jahr</span><strong>3–6 (8–12 Junge)</strong></li>
+              <li className={VS_LI}><span>Sozial</span><strong>Rudel bis 200</strong></li>
+            </ul>
+            <p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Größer, kräftiger, oft aggressiver. Hochintelligent, komplexe soziale Strukturen. Exzellenter <strong>Schwimmer</strong>, hervorragender Gräber – findet sich an Bachläufen, im Komposter, unter Sträuchern.</p>
+            <p className="mt-2 text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Misstrauisch gegenüber Neuem (<strong>Neophobie</strong>) – meidet Fallen oft tagelang. Lernfähig. Bevorzugt feuchte, kühle Umgebungen, in Städten Kanalisation, Keller, Mülldeponien. Der „Vorkoster" ist ein Mythos – die zeitverzögerte Wirkung dient dem Schutz von Nichtzieltieren.</p>
+          </article>
         </div>
-      </section>
+      </Section>
 
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`}>
-        <div className={`${WRAP} max-w-[48rem]`}>
-          <Eyebrow>Methode</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">In dieser Reihenfolge.</h2>
-          <ol className={NUMLIST}>
-            <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>1</span><div><strong>Warum?</strong><p className="text-ink-soft">Ursache finden – Nahrungsmittelreste, offene Eindringmöglichkeiten, passende Nistplätze. Gegenmaßnahmen: Nahrungsquelle weg, Eindringstellen abdichten.</p></div></li>
-            <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>2</span><div><strong>Wieviele?</strong><p className="text-ink-soft">Populationsstärke abschätzen – danach richtet sich, ob eine oder mehrere Bekämpfungen, und welche Methoden.</p></div></li>
-            <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>3</span><div><strong>Womit?</strong><p className="text-ink-soft">Lebendfallen, Schlagfallen, toxische Köder oder Kombinationen. Lebend-/Schlagfallen werden mehrmals täglich kontrolliert (oft von Ihnen).</p></div></li>
-            <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>4</span><div><strong>Rodentizide.</strong><p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Wenn nötig: zugriffsgeschützte <strong>Köderboxen</strong> entlang der Laufwege. Köder im Inneren gegen Herausfallen gesichert. Nager nimmt auf, stirbt einige Tage später.</p></div></li>
-            <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>5</span><div><strong>Nachbehandlung.</strong><p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Köder ergänzen oder erneuern. Nach Erfolg: Köderstellen entfernen, Reste ordnungsgemäß entsorgen. Im Wohnbereich ergänzend <strong>Desinfektion</strong>, damit Kot &amp; Urin kein Risiko darstellen.</p></div></li>
-          </ol>
-        </div>
-      </section>
+      <Section className="border-b border-t border-line bg-bg-panel" innerClassName="max-w-[48rem]">
+        <Eyebrow>Methode</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">In dieser Reihenfolge.</h2>
+        <ol className={NUMLIST}>
+          <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>1</span><div><strong>Warum?</strong><p className="text-ink-soft">Ursache finden – Nahrungsmittelreste, offene Eindringmöglichkeiten, passende Nistplätze. Gegenmaßnahmen: Nahrungsquelle weg, Eindringstellen abdichten.</p></div></li>
+          <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>2</span><div><strong>Wieviele?</strong><p className="text-ink-soft">Populationsstärke abschätzen – danach richtet sich, ob eine oder mehrere Bekämpfungen, und welche Methoden.</p></div></li>
+          <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>3</span><div><strong>Womit?</strong><p className="text-ink-soft">Lebendfallen, Schlagfallen, toxische Köder oder Kombinationen. Lebend-/Schlagfallen werden mehrmals täglich kontrolliert (oft von Ihnen).</p></div></li>
+          <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>4</span><div><strong>Rodentizide.</strong><p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Wenn nötig: zugriffsgeschützte <strong>Köderboxen</strong> entlang der Laufwege. Köder im Inneren gegen Herausfallen gesichert. Nager nimmt auf, stirbt einige Tage später.</p></div></li>
+          <li className={NUMLIST_LI}><span className={NUMLIST_NUM}>5</span><div><strong>Nachbehandlung.</strong><p className="text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Köder ergänzen oder erneuern. Nach Erfolg: Köderstellen entfernen, Reste ordnungsgemäß entsorgen. Im Wohnbereich ergänzend <strong>Desinfektion</strong>, damit Kot &amp; Urin kein Risiko darstellen.</p></div></li>
+        </ol>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Persönlich erreichbar"
-            title="Ein Anruf reicht."
-            description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter."
-            actions={(
-              <>
-                <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-                <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-                <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
-              </>
-            )}
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Persönlich erreichbar"
+          title="Ein Anruf reicht."
+          description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter."
+          actions={(
+            <>
+              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
+              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
+              <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
+            </>
+          )}
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

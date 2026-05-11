@@ -2,6 +2,8 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
+import { Faq, FaqQuestion, FaqAnswer } from '@/components/site/Faq';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
@@ -11,8 +13,6 @@ const PAGE_HERO =
   'border-b border-line pt-[72px] pb-12 bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--bg-panel)_80%,transparent),transparent_60%),linear-gradient(180deg,var(--bg)_0%,var(--bg-panel)_100%)]';
 const PROSE = 'flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand [&_ul]:m-0 [&_ul]:flex [&_ul]:list-none [&_ul]:flex-col [&_ul]:gap-2 [&_ul]:p-0 [&_li]:relative [&_li]:pl-6 [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:font-bold [&_li]:before:text-accent [&_li]:before:content-["•"] [&_h3]:mt-4 [&_h3]:text-xl';
 const CALLOUT = 'rounded-sm border-l-[3px] border-accent bg-accent-soft px-5 py-4 text-[15px]';
-const FAQ_ITEM =
-  "border-b border-line py-4.5 [&[open]_summary::after]:rotate-45 [&_summary]:flex [&_summary]:cursor-pointer [&_summary]:list-none [&_summary]:items-center [&_summary]:justify-between [&_summary]:gap-5 [&_summary]:font-display [&_summary]:text-[19px] [&_summary]:font-[550] [&_summary]:text-brand [&_summary::after]:text-[22px] [&_summary::after]:text-accent [&_summary::after]:transition-transform [&_summary::after]:duration-200 [&_summary::after]:content-['+'] [&_summary::-webkit-details-marker]:hidden";
 
 export default function WirkungsweisePage() {
   return (
@@ -30,58 +30,67 @@ export default function WirkungsweisePage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={`${WRAP} max-w-[50rem]`}>
-          <Eyebrow>Gruppeneinteilung</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Die zwei wichtigsten Klassen.</h2>
-          <div className={`${PROSE} mt-5`}>
-            <h3>1. Rodentizide (Nagetierbekämpfungsmittel)</h3>
-            <p>Die moderne Nagetierbekämpfung stützt sich primär auf <strong>Antikoagulanzien</strong> (Blutgerinnungshemmer). Die Köderformulierung besteht meist zu <strong>99,995&nbsp;%</strong> aus Lock- und Zusatzstoffen, <strong>0,005&nbsp;%</strong> sind reiner Wirkstoff – Difenacoum, Brodifacoum, Bromadiolon.</p>
-            <p>Sie wirken als Vitamin-K-Antagonisten und blockieren das Enzym Vitamin-K-Epoxid-Reduktase. Der Tod tritt <strong>zeitverzögert nach 3–7 Tagen</strong> ein, um Köderscheu bei sozialen Nagern zu vermeiden.</p>
-            <div className={CALLOUT}><strong>Antidot:</strong> Vitamin K1 dient als wirksames Gegengift bei Fehlvergiftungen.</div>
-            <h3>2. Insektizide</h3>
-            <p>Insektizide greifen meist das Nervensystem oder die körperliche Entwicklung (Häutung) an.</p>
-            <ul>
-              <li><strong>Pyrethroide</strong> (Permethrin, Deltamethrin): halten die Natriumkanäle offen → Dauererregung, Krämpfe, Tod („Knock-down-Effekt").</li>
-              <li><strong>Neonicotinoide:</strong> binden an Acetylcholin-Rezeptoren, blockieren die Reizübertragung zwischen Nervenzellen.</li>
-              <li><strong>Carbamate &amp; Organophosphate:</strong> hemmen das Enzym Acetylcholinesterase – Acetylcholin wird nicht mehr abgebaut.</li>
-              <li><strong>IGRs (Insect Growth Regulators):</strong> Chitinsynthesehemmer verhindern den neuen Panzer während der Häutung.</li>
-              <li><strong>Physikalisch wirkende Mittel</strong> wie Kieselgur (Diatomeenerde): scharfkantige Partikel verletzen die Wachsschicht – die Insekten trocknen aus.</li>
-            </ul>
-          </div>
+      <Section innerClassName="max-w-[50rem]">
+        <Eyebrow>Gruppeneinteilung</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Die zwei wichtigsten Klassen.</h2>
+        <div className={`${PROSE} mt-5`}>
+          <h3>1. Rodentizide (Nagetierbekämpfungsmittel)</h3>
+          <p>Die moderne Nagetierbekämpfung stützt sich primär auf <strong>Antikoagulanzien</strong> (Blutgerinnungshemmer). Die Köderformulierung besteht meist zu <strong>99,995&nbsp;%</strong> aus Lock- und Zusatzstoffen, <strong>0,005&nbsp;%</strong> sind reiner Wirkstoff – Difenacoum, Brodifacoum, Bromadiolon.</p>
+          <p>Sie wirken als Vitamin-K-Antagonisten und blockieren das Enzym Vitamin-K-Epoxid-Reduktase. Der Tod tritt <strong>zeitverzögert nach 3–7 Tagen</strong> ein, um Köderscheu bei sozialen Nagern zu vermeiden.</p>
+          <div className={CALLOUT}><strong>Antidot:</strong> Vitamin K1 dient als wirksames Gegengift bei Fehlvergiftungen.</div>
+          <h3>2. Insektizide</h3>
+          <p>Insektizide greifen meist das Nervensystem oder die körperliche Entwicklung (Häutung) an.</p>
+          <ul>
+            <li><strong>Pyrethroide</strong> (Permethrin, Deltamethrin): halten die Natriumkanäle offen → Dauererregung, Krämpfe, Tod („Knock-down-Effekt").</li>
+            <li><strong>Neonicotinoide:</strong> binden an Acetylcholin-Rezeptoren, blockieren die Reizübertragung zwischen Nervenzellen.</li>
+            <li><strong>Carbamate &amp; Organophosphate:</strong> hemmen das Enzym Acetylcholinesterase – Acetylcholin wird nicht mehr abgebaut.</li>
+            <li><strong>IGRs (Insect Growth Regulators):</strong> Chitinsynthesehemmer verhindern den neuen Panzer während der Häutung.</li>
+            <li><strong>Physikalisch wirkende Mittel</strong> wie Kieselgur (Diatomeenerde): scharfkantige Partikel verletzen die Wachsschicht – die Insekten trocknen aus.</li>
+          </ul>
         </div>
-      </section>
+      </Section>
 
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`}>
-        <div className={`${WRAP} max-w-[50rem]`}>
-          <Eyebrow>FAQs</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Häufig gefragt.</h2>
-          <div className="mt-6">
-            <details className={FAQ_ITEM}><summary>Ist das giftig?</summary><div className="mt-3.5 max-w-[64ch] text-[15px] leading-[1.65] text-ink-soft">Ja, natürlich. Deshalb darf es nur von geschulten, fachkundigen Personen ausgebracht werden.</div></details>
-            <details className={FAQ_ITEM}><summary>Wie lange dauert es, bis es wirkt?</summary><div className="mt-3.5 max-w-[64ch] text-[15px] leading-[1.65] text-ink-soft">Das alte Dosis-/Wirkungsprinzip. Je mehr und je öfter das Zieltier aufnimmt, desto schneller wirkt es. Ausbringort und Köderattraktivität sind ausschlaggebend.</div></details>
-            <details className={FAQ_ITEM}><summary>Was, wenn mein Haustier den Köder aufnimmt?</summary><div className="mt-3.5 max-w-[64ch] text-[15px] leading-[1.65] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Sofort die <strong>Vergiftungsinformationszentrale (VIZ) unter 01/406 43 43</strong> anrufen und den Tierarzt aufsuchen – mit der Information, welches Präparat aufgenommen wurde.</div></details>
-            <details className={FAQ_ITEM}><summary>Wenn ich die Köderbox berühre?</summary><div className="mt-3.5 max-w-[64ch] text-[15px] leading-[1.65] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Die Box selbst ist aus Kunststoff oder Metall – unbedenklich. Bei Kontakt mit dem Köder selbst: <strong>Hände waschen</strong> und mich verständigen.</div></details>
-            <details className={FAQ_ITEM}><summary>Darf ich nach einer Sprühbehandlung aufwischen?</summary><div className="mt-3.5 max-w-[64ch] text-[15px] leading-[1.65] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">Aufwischen <strong>neutralisiert den Belag</strong> und macht ihn wirkungslos. Nach Abschluss der Behandlung ist das genau die Methode zum Neutralisieren.</div></details>
-          </div>
+      <Section className="border-b border-t border-line bg-bg-panel" innerClassName="max-w-[50rem]">
+        <Eyebrow>FAQs</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Häufig gefragt.</h2>
+        <div className="mt-6">
+          <Faq>
+            <FaqQuestion>Ist das giftig?</FaqQuestion>
+            <FaqAnswer>Ja, natürlich. Deshalb darf es nur von geschulten, fachkundigen Personen ausgebracht werden.</FaqAnswer>
+          </Faq>
+          <Faq>
+            <FaqQuestion>Wie lange dauert es, bis es wirkt?</FaqQuestion>
+            <FaqAnswer>Das alte Dosis-/Wirkungsprinzip. Je mehr und je öfter das Zieltier aufnimmt, desto schneller wirkt es. Ausbringort und Köderattraktivität sind ausschlaggebend.</FaqAnswer>
+          </Faq>
+          <Faq>
+            <FaqQuestion>Was, wenn mein Haustier den Köder aufnimmt?</FaqQuestion>
+            <FaqAnswer>Sofort die <strong>Vergiftungsinformationszentrale (VIZ) unter 01/406 43 43</strong> anrufen und den Tierarzt aufsuchen – mit der Information, welches Präparat aufgenommen wurde.</FaqAnswer>
+          </Faq>
+          <Faq>
+            <FaqQuestion>Wenn ich die Köderbox berühre?</FaqQuestion>
+            <FaqAnswer>Die Box selbst ist aus Kunststoff oder Metall – unbedenklich. Bei Kontakt mit dem Köder selbst: <strong>Hände waschen</strong> und mich verständigen.</FaqAnswer>
+          </Faq>
+          <Faq>
+            <FaqQuestion>Darf ich nach einer Sprühbehandlung aufwischen?</FaqQuestion>
+            <FaqAnswer>Aufwischen <strong>neutralisiert den Belag</strong> und macht ihn wirkungslos. Nach Abschluss der Behandlung ist das genau die Methode zum Neutralisieren.</FaqAnswer>
+          </Faq>
         </div>
-      </section>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Persönlich erreichbar"
-            title="Ein Anruf reicht."
-            description="Mo–Fr 8:00–17:00. Sie sprechen mit mir – nicht mit einem Callcenter."
-            actions={(
-              <>
-                <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-                <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-                <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
-              </>
-            )}
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Persönlich erreichbar"
+          title="Ein Anruf reicht."
+          description="Mo–Fr 8:00–17:00. Sie sprechen mit mir – nicht mit einem Callcenter."
+          actions={(
+            <>
+              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
+              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
+              <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
+            </>
+          )}
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

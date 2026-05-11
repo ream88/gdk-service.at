@@ -3,7 +3,7 @@
 
 import { watch } from 'node:fs';
 import { existsSync, statSync } from 'node:fs';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -75,6 +75,10 @@ Bun.serve({
       return new Response('upgrade required', { status: 426 });
     }
 
+    if (url.pathname === '/sitemap' || url.pathname === '/sitemap.html') {
+      return serveSitemap();
+    }
+
     let rel = decodeURIComponent(url.pathname);
     if (rel.endsWith('/')) rel += 'index.html';
     let filePath = path.join(distDir, rel);
@@ -96,6 +100,39 @@ Bun.serve({
     message() {},
   },
 });
+
+async function serveSitemap() {
+  const files = (await readdir(distDir)).filter(f => f.endsWith('.html')).sort();
+  const rows = files.map(f => {
+    const slug = f.replace(/\.html$/, '');
+    const isIndex = slug === 'index';
+    const href = isIndex ? '/' : `/${f}`;
+    return `<li><a href="${href}">${slug}</a> <span class="path">${href}</span></li>`;
+  }).join('\n');
+  const html = `<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Dev sitemap · GDK Service</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.55 ui-sans-serif, system-ui, sans-serif; margin: 48px auto; max-width: 640px; padding: 0 20px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.meta { color: #888; font-size: 13px; margin: 0 0 28px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { padding: 8px 0; border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent); }
+  a { font-weight: 600; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .path { color: #888; margin-left: 10px; font: 12px ui-monospace, monospace; }
+</style></head>
+<body>
+  <h1>GDK Service · dev sitemap</h1>
+  <p class="meta">Every page in <code>src/pages/</code>. Dev-only — not deployed.</p>
+  <ul>
+${rows}
+  </ul>
+</body></html>`;
+  return new Response(html.replace(/<\/body>/i, RELOAD_SNIPPET + '</body>'), {
+    headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
+  });
+}
 
 async function serveFile(filePath) {
   const ext = path.extname(filePath).toLowerCase();

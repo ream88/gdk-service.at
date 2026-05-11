@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Placeholder } from '@/components/ui/Primitives';
 
@@ -94,19 +95,13 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section className={SECTION} data-screen-label="Home · Leistungen">
-        <div className={WRAP}>
-          <div className="mb-10 flex flex-wrap items-end justify-between gap-8">
-            <div>
-              <Eyebrow>Leistungen</Eyebrow>
-              <h2 className="mt-3 max-w-[18ch] text-[clamp(30px,3.8vw,48px)]">
-                Zwei Leistungen.<br />
-                <em className="italic text-[color-mix(in_oklch,var(--brand)_80%,var(--accent))]">Beide auf höchstem Niveau.</em>
-              </h2>
-            </div>
-            <p className="max-w-[36ch] text-ink-soft">Spezialisiert statt Bauchladen – damit Sie genau das bekommen, wofür Sie zahlen.</p>
-          </div>
-          <div className="grid grid-cols-2 gap-6 max-[800px]:grid-cols-1">
+      <Section
+        data-screen-label="Home · Leistungen"
+        eyebrow="Leistungen"
+        title={<>Zwei Leistungen.<br /><em>Beide auf höchstem Niveau.</em></>}
+        aside="Spezialisiert statt Bauchladen – damit Sie genau das bekommen, wofür Sie zahlen."
+      >
+        <div className="grid grid-cols-2 gap-6 max-[800px]:grid-cols-1">
             <ServiceCard
               href="/schaedlingsbekaempfung.html"
               badge="Hauptleistung"
@@ -125,19 +120,18 @@ export default function HomePage() {
               lede="Schränke, Küchen, Regale – fachgerecht aufgebaut, sauber hinterlassen. Sie sparen Stunden, Nerven und Werkzeug."
               ticks={['IKEA & Co. erfahren', 'Sauberes Arbeiten', 'Faire Stundensätze']}
             />
-          </div>
         </div>
-      </section>
+      </Section>
 
       {/* PROBLEM */}
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`} data-screen-label="Home · Problem">
-        <div className={`${WRAP} grid grid-cols-[1.2fr_1fr] items-center gap-14 max-[900px]:grid-cols-1`}>
-          <div>
-            <Eyebrow>Sie haben ein Problem?</Eyebrow>
-            <h2 className="text-[clamp(30px,3.8vw,48px)]">
-              Ungeziefer entdeckt?<br />
-              <em className="italic text-[color-mix(in_oklch,var(--brand)_80%,var(--accent))]">Schnelle Hilfe in Ihrer Nähe.</em>
-            </h2>
+      <Section
+        cols="1.2fr 1fr"
+        data-screen-label="Home · Problem"
+        className="border-b border-t border-line bg-bg-panel"
+        eyebrow="Sie haben ein Problem?"
+        title={<>Ungeziefer entdeckt?<br /><em>Schnelle Hilfe in Ihrer Nähe.</em></>}
+        primary={
+          <>
             <p className="mt-4 max-w-[48ch] text-ink-soft">
               Ratten in der Garage, Wespen am Balkon, Bettwanzen im Hotelzimmer:
               Schädlinge warten nicht – ich auch nicht. Ein Telefonat genügt, um Lage und Fixpreis zu klären.
@@ -163,8 +157,10 @@ export default function HomePage() {
               <Button href={PHONE_HREF} variant="cta">Sofort anrufen</Button>
               <Button href="/schaedlingsbekaempfung.html" variant="ghost">Leistungen ansehen →</Button>
             </div>
-          </div>
-          <div className="grid grid-cols-2 content-start gap-3">
+          </>
+        }
+      >
+        <div className="grid grid-cols-2 content-start gap-3">
             {[
               ['Wespen',     '/schaedlingsbekaempfung.html#wespen'],
               ['Ameisen',    '/schaedlingsbekaempfung.html#ameisen'],
@@ -180,26 +176,18 @@ export default function HomePage() {
                 <span className="text-lg text-ink-mute transition-[transform,color] duration-200 group-hover:translate-x-1 group-hover:text-accent">→</span>
               </a>
             ))}
-          </div>
         </div>
-      </section>
+      </Section>
 
       {/* PORTRAIT */}
-      <section className={SECTION} data-screen-label="Home · Portrait">
-        <div className={`${WRAP} grid grid-cols-[0.85fr_1.1fr] items-center gap-14 max-[900px]:grid-cols-1`}>
-          <figure className="relative m-0">
-            <Placeholder ratio="3/4" tone="dark" label="Portrait · Gerhard Klosterer" />
-            <div className="absolute -right-3 -top-3 rounded-[18px] bg-brand px-[18px] py-[14px] text-center text-brand-ink shadow-lift">
-              <strong className="block font-display text-[36px] font-[550] leading-none">24<span className="text-accent">+</span></strong>
-              <span className="text-[10px] uppercase tracking-[0.18em] opacity-75">Jahre im Einsatz</span>
-            </div>
-          </figure>
-          <div>
-            <Eyebrow>Der Mann hinter GDK</Eyebrow>
-            <h2 className="text-[clamp(30px,3.8vw,48px)]">
-              Gerhard Klosterer.<br />
-              <em className="italic text-[color-mix(in_oklch,var(--brand)_80%,var(--accent))]">Kein Callcenter.<br />Kein Subunternehmer.</em>
-            </h2>
+      <Section
+        cols="0.85fr 1.1fr"
+        reverse
+        data-screen-label="Home · Portrait"
+        eyebrow="Der Mann hinter GDK"
+        title={<>Gerhard Klosterer.<br /><em>Kein Callcenter.<br />Kein Subunternehmer.</em></>}
+        primary={
+          <>
             <p className="mt-6 text-ink-soft">
               Über zwei Jahrzehnte habe ich für einen der größten Schädlingsbekämpfer der Welt gearbeitet. Heute bürgt mein Name für die gleiche Qualität – nur direkter, persönlicher und ohne den Zwischenkostenaufschlag.
             </p>
@@ -210,24 +198,32 @@ export default function HomePage() {
               <Button href="/ueber.html" variant="primary">Mehr über mich</Button>
               <Button href="/kontakt.html" variant="ghost">Termin vereinbaren</Button>
             </div>
+          </>
+        }
+      >
+        <figure className="relative m-0">
+          <Placeholder ratio="3/4" tone="dark" label="Portrait · Gerhard Klosterer" />
+          <div className="absolute -right-3 -top-3 rounded-[18px] bg-brand px-[18px] py-[14px] text-center text-brand-ink shadow-lift">
+            <strong className="block font-display text-[36px] font-[550] leading-none">24<span className="text-accent">+</span></strong>
+            <span className="text-[10px] uppercase tracking-[0.18em] opacity-75">Jahre im Einsatz</span>
           </div>
-        </div>
-      </section>
+        </figure>
+      </Section>
 
       {/* TESTIMONIALS */}
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`} data-screen-label="Home · Stimmen">
-        <div className={WRAP}>
-          <div className="mb-10 flex flex-wrap items-end justify-between gap-8">
-            <div>
-              <Eyebrow>Stimmen aus der Region</Eyebrow>
-              <h2 className="mt-3 text-[clamp(30px,3.8vw,48px)]">Was Kunden sagen.</h2>
-            </div>
-            <p className="max-w-[36ch] text-ink-soft">
-              <span className="tracking-[2px] text-accent" aria-hidden="true">★★★★★</span>{' '}
-              <strong className="text-brand">4,9 / 5</strong> · über 60 Aufträge im letzten Jahr
-            </p>
-          </div>
-          <div className="grid grid-cols-3 gap-5 max-[800px]:grid-cols-1">
+      <Section
+        data-screen-label="Home · Stimmen"
+        className="border-b border-t border-line bg-bg-panel"
+        eyebrow="Stimmen aus der Region"
+        title="Was Kunden sagen."
+        aside={
+          <>
+            <span className="tracking-[2px] text-accent" aria-hidden="true">★★★★★</span>{' '}
+            <strong className="text-brand">4,9 / 5</strong> · über 60 Aufträge im letzten Jahr
+          </>
+        }
+      >
+        <div className="grid grid-cols-3 gap-5 max-[800px]:grid-cols-1">
             {[
               { quote: 'Wespennest am Dachvorsprung – am selben Nachmittag erledigt. Freundlich, schnell, der Preis war wie am Telefon angekündigt.', who: 'Familie Hofer', where: 'St. Pölten' },
               { quote: 'Wir hatten Bettwanzen im Hotelzimmer. Diskret abgewickelt, Möbel demontiert und wieder zusammengebaut – alles aus einer Hand.',     who: 'Hotel Z.',      where: 'Tullnerfeld' },
@@ -241,20 +237,17 @@ export default function HomePage() {
                 <figcaption className="text-[13px] text-ink-mute"><strong className="font-semibold text-brand">{q.who}</strong> · {q.where}</figcaption>
               </figure>
             ))}
-          </div>
         </div>
-      </section>
+      </Section>
 
       {/* FINAL CTA */}
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Schnelle Hilfe"
-            title={<>Akutes Problem?<br />Greifen Sie zum Hörer.</>}
-            description="Persönlich, diskret und meist noch heute vor Ort. Ein Anruf reicht."
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Schnelle Hilfe"
+          title={<>Akutes Problem?<br />Greifen Sie zum Hörer.</>}
+          description="Persönlich, diskret und meist noch heute vor Ort. Ein Anruf reicht."
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

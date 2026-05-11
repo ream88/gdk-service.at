@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
@@ -39,66 +40,58 @@ export default function WespenPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <Eyebrow>Arbeitsweise</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
-          <div className={PRINCIPLE_GRID}>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Egal ob Nest tief in der Bausubstanz versteckt oder frei zugänglich – ich arbeite punktgenau.</p></div>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Diskretion ist immer wichtig. Bei Wespen zählt zudem die rasche, unkomplizierte Bekämpfung.</p></div>
-            <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Nicht jede Wespe ist auch wirklich ein Schädling. Aber wenn notwendig, dann richtig.</p></div>
-          </div>
+      <Section>
+        <Eyebrow>Arbeitsweise</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,36px)]">Genau · Diskret · Kompetent</h2>
+        <div className={PRINCIPLE_GRID}>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>⏱</div><h3 className="text-xl">Genau</h3><p className="mt-1.5 text-ink-soft">Egal ob Nest tief in der Bausubstanz versteckt oder frei zugänglich – ich arbeite punktgenau.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>◆</div><h3 className="text-xl">Diskret</h3><p className="mt-1.5 text-ink-soft">Diskretion ist immer wichtig. Bei Wespen zählt zudem die rasche, unkomplizierte Bekämpfung.</p></div>
+          <div className={PRINCIPLE_CARD}><div className={ICON_BOX}>✦</div><h3 className="text-xl">Kompetent</h3><p className="mt-1.5 text-ink-soft">Nicht jede Wespe ist auch wirklich ein Schädling. Aber wenn notwendig, dann richtig.</p></div>
         </div>
-      </section>
+      </Section>
 
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`}>
-        <div className={`${WRAP} max-w-[48rem]`}>
-          <Eyebrow>Biologie kurz</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Wer nistet hier eigentlich?</h2>
-          <div className={`${PROSE} mt-5`}>
-            <p>In unserer Region nistet sich meist die <strong>Gemeine Wespe</strong> (Vespula vulgaris) oder die <strong>Deutsche Wespe</strong> (Vespula germanica) ein. Beide bauen papierähnliche Nester in Hohlräumen oder in Erdlöchern – je nachdem, was gerade verfügbar und passend ist.</p>
-            <p>Wespen sind <strong>wechselwarm (poikilotherm)</strong> – sie brauchen Wärme, um aktiv zu werden. Deshalb startet die Saison im Frühling: junge Königinnen beginnen das Nest zu bauen, indem sie Eier in die Wabenzellen legen. Am Ende der Saison kann ein Volk <strong>mehrere tausend Individuen</strong> zählen. Es überwintern danach nur die jungen Königinnen, der Rest stirbt ab.</p>
-            <p className={CALLOUT}>Genau aus diesem Grund empfiehlt es sich, die Saison einfach abzuwarten und im Oktober/November an einem kühlen Tag das Einflugloch mit Silikon o.ä. gut zu verschließen. Falls das nicht möglich ist, weil <strong>Gefahr in Verzug</strong> ist, sollten Sie eine Bekämpfung in Erwägung ziehen.</p>
-          </div>
+      <Section className="border-b border-t border-line bg-bg-panel" innerClassName="max-w-[48rem]">
+        <Eyebrow>Biologie kurz</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Wer nistet hier eigentlich?</h2>
+        <div className={`${PROSE} mt-5`}>
+          <p>In unserer Region nistet sich meist die <strong>Gemeine Wespe</strong> (Vespula vulgaris) oder die <strong>Deutsche Wespe</strong> (Vespula germanica) ein. Beide bauen papierähnliche Nester in Hohlräumen oder in Erdlöchern – je nachdem, was gerade verfügbar und passend ist.</p>
+          <p>Wespen sind <strong>wechselwarm (poikilotherm)</strong> – sie brauchen Wärme, um aktiv zu werden. Deshalb startet die Saison im Frühling: junge Königinnen beginnen das Nest zu bauen, indem sie Eier in die Wabenzellen legen. Am Ende der Saison kann ein Volk <strong>mehrere tausend Individuen</strong> zählen. Es überwintern danach nur die jungen Königinnen, der Rest stirbt ab.</p>
+          <p className={CALLOUT}>Genau aus diesem Grund empfiehlt es sich, die Saison einfach abzuwarten und im Oktober/November an einem kühlen Tag das Einflugloch mit Silikon o.ä. gut zu verschließen. Falls das nicht möglich ist, weil <strong>Gefahr in Verzug</strong> ist, sollten Sie eine Bekämpfung in Erwägung ziehen.</p>
         </div>
-      </section>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <Eyebrow>Methode</Eyebrow>
-          <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Wo sie nisten – und wie ich vorgehe.</h2>
-          <div className={PEST_BLOCK}>
-            <article className={PEST_ARTICLE}>
-              <h3 className="text-xl"><span className={PEST_EMOJI}>D</span>Direkt am Haus</h3>
-              <p className="mt-3 text-ink-soft">Wespen bevorzugen <strong className="font-semibold text-brand">Rollkästen</strong> oder die Anschlussfugen vom Dachstuhl zur Fassade. Bei Holzfassaden tragen sie das Holz selbst ab, speicheln es ein und bauen daraus ihr Nest.</p>
-              <p className="mt-3 text-ink-soft">Meist ist nur eine Ein-/Ausflugöffnung sichtbar; die Königin sitzt tief in der Baustruktur. Ich bringe ein <strong className="font-semibold text-brand">granulatartiges Stäubepulver mit Hochdruck</strong> direkt in die Öffnung ein – es verteilt sich in den von Wespen angelegten Gängen bis zur Königin. Arbeiterinnen tragen es weiter ins Nest.</p>
-              <p className="mt-3 text-ink-soft">Heimkehrende Wespen sind irritiert und versuchen andere Wege; vor dem Einflugloch entsteht ein <strong className="font-semibold text-brand">„Stau"</strong>, der je nach Population mehrere Stunden bis 1–2 Tage dauert. Diesen Bereich in der Zeit bitte meiden.</p>
-            </article>
-            <article className={PEST_ARTICLE}>
-              <h3 className="text-xl"><span className={PEST_EMOJI}>F</span>Frei hängend</h3>
-              <p className="mt-3 text-ink-soft">Am Dachstuhl oder unter Balken arbeite ich mit einem <strong className="font-semibold text-brand">Knock-Down-Präparat</strong> und entsorge das Nest anschließend. Auch hier kehren Einzeltiere zurück, wenn das Nest schon weg ist – Zuflugbereich kurzzeitig meiden.</p>
-              <p className="mt-3 text-ink-soft">Termine in den <strong className="font-semibold text-brand">frühen Morgenstunden</strong> oder am Abend sind die beste Wahl, weil dann die meisten Wespen im Nest sind.</p>
-            </article>
-          </div>
+      <Section>
+        <Eyebrow>Methode</Eyebrow>
+        <h2 className="mt-2 text-[clamp(26px,3vw,34px)]">Wo sie nisten – und wie ich vorgehe.</h2>
+        <div className={PEST_BLOCK}>
+          <article className={PEST_ARTICLE}>
+            <h3 className="text-xl"><span className={PEST_EMOJI}>D</span>Direkt am Haus</h3>
+            <p className="mt-3 text-ink-soft">Wespen bevorzugen <strong className="font-semibold text-brand">Rollkästen</strong> oder die Anschlussfugen vom Dachstuhl zur Fassade. Bei Holzfassaden tragen sie das Holz selbst ab, speicheln es ein und bauen daraus ihr Nest.</p>
+            <p className="mt-3 text-ink-soft">Meist ist nur eine Ein-/Ausflugöffnung sichtbar; die Königin sitzt tief in der Baustruktur. Ich bringe ein <strong className="font-semibold text-brand">granulatartiges Stäubepulver mit Hochdruck</strong> direkt in die Öffnung ein – es verteilt sich in den von Wespen angelegten Gängen bis zur Königin. Arbeiterinnen tragen es weiter ins Nest.</p>
+            <p className="mt-3 text-ink-soft">Heimkehrende Wespen sind irritiert und versuchen andere Wege; vor dem Einflugloch entsteht ein <strong className="font-semibold text-brand">„Stau"</strong>, der je nach Population mehrere Stunden bis 1–2 Tage dauert. Diesen Bereich in der Zeit bitte meiden.</p>
+          </article>
+          <article className={PEST_ARTICLE}>
+            <h3 className="text-xl"><span className={PEST_EMOJI}>F</span>Frei hängend</h3>
+            <p className="mt-3 text-ink-soft">Am Dachstuhl oder unter Balken arbeite ich mit einem <strong className="font-semibold text-brand">Knock-Down-Präparat</strong> und entsorge das Nest anschließend. Auch hier kehren Einzeltiere zurück, wenn das Nest schon weg ist – Zuflugbereich kurzzeitig meiden.</p>
+            <p className="mt-3 text-ink-soft">Termine in den <strong className="font-semibold text-brand">frühen Morgenstunden</strong> oder am Abend sind die beste Wahl, weil dann die meisten Wespen im Nest sind.</p>
+          </article>
         </div>
-      </section>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Persönlich erreichbar"
-            title="Ein Anruf reicht."
-            description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter."
-            actions={(
-              <>
-                <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
-                <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
-                <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
-              </>
-            )}
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Persönlich erreichbar"
+          title="Ein Anruf reicht."
+          description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter."
+          actions={(
+            <>
+              <Button href={PHONE_HREF} variant="cta" size="xl"><PhoneIcon />{PHONE}</Button>
+              <Button href={WHATSAPP_HREF} variant="wa"><WhatsAppIcon /> WhatsApp</Button>
+              <Button href="/kontakt.html" variant="ghost">Termin per Formular</Button>
+            </>
+          )}
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

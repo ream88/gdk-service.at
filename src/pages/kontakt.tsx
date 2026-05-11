@@ -1,6 +1,7 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, EMAIL, EMAIL_HREF, ADDRESS, HOURS, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { Section } from '@/components/site/Section';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -26,8 +27,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={`${WRAP} grid grid-cols-[1fr_1.4fr] gap-10 max-[800px]:grid-cols-1`}>
+      <Section
+        cols="1fr 1.4fr"
+        align="start"
+        gap="gap-10"
+        collapseBelow={800}
+        primary={
           <div className="flex flex-col gap-3">
             <a href={PHONE_HREF} className={`${CONTACT_CARD} border-accent bg-accent-soft`}>
               <div className="font-mono text-xs uppercase tracking-[0.12em] text-accent">📞 Direkt anrufen (empfohlen)</div>
@@ -49,8 +54,9 @@ export default function ContactPage() {
               <p className="mt-2.5 text-sm text-ink-soft">{HOURS}</p>
             </div>
           </div>
-
-          <form className="rounded-lg border border-line bg-bg-raised p-8" action="mailto:gerhard@gdk-service.at" method="post" encType="text/plain">
+        }
+      >
+        <form className="rounded-lg border border-line bg-bg-raised p-8" action="mailto:gerhard@gdk-service.at" method="post" encType="text/plain">
             <Eyebrow>Unverbindlich anfragen</Eyebrow>
             <h2 className="mt-2 text-[clamp(24px,2.4vw,30px)]">Termin per Formular</h2>
             <p className="mt-1 text-sm text-ink-soft">Antwort meist innerhalb weniger Stunden – werktags.</p>
@@ -101,9 +107,8 @@ export default function ContactPage() {
               Anfrage senden
             </button>
             <p className="mt-4 text-xs text-ink-mute">Mit Absenden erklären Sie sich mit der Verarbeitung Ihrer Daten zur Bearbeitung der Anfrage einverstanden.</p>
-          </form>
-        </div>
-      </section>
+        </form>
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

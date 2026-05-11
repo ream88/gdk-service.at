@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -33,10 +34,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={`${WRAP} grid grid-cols-[0.85fr_1.1fr] items-start gap-12 max-[900px]:grid-cols-1`}>
-          <Placeholder ratio="3/4" tone="dark" label="Portrait · Gerhard Klosterer" />
-          <div>
+      <Section
+        cols="0.85fr 1.1fr"
+        reverse
+        align="start"
+        gap="gap-12"
+        primary={
+          <>
             <div className="flex flex-col gap-3.5 text-base leading-[1.75] text-ink-soft [&_strong]:font-semibold [&_strong]:text-brand">
               <p>Ich heiße <strong>Gerhard Klosterer</strong>. Bis vor Kurzem war ich in einem der größten Schädlingsbekämpfungsunternehmen auf diesem Planeten tätig. Heute bürgt mein eigener Name für Qualität.</p>
               <p>Mein Ziel ist einfach: Ihnen eine <strong>rasche und unkomplizierte Lösung</strong> Ihres Problems zu bieten. Sicherheit und Sauberkeit dürfen dabei nie zu kurz kommen.</p>
@@ -52,19 +56,19 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      >
+        <Placeholder ratio="3/4" tone="dark" label="Portrait · Gerhard Klosterer" />
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Persönlich erreichbar"
-            title="Lieber direkt sprechen?"
-            description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Einfach anrufen – ich gehe ran."
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Persönlich erreichbar"
+          title="Lieber direkt sprechen?"
+          description="Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Einfach anrufen – ich gehe ran."
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />

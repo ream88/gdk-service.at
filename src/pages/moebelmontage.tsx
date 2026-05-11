@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
+import { Section } from '@/components/site/Section';
 import { Eyebrow, Placeholder, Crumbs } from '@/components/ui/Primitives';
 
 const WRAP    = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
@@ -44,15 +45,15 @@ export default function FurniturePage() {
         </div>
       </section>
 
-      <section className={SECTION}>
-        <div className={`${WRAP} grid grid-cols-[1fr_1.2fr] items-center gap-12 max-[800px]:grid-cols-1`}>
-          <Placeholder ratio="4/3" tone="dark" label="Möbelmontage · heller Raum" />
-          <div>
-            <Eyebrow>Warum mit mir?</Eyebrow>
-            <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">
-              Zeit sparen.<br />Nerven sparen.<br />
-              <em className="italic text-[color-mix(in_oklch,var(--brand)_80%,var(--accent))]">Ergebnis behalten.</em>
-            </h2>
+      <Section
+        cols="1fr 1.2fr"
+        reverse
+        gap="gap-12"
+        collapseBelow={800}
+        eyebrow="Warum mit mir?"
+        title={<>Zeit sparen.<br />Nerven sparen.<br /><em>Ergebnis behalten.</em></>}
+        primary={
+          <>
             <p className="mt-4 text-ink-soft">
               Ein IKEA-Schrank kostet Sie selbst 3–5 Stunden – und manchmal eine Beziehungskrise. Ich montiere ihn in einem Bruchteil der Zeit, mit dem richtigen Werkzeug und dem Auge eines Profis.
             </p>
@@ -67,33 +68,31 @@ export default function FurniturePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      >
+        <Placeholder ratio="4/3" tone="dark" label="Möbelmontage · heller Raum" />
+      </Section>
 
-      <section className={`${SECTION} border-b border-t border-line bg-bg-panel`}>
-        <div className={WRAP}>
-          <div className="max-w-[36rem]">
-            <Eyebrow>Typische Aufträge</Eyebrow>
-            <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Das baue ich am häufigsten auf.</h2>
-          </div>
-          <div className="mt-8 grid grid-cols-3 gap-3 max-[720px]:grid-cols-2 max-[480px]:grid-cols-1">
-            {JOBS.map(j => (
-              <div key={j} className="rounded-sm border border-line bg-bg-raised px-4 py-3.5 text-sm text-ink-soft">{j}</div>
-            ))}
-          </div>
+      <Section className="border-b border-t border-line bg-bg-panel">
+        <div className="max-w-[36rem]">
+          <Eyebrow>Typische Aufträge</Eyebrow>
+          <h2 className="mt-2 text-[clamp(28px,3.2vw,40px)]">Das baue ich am häufigsten auf.</h2>
         </div>
-      </section>
+        <div className="mt-8 grid grid-cols-3 gap-3 max-[720px]:grid-cols-2 max-[480px]:grid-cols-1">
+          {JOBS.map(j => (
+            <div key={j} className="rounded-sm border border-line bg-bg-raised px-4 py-3.5 text-sm text-ink-soft">{j}</div>
+          ))}
+        </div>
+      </Section>
 
-      <section className={SECTION}>
-        <div className={WRAP}>
-          <CTABlock
-            eyebrow="Termin sichern"
-            title={<>Möbel liegen schon<br />bei Ihnen?</>}
-            description="Senden Sie mir per WhatsApp ein Foto der Verpackung – ich nenne Ihnen den Fixpreis und einen Termin."
-          />
-        </div>
-      </section>
+      <Section>
+        <CTABlock
+          eyebrow="Termin sichern"
+          title={<>Möbel liegen schon<br />bei Ihnen?</>}
+          description="Senden Sie mir per WhatsApp ein Foto der Verpackung – ich nenne Ihnen den Fixpreis und einen Termin."
+        />
+      </Section>
 
       <SiteFooter />
       <MobileSticky />
