@@ -1,0 +1,108 @@
+import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
+import { PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, ADDRESS, HOURS, COMPANY, WHATSAPP_HREF } from './SiteHeader';
+
+const FOOTER_GROUPS = [
+  {
+    title: 'Leistungen',
+    links: [
+      { href: '/schaedlingsbekaempfung.html', label: 'Schädlingsbekämpfung' },
+      { href: '/wespen.html', label: 'Wespen' },
+      { href: '/ameisen.html', label: 'Ameisen' },
+      { href: '/bettwanzen.html', label: 'Bettwanzen' },
+      { href: '/maeuse-ratten.html', label: 'Mäuse & Ratten' },
+      { href: '/moebelmontage.html', label: 'Möbelmontage' },
+      { href: '/hausverwaltungen.html', label: 'Hausverwaltungen' },
+    ],
+  },
+  {
+    title: 'Fachwissen',
+    links: [
+      { href: '/wirkungsweise.html', label: 'Wirkungsweise' },
+      { href: '/gesetze-normen.html', label: 'Gesetze & Normen' },
+      { href: '/einsatzgebiet.html', label: 'Einsatzgebiet' },
+      { href: '/faq.html', label: 'FAQ' },
+    ],
+  },
+];
+
+const WRAP = 'mx-auto max-w-wrap px-7 max-[640px]:px-5';
+const H4   = 'mb-3.5 font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-dark-ink/60';
+const UL   = 'm-0 flex list-none flex-col gap-2.5 p-0 text-sm';
+
+export function SiteFooter() {
+  return (
+    <footer
+      className="mt-20 bg-[linear-gradient(180deg,var(--dark)_0%,color-mix(in_oklch,var(--dark)_92%,black)_100%)] pb-[120px] pt-[72px] text-dark-ink max-[720px]:pb-[140px]"
+    >
+      <div className={WRAP}>
+        <div className="grid grid-cols-[1.3fr_1fr_1fr_1fr] gap-10 max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
+          <div>
+            <a href="/index.html" className="inline-flex items-center" aria-label="GDK Service Startseite">
+              <img
+                src="/logos/logo-horizontal-white.png"
+                alt="GDK Service – Klosterer, Niederösterreich"
+                className="block h-[57px] w-auto max-w-full max-[480px]:h-[54px]"
+                width="226"
+                height="57"
+              />
+            </a>
+            <p className="mt-5 max-w-[280px] text-sm leading-[1.6] opacity-[0.72]">
+              Diskrete Schädlingsbekämpfung &amp; saubere Möbelmontage in Niederösterreich. Persönlich. Fix. Kompetent.
+            </p>
+          </div>
+
+          {FOOTER_GROUPS.map(group => (
+            <div key={group.title}>
+              <h4 className={H4}>{group.title}</h4>
+              <ul className={UL}>
+                {group.links.map(l => (
+                  <li key={l.href}><a href={l.href} className="hover:text-accent">{l.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+
+          <div>
+            <h4 className={H4}>Direkt</h4>
+            <ul className={UL}>
+              <li><a href={PHONE_HREF} className="hover:text-accent">{PHONE}</a></li>
+              <li><a href={EMAIL_HREF} className="hover:text-accent">{EMAIL}</a></li>
+              <li className="opacity-70">{ADDRESS}</li>
+              <li className="mt-2 opacity-[0.55]">{HOURS}</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className={H4}>Unternehmen</h4>
+            <ul className={UL}>
+              <li><a href="/ueber.html" className="hover:text-accent">Über mich</a></li>
+              <li><a href="/kontakt.html" className="hover:text-accent">Termin &amp; Kontakt</a></li>
+              <li><a href="/hausverwaltungen.html" className="hover:text-accent">Hausverwaltungen</a></li>
+              <li><a href="/impressum.html" className="hover:text-accent">Impressum</a></li>
+              <li><a href="/datenschutz.html" className="hover:text-accent">Datenschutz</a></li>
+              <li><a href="/agb.html" className="hover:text-accent">AGB</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-14 border-t border-white/[0.08] pt-5 text-xs opacity-50">
+          © {new Date().getFullYear()} {COMPANY} · UID ATU82992549 · Schädlingsbekämpfung &amp; Möbelmontage in Niederösterreich
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export function MobileSticky() {
+  return (
+    <div className="fixed inset-x-4 bottom-4 z-30 hidden gap-2.5 rounded-full border border-line bg-bg-raised p-2.5 shadow-lift max-[720px]:flex">
+      <Button href={PHONE_HREF} variant="cta" size="xl" className="flex-1 justify-center">
+        <PhoneIcon />
+        Anrufen
+      </Button>
+      <Button href={WHATSAPP_HREF} target="_blank" rel="noreferrer" variant="wa" size="xl" className="flex-1 justify-center">
+        <WhatsAppIcon /> WhatsApp
+      </Button>
+    </div>
+  );
+}

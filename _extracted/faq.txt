@@ -1,0 +1,56 @@
+<section class="page-hero" data-screen-label="FAQ · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>FAQ</span></nav>
+      <p class="eyebrow">Häufige Fragen</p>
+      <h1>Was <em style="font-style:italic;color:var(--accent)">oft gefragt</em> wird.</h1>
+      <p>Die Antworten auf die häufigsten Fragen zu Preis, Ablauf und Methoden.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap faq-grid">
+      <nav class="faq-nav">
+        <a href="#preis">Preis &amp; Fixpreis</a>
+        <a href="#termin">Termin &amp; Ablauf</a>
+        <a href="#methoden">Methoden</a>
+        <a href="#hygiene">Haustiere &amp; Hygiene</a>
+        <a href="#moebel">Möbelmontage</a>
+      </nav>
+
+      <div>
+        <div class="faq-group" id="preis">
+          <h2>Preis &amp; Fixpreis</h2>
+          <details><summary>Wie viel kostet ein Einsatz?</summary><p>Der Fixpreis richtet sich nach Schädling, Umfang und Bezirk. Sie erhalten ihn verbindlich am Telefon – inklusive Anfahrt, Präparate, Arbeitszeit und MwSt.</p></details>
+          <details><summary>Gibt es versteckte Zusatzkosten?</summary><p>Nein. Der am Telefon genannte Preis ist der Endpreis. Wenn während des Einsatzes wider Erwarten mehr nötig sein sollte, sprechen wir das vorher ab.</p></details>
+          <details><summary>Was ist im Fixpreis enthalten?</summary><p>An- und Abfahrt, alle eingesetzten Präparate, Arbeitszeit, gesetzliche MwSt.</p></details>
+          <details><summary>Zahlungsmöglichkeiten?</summary><p>Bar, Bankomat oder Rechnung per Überweisung.</p></details>
+        </div>
+
+        <div class="faq-group" id="termin">
+          <h2>Termin &amp; Ablauf</h2>
+          <details><summary>Wie schnell bekomme ich einen Termin?</summary><p>Bei akuten Fällen meist am selben Tag. Reguläre Termine innerhalb von 1–3 Tagen.</p></details>
+          <details><summary>Wie lange dauert ein Einsatz?</summary><p>Wespen: 30–60 Minuten. Ameisen: 1–2 Stunden. Bettwanzen inkl. Möbelarbeit: 3–6 Stunden. Möbelmontage nach Aufwand.</p></details>
+          <details><summary>Muss ich anwesend sein?</summary><p>Für die Besprechung ja, danach nicht zwingend. Bei Hausverwaltungen auch ohne Anwesenheit möglich.</p></details>
+        </div>
+
+        <div class="faq-group" id="methoden">
+          <h2>Methoden</h2>
+          <details><summary>Welche Mittel setzen Sie ein?</summary><p>Nur behördlich zugelassene, professionelle Biozide. Immer so wenig wie möglich, so gezielt wie nötig.</p></details>
+          <details><summary>Sind die Mittel umweltschonend?</summary><p>Ich arbeite mit dem Prinzip „minimaler toxischer Einsatz, maximale Wirkung“ – abgestimmt auf das jeweilige Zieltier.</p></details>
+        </div>
+
+        <div class="faq-group" id="hygiene">
+          <h2>Haustiere &amp; Hygiene</h2>
+          <details><summary>Können Haustiere im Haus bleiben?</summary><p>Das hängt vom Mittel und Zieltier ab. Ich berate Sie vor Ort und gebe eine klare Empfehlung zu Sperrfristen.</p></details>
+          <details><summary>Können Kinder zuhause sein?</summary><p>Nach einem Einsatz empfehlen wir meist einige Stunden Lüften, bevor Kinder wieder in den behandelten Raum kommen.</p></details>
+        </div>
+
+        <div class="faq-group" id="moebel">
+          <h2>Möbelmontage</h2>
+          <details><summary>Welche Möbel montieren Sie?</summary><p>Alles mit Bauanleitung: IKEA, XXXLutz, Mömax, Maßmöbel, Küchenmodule. Auch Wandmontagen.</p></details>
+          <details><summary>Entsorgen Sie auch das Verpackungsmaterial?</summary><p>Auf Wunsch, gegen einen kleinen Aufpreis, nehme ich Kartons &amp; Styropor mit.</p></details>
+          <details><summary>Können Sie auch Möbel demontieren?</summary><p>Ja. Vor allem bei Umzügen oder Bettwanzeneinsätzen gehört das Abbauen, Behandeln und Wieder-Aufbauen zum Standard.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>

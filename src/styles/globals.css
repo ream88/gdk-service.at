@@ -1,0 +1,19 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a { text-decoration: none; }
+  button { background: none; }
+  h1, h2, h3, h4 {
+    @apply font-display text-brand;
+    margin: 0;
+    line-height: 1.05;
+    font-weight: 550;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+}

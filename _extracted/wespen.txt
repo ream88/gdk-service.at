@@ -1,0 +1,66 @@
+<section class="page-hero" data-screen-label="Wespen · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><a href="schaedlingsbekaempfung.html">Schädlingsbekämpfung</a><span>/</span><span>Wespen</span></nav>
+      <p class="eyebrow">Wespenbekämpfung NÖ</p>
+      <h1>Wespen –<br /><em style="font-style:italic;color:var(--accent)">der ungebetene Gast.</em></h1>
+      <p>Ob Nest tief in der Bausubstanz oder frei am Dachstuhl – ich arbeite präzise. Nicht jede Wespe ist ein Schädling. Aber wenn nötig, dann richtig.</p>
+      <div class="hero__cta" style="margin-top:28px"><a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a><a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Arbeitsweise</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,36px)">Genau · Diskret · Kompetent</h2>
+      <div class="pest-principles" style="margin-top:24px">
+        <div class="card"><div class="icon-box">⏱</div><h3>Genau</h3><p class="soft">Egal ob Nest tief in der Bausubstanz versteckt oder frei zugänglich – ich arbeite punktgenau.</p></div>
+        <div class="card"><div class="icon-box">◆</div><h3>Diskret</h3><p class="soft">Diskretion ist immer wichtig. Bei Wespen zählt zudem die rasche, unkomplizierte Bekämpfung.</p></div>
+        <div class="card"><div class="icon-box">✦</div><h3>Kompetent</h3><p class="soft">Nicht jede Wespe ist auch wirklich ein Schädling. Aber wenn notwendig, dann richtig.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--bg-panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap" style="max-width:48rem">
+      <p class="eyebrow">Biologie kurz</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,34px)">Wer nistet hier eigentlich?</h2>
+      <div class="prose">
+        <p>In unserer Region nistet sich meist die <strong>Gemeine Wespe</strong> (Vespula vulgaris) oder die <strong>Deutsche Wespe</strong> (Vespula germanica) ein. Beide bauen papierähnliche Nester in Hohlräumen oder in Erdlöchern – je nachdem, was gerade verfügbar und passend ist.</p>
+        <p>Wespen sind <strong>wechselwarm (poikilotherm)</strong> – sie brauchen Wärme, um aktiv zu werden. Deshalb startet die Saison im Frühling: junge Königinnen beginnen das Nest zu bauen, indem sie Eier in die Wabenzellen legen. Am Ende der Saison kann ein Volk <strong>mehrere tausend Individuen</strong> zählen. Es überwintern danach nur die jungen Königinnen, der Rest stirbt ab.</p>
+        <p class="callout">Genau aus diesem Grund empfiehlt es sich, die Saison einfach abzuwarten und im Oktober/November an einem kühlen Tag das Einflugloch mit Silikon o.ä. gut zu verschließen. Falls das nicht möglich ist, weil <strong>Gefahr in Verzug</strong> ist, sollten Sie eine Bekämpfung in Erwägung ziehen.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Methode</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,34px)">Wo sie nisten – und wie ich vorgehe.</h2>
+      <div class="pest-block" style="margin-top:24px">
+        <article>
+          <h3><span class="emoji">D</span>Direkt am Haus</h3>
+          <p class="soft">Wespen bevorzugen <strong>Rollkästen</strong> oder die Anschlussfugen vom Dachstuhl zur Fassade. Bei Holzfassaden tragen sie das Holz selbst ab, speicheln es ein und bauen daraus ihr Nest.</p>
+          <p class="soft" style="margin-top:12px">Meist ist nur eine Ein-/Ausflugöffnung sichtbar; die Königin sitzt tief in der Baustruktur. Ich bringe ein <strong>granulatartiges Stäubepulver mit Hochdruck</strong> direkt in die Öffnung ein – es verteilt sich in den von Wespen angelegten Gängen bis zur Königin. Arbeiterinnen tragen es weiter ins Nest.</p>
+          <p class="soft" style="margin-top:12px">Heimkehrende Wespen sind irritiert und versuchen andere Wege; vor dem Einflugloch entsteht ein <strong>"Stau"</strong>, der je nach Population mehrere Stunden bis 1–2 Tage dauert. Diesen Bereich in der Zeit bitte meiden.</p>
+        </article>
+        <article>
+          <h3><span class="emoji">F</span>Frei hängend</h3>
+          <p class="soft">Am Dachstuhl oder unter Balken arbeite ich mit einem <strong>Knock-Down-Präparat</strong> und entsorge das Nest anschließend. Auch hier kehren Einzeltiere zurück, wenn das Nest schon weg ist – Zuflugbereich kurzzeitig meiden.</p>
+          <p class="soft" style="margin-top:12px">Termine in den <strong>frühen Morgenstunden</strong> oder am Abend sind die beste Wahl, weil dann die meisten Wespen im Nest sind.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Persönlich erreichbar</p>
+          <h2>Ein Anruf reicht.</h2>
+          <p>Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a>
+          <a href="kontakt.html" class="btn btn-ghost">Termin per Formular</a>
+        </div>
+      </div>
+    </div>
+  </section>

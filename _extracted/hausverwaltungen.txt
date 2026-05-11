@@ -1,0 +1,43 @@
+<section class="page-hero" data-screen-label="Hausverwaltungen · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>Hausverwaltungen</span></nav>
+      <p class="eyebrow">Für Hausverwaltungen &amp; Hotellerie</p>
+      <h1>Ein verlässlicher Partner –<br /><em style="font-style:italic;color:var(--accent)">für Ihre Objekte.</em></h1>
+      <p>Diskret, dokumentiert, abrechenbar. Ich arbeite mit Verwaltungen, Hotels und Gastronomiebetrieben in ganz Niederösterreich.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div style="max-width:40rem">
+        <p class="eyebrow">Leistungen für B2B</p>
+        <h2 style="margin-top:8px;font-size:clamp(28px,3.2vw,40px)">Was Sie von mir bekommen.</h2>
+      </div>
+      <div class="hv-grid" style="margin-top:40px">
+        <div class="card"><div class="emoji">P</div><h3>Rahmenvertrag</h3><p class="soft">Konditionen fix vereinbart, auf Abruf verfügbar.</p></div>
+        <div class="card"><div class="emoji">D</div><h3>Dokumentation</h3><p class="soft">Einsatzberichte mit Fotos, Maßnahmen, Empfehlungen.</p></div>
+        <div class="card"><div class="emoji">S</div><h3>Schnellreaktion</h3><p class="soft">Bei Beschwerden von Bewohnern oder Gästen: gleicher Tag.</p></div>
+        <div class="card"><div class="emoji">H</div><h3>Monitoring</h3><p class="soft">Köderstationen, Fallen &amp; regelmäßige Kontrollgänge.</p></div>
+        <div class="card"><div class="emoji">B</div><h3>Bettwanzen-Protokoll</h3><p class="soft">Speziell für Hotels: Demontage, Behandlung, Reassembly.</p></div>
+        <div class="card"><div class="emoji">A</div><h3>Abrechnung</h3><p class="soft">Sauber auf Objekt/Top/Einheit – direkt buchbar.</p></div>
+        <div class="card"><div class="emoji">E</div><h3>Einzelerstattung</h3><p class="soft">Direkt mit dem Bewohner abrechenbar – ohne Ihren Aufwand.</p></div>
+        <div class="card"><div class="emoji">V</div><h3>Vertraulichkeit</h3><p class="soft">Diskret im Einsatz. Niemand sieht, wozu ich da war.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Rahmenvertrag anfragen</p>
+          <h2>Gesprächstermin vereinbaren.</h2>
+          <p>Wir klären Objekte, Umfang &amp; Reaktionszeiten – ich lege Ihnen ein passgenaues Angebot vor.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="mailto:gerhard@gdk-service.at" class="btn btn-ghost">E-Mail senden</a>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,64 @@
+<section class="page-hero" data-screen-label="Furniture · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>Möbelmontage</span></nav>
+      <p class="eyebrow">Möbelmontage</p>
+      <h1>Schränke, Küchen, Regale – <em style="font-style:italic;color:var(--accent)">fachgerecht aufgebaut.</em></h1>
+      <p>Sie sparen Stunden, vermeiden falsche Schrauben und bekommen am Ende ein Möbel, das hält. Sauber gearbeitet, alles entsorgt.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap furn-hero">
+      <div class="ph" style="aspect-ratio: 4/3" data-tone="dark"><span>Möbelmontage · heller Raum</span></div>
+      <div>
+        <p class="eyebrow">Warum mit mir?</p>
+        <h2 style="margin-top:8px;font-size:clamp(28px,3.2vw,40px)">Zeit sparen.<br />Nerven sparen.<br /><em style="color:var(--accent);font-style:italic">Ergebnis behalten.</em></h2>
+        <p class="soft" style="margin-top:16px">
+          Ein IKEA-Schrank kostet Sie selbst 3–5 Stunden – und manchmal eine Beziehungskrise.
+          Ich montiere ihn in einem Bruchteil der Zeit, mit dem richtigen Werkzeug und dem Auge eines Profis.
+        </p>
+        <div class="furn-why">
+          <div><div class="emoji">⏱</div><div><strong>Schnell</strong><span class="soft">Bis zu 4× schneller als Eigenmontage.</span></div></div>
+          <div><div class="emoji">🔧</div><div><strong>Fachgerecht</strong><span class="soft">Stabil verschraubt, Türen perfekt eingestellt.</span></div></div>
+          <div><div class="emoji">✦</div><div><strong>Sauber</strong><span class="soft">Verpackung mitgenommen, Boden sauber.</span></div></div>
+          <div><div class="emoji">+</div><div><strong>Komplettservice</strong><span class="soft">Auf Wunsch Demontage &amp; Wandmontage.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div style="max-width:36rem">
+        <p class="eyebrow">Typische Aufträge</p>
+        <h2 style="margin-top:8px;font-size:clamp(28px,3.2vw,40px)">Das baue ich am häufigsten auf.</h2>
+      </div>
+      <div class="furn-jobs">
+        <div>Kleiderschränke (PAX &amp; Co.)</div>
+        <div>Küchen &amp; Küchenmodule</div>
+        <div>Regalsysteme &amp; Bücherwände</div>
+        <div>Betten inkl. Lattenrost</div>
+        <div>Schreibtische &amp; Büromöbel</div>
+        <div>Kommoden &amp; Sideboards</div>
+        <div>TV-Möbel &amp; Lowboards</div>
+        <div>Garderoben &amp; Flurmöbel</div>
+        <div>Kinder- &amp; Babyzimmer</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Termin sichern</p>
+          <h2>Möbel liegen schon<br />bei Ihnen?</h2>
+          <p>Senden Sie mir per WhatsApp ein Foto der Verpackung – ich nenne Ihnen den Fixpreis und einen Termin.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp schreiben</a>
+        </div>
+      </div>
+    </div>
+  </section>

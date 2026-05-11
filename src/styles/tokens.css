@@ -1,0 +1,45 @@
+/* Design tokens + theme variants.
+   Tailwind references these CSS vars via theme.extend.colors.
+   Theme switching via body[data-theme] / [data-color] swaps the vars at runtime
+   — Tailwind has no native equivalent for attribute-driven token swaps. */
+
+:root {
+  --bg:          oklch(0.975 0.012 85);
+  --bg-raised:   oklch(1 0 0);
+  --bg-panel:    oklch(0.955 0.015 82);
+  --ink:         oklch(0.22 0.028 150);
+  --ink-soft:    oklch(0.44 0.022 150);
+  --ink-mute:    oklch(0.58 0.018 150);
+  --line:        oklch(0.88 0.012 85);
+  --line-soft:   oklch(0.92 0.01 85);
+
+  --brand:       oklch(0.32 0.05 160);
+  --brand-ink:   oklch(0.96 0.012 85);
+  --brand-soft:  oklch(0.94 0.02 160);
+
+  --accent:      oklch(0.65 0.19 39);
+  --accent-ink:  oklch(0.99 0 0);
+  --accent-soft: oklch(0.955 0.038 50);
+
+  --dark:        oklch(0.24 0.035 160);
+  --dark-ink:    oklch(0.95 0.015 85);
+}
+
+body[data-theme="stempel"] {
+  --bg:        oklch(0.97 0.015 75);
+  --bg-panel:  oklch(0.94 0.022 72);
+  --brand:     oklch(0.22 0.04 30);
+  --accent:    oklch(0.65 0.19 39);
+  --dark:      oklch(0.20 0.03 35);
+}
+
+body[data-color="cobalt"] { --brand: oklch(0.32 0.08 255); --dark: oklch(0.22 0.06 255); }
+body[data-color="clay"]   { --brand: oklch(0.30 0.06 45);  --dark: oklch(0.22 0.04 40); }
+body[data-color="moss"]   { --brand: oklch(0.30 0.07 150); --dark: oklch(0.22 0.04 150); }
+
+/* Body resets that don't sit naturally in Tailwind utilities */
+body {
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+}
+html { scroll-behavior: smooth; }

@@ -1,0 +1,223 @@
+<!-- HERO -->
+  <section class="hero" data-screen-label="Home A · Hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Schädlingsbekämpfung &amp; Möbelmontage · NÖ</p>
+        <h1 class="hero__title">
+          Schädling im Haus?<br />
+          <em class="display">Heute noch erledigt.</em>
+        </h1>
+        <p class="hero__lead">
+          Diskreter, persönlicher Service vom Profi mit 24+ Jahren Erfahrung.
+          Klare Fixpreise, kein Außendienst, keine Überraschungen –
+          nur ein Anruf zwischen Ihnen und der Lösung.
+        </p>
+
+        <div class="hero__cta">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72c.13.96.38 1.9.72 2.79a2 2 0 0 1-.45 2.11L8.09 9.9a16 16 0 0 0 6 6l1.28-1.27a2 2 0 0 1 2.11-.45c.89.34 1.83.59 2.79.72A2 2 0 0 1 22 16.92z"/></svg>
+            0670 199 55 44
+          </a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa btn-xl">WhatsApp</a>
+        </div>
+
+        <ul class="hero__bullets">
+          <li><strong>Termin</strong> meist heute oder morgen</li>
+          <li><strong>Fixpreis</strong> inkl. Anfahrt, Material, MwSt.</li>
+          <li><strong>Diskret</strong> – Nachbarn merken nichts</li>
+          <li><strong>Direkt</strong> – Sie sprechen mit dem Profi</li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <div class="ph hero__photo" style="aspect-ratio: 5/4" data-tone="dark"><span>Portrait · Gerhard am Kundenobjekt</span></div>
+        <figure class="hero__quote">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>
+            „War noch am selben Tag da. Problem gelöst, Preis exakt wie besprochen.”
+          </blockquote>
+          <figcaption>— Familie M., St. Pölten</figcaption>
+        </figure>
+        <div class="hero__stamp" aria-hidden="true">
+          <span class="stamp">Fix&shy;preis<br/>Garantie</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__footline wrap">
+      <span class="mono">AT · NIEDERÖSTERREICH · EST. 2024</span>
+      <span class="mono">Sitz 3041 Siegersdorf · 24+ Jahre Einsatz</span>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust" data-screen-label="Home A · Trust">
+    <div class="wrap trust__grid">
+      <div><strong>24+</strong><span>Jahre Erfahrung</span></div>
+      <div><strong>4,9 / 5</strong><span>Über 60 Aufträge / Jahr</span></div>
+      <div><strong>Same-day</strong><span>Einsatz möglich</span></div>
+      <div><strong>Fixpreis</strong><span>schon am Telefon</span></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" data-screen-label="Home A · Leistungen">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Leistungen</p>
+          <h2>Zwei Leistungen.<br /><em>Beide auf höchstem Niveau.</em></h2>
+        </div>
+        <p class="section__lede">
+          Spezialisiert statt Bauchladen – damit Sie genau das bekommen, wofür Sie zahlen.
+        </p>
+      </div>
+
+      <div class="services">
+        <a class="service" href="schaedlingsbekaempfung.html">
+          <div class="ph service__photo" style="aspect-ratio: 16/10" data-tone="dark"><span>Schädlingsbekämpfung</span></div>
+          <span class="service__badge service__badge--accent">Hauptleistung</span>
+          <div class="service__body">
+            <h3>Schädlingsbekämpfung</h3>
+            <p class="soft">Wespen, Ameisen, Bettwanzen, Mäuse, Ratten – präzise, sicher, diskret. Mit Fixpreis nach Bezirk.</p>
+            <ul class="ticks">
+              <li>Same-day Service möglich</li>
+              <li>Punktgenau, minimal toxisch</li>
+              <li>Inkl. Anfahrt &amp; Material</li>
+            </ul>
+            <span class="arrow">Mehr erfahren →</span>
+          </div>
+        </a>
+        <a class="service" href="moebelmontage.html">
+          <div class="ph service__photo" style="aspect-ratio: 16/10"><span>Möbelmontage</span></div>
+          <span class="service__badge">Komfort-Service</span>
+          <div class="service__body">
+            <h3>Möbelmontage</h3>
+            <p class="soft">Schränke, Küchen, Regale – fachgerecht aufgebaut, sauber hinterlassen. Sie sparen Stunden, Nerven und Werkzeug.</p>
+            <ul class="ticks">
+              <li>IKEA &amp; Co. erfahren</li>
+              <li>Sauberes Arbeiten</li>
+              <li>Faire Stundensätze</li>
+            </ul>
+            <span class="arrow">Mehr erfahren →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM / PEST PICKER -->
+  <section class="section problem" data-screen-label="Home A · Problem">
+    <div class="wrap problem__grid">
+      <div>
+        <p class="eyebrow">Sie haben ein Problem?</p>
+        <h2>Ungeziefer entdeckt?<br /><em>Schnelle Hilfe in Ihrer Nähe.</em></h2>
+        <p class="soft" style="margin-top:16px;max-width:48ch">
+          Ratten in der Garage, Wespen am Balkon, Bettwanzen im Hotelzimmer:
+          Schädlinge warten nicht – ich auch nicht. Ein Telefonat genügt, um
+          Lage und Fixpreis zu klären.
+        </p>
+        <div class="problem__principles">
+          <div><span class="principle-icon" aria-hidden="true">⏱</span>
+            <div><strong>Schnell vor Ort</strong><br/><span class="soft">In ganz Niederösterreich – meist innerhalb 24 Std.</span></div>
+          </div>
+          <div><span class="principle-icon" aria-hidden="true">◆</span>
+            <div><strong>Sicher &amp; sauber</strong><br/><span class="soft">Mensch, Tier und Möbel bleiben unbeschadet.</span></div>
+          </div>
+          <div><span class="principle-icon" aria-hidden="true">€</span>
+            <div><strong>Fixpreis transparent</strong><br/><span class="soft">Ein Auftrag = ein Preis. Ohne Kleingedrucktes.</span></div>
+          </div>
+        </div>
+        <div class="hero__cta" style="margin-top:28px">
+          <a href="tel:+436701995544" class="btn btn-cta">Sofort anrufen</a>
+          <a href="schaedlingsbekaempfung.html" class="btn btn-ghost">Leistungen ansehen →</a>
+        </div>
+      </div>
+      <div class="pest-picker">
+        <a href="schaedlingsbekaempfung.html#wespen"><span>Wespen</span><span class="arrow">→</span></a>
+        <a href="schaedlingsbekaempfung.html#ameisen"><span>Ameisen</span><span class="arrow">→</span></a>
+        <a href="schaedlingsbekaempfung.html#bettwanzen"><span>Bettwanzen</span><span class="arrow">→</span></a>
+        <a href="schaedlingsbekaempfung.html#maeuse"><span>Nager</span><span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTRAIT / TRUST -->
+  <section class="section portrait" data-screen-label="Home A · Portrait">
+    <div class="wrap portrait__grid">
+      <figure class="portrait__media">
+        <div class="ph" style="aspect-ratio: 3/4" data-tone="dark"><span>Portrait · Gerhard Klosterer</span></div>
+        <div class="portrait__badge">
+          <strong>24<span>+</span></strong>
+          <span>Jahre im Einsatz</span>
+        </div>
+      </figure>
+      <div>
+        <p class="eyebrow">Der Mann hinter GDK</p>
+        <h2>Gerhard Klosterer.<br /><em>Kein Callcenter.<br/>Kein Subunternehmer.</em></h2>
+        <p class="soft" style="margin-top:24px">
+          Über zwei Jahrzehnte habe ich für einen der größten Schädlingsbekämpfer der Welt
+          gearbeitet. Heute bürgt mein Name für die gleiche Qualität – nur direkter,
+          persönlicher und ohne den Zwischenkostenaufschlag.
+        </p>
+        <p class="soft" style="margin-top:14px">
+          Sie rufen an, ich gehe ran. Sie schildern das Problem, ich nenne den Fixpreis.
+          Ich komme, löse das Problem sauber – und gehe erst, wenn der Schädling das auch getan hat.
+        </p>
+        <div class="hero__cta" style="margin-top:24px">
+          <a href="ueber.html" class="btn btn-primary">Mehr über mich</a>
+          <a href="kontakt.html" class="btn btn-ghost">Termin vereinbaren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" data-screen-label="Home A · Stimmen">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Stimmen aus der Region</p>
+          <h2>Was Kunden sagen.</h2>
+        </div>
+        <p class="section__lede">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong class="brand">4,9 / 5</strong> · über 60 Aufträge im letzten Jahr
+        </p>
+      </div>
+      <div class="quotes">
+        <figure>
+          <p class="quote-open">„</p>
+          <blockquote>Wespennest am Dachvorsprung – am selben Nachmittag erledigt. Freundlich, schnell, der Preis war wie am Telefon angekündigt.</blockquote>
+          <figcaption><strong>Familie Hofer</strong> · St. Pölten</figcaption>
+        </figure>
+        <figure>
+          <p class="quote-open">„</p>
+          <blockquote>Wir hatten Bettwanzen im Hotelzimmer. Diskret abgewickelt, Möbel demontiert und wieder zusammengebaut – alles aus einer Hand.</blockquote>
+          <figcaption><strong>Hotel Z.</strong> · Tullnerfeld</figcaption>
+        </figure>
+        <figure>
+          <p class="quote-open">„</p>
+          <blockquote>Drei IKEA-Schränke an einem Vormittag montiert. Sauber gearbeitet, kein Krümel am Boden. Klare Empfehlung.</blockquote>
+          <figcaption><strong>Lisa K.</strong> · Krems</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Schnelle Hilfe</p>
+          <h2>Akutes Problem?<br />Greifen Sie zum Hörer.</h2>
+          <p>Persönlich, diskret und meist noch heute vor Ort. Ein Anruf reicht.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp schreiben</a>
+          <a href="kontakt.html" class="btn btn-ghost" style="color:var(--dark-ink);border-color:rgba(255,255,255,0.2)">Termin per Formular</a>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,149 @@
+<section class="page-hero" data-screen-label="Pest · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>Schädlingsbekämpfung</span></nav>
+      <p class="eyebrow">Schädlingsbekämpfung NÖ</p>
+      <h1>Diskret. Punktgenau.<br /><em class="display" style="font-style:italic;color:var(--accent)">Mit Fixpreis.</em></h1>
+      <p>Über 24 Jahre Erfahrung in einem der größten Schädlingsbekämpfungskonzerne der Welt – jetzt persönlich für Sie in Niederösterreich. Same-day Service möglich.</p>
+      <div class="hero__cta" style="margin-top:28px">
+        <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+        <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Prinzipien</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,36px)">Drei Worte. Drei Versprechen.</h2>
+      <div class="pest-principles">
+        <div class="card"><div class="icon-box">⏱</div><h3>Genau</h3><p class="soft">Auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
+        <div class="card"><div class="icon-box">◆</div><h3>Diskret</h3><p class="soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
+        <div class="card"><div class="icon-box">✦</div><h3>Kompetent</h3><p class="soft">24+ Jahre Praxis, ausgebildet im weltweit tätigen Konzern.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div style="max-width:36rem">
+        <p class="eyebrow">Spezialisierungen</p>
+        <h2 style="margin-top:8px;font-size:clamp(28px,3.2vw,40px)">Welcher Schädling plagt Sie?</h2>
+        <p class="soft" style="margin-top:12px">Jede Art braucht ihre eigene Methode. Hier die häufigsten Einsätze:</p>
+      </div>
+
+      <div class="pest-block">
+        <article id="wespen">
+          <h3><span class="emoji">W</span>Wespen</h3>
+          <p class="soft">Ob Nest tief in der Bausubstanz oder frei zugänglich – ich arbeite präzise. Nicht jede Wespe ist ein Schädling, aber wenn nötig, dann richtig.</p>
+          <ul class="ticks" style="margin-top:14px">
+            <li>Schnelle Beruhigung in Akutfällen</li>
+            <li>Schutzkleidung &amp; geprüfte Präparate</li>
+            <li>Fixpreis inkl. Anfahrt</li>
+          </ul>
+        </article>
+        <article id="ameisen">
+          <h3><span class="emoji">A</span>Ameisen</h3>
+          <p class="soft">Strukturiert wie das Volk selbst muss auch die Bekämpfung sein. Wissen über Biologie, Arten und Duftspuren entscheidet über den Erfolg.</p>
+          <ul class="ticks" style="margin-top:14px">
+            <li>Ursachenanalyse statt Symptombekämpfung</li>
+            <li>Pheromon-basiertes Vorgehen</li>
+            <li>Nachhaltige Wirkung</li>
+          </ul>
+        </article>
+        <article id="bettwanzen">
+          <h3><span class="emoji">B</span>Bettwanzen</h3>
+          <p class="soft">Blutsaugende Parasiten verlangen höchste Präzision und maximale Diskretion. Schädlingsbekämpfung trifft hier auf Möbeldemontage – alles aus einer Hand.</p>
+          <ul class="ticks" style="margin-top:14px">
+            <li>Demontage + Bekämpfung + Wiederaufbau</li>
+            <li>Speziell für Hotels</li>
+            <li>Mehrstufige Methodenkombination</li>
+          </ul>
+        </article>
+        <article id="maeuse">
+          <h3><span class="emoji">M</span>Mäuse &amp; Ratten</h3>
+          <p class="soft">Laufwege, Schmierspuren, Nagespuren – ich finde, wo die Nager eindringen, dichte ab und bekämpfe gezielt. So bleibt der Erfolg dauerhaft.</p>
+          <ul class="ticks" style="margin-top:14px">
+            <li>Aufspüren von Eintrittsstellen</li>
+            <li>Abdichtung + Bekämpfung</li>
+            <li>Diskret &amp; sauber abgewickelt</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap process-grid">
+      <div>
+        <p class="eyebrow">So läuft's ab</p>
+        <h2 style="margin-top:8px;font-size:clamp(28px,3.2vw,40px)">In 4 Schritten zur Lösung.</h2>
+        <ol class="process-list">
+          <li><span class="num">1</span><div><strong>Anruf oder WhatsApp</strong><p class="soft">Sie schildern das Problem. Ich höre zu und stelle die richtigen Fragen.</p></div></li>
+          <li><span class="num">2</span><div><strong>Fixpreis am Telefon</strong><p class="soft">Klare Konditionen nach Bezirk, inkl. Anfahrt, Material, Arbeitszeit, MwSt.</p></div></li>
+          <li><span class="num">3</span><div><strong>Termin – meist heute oder morgen</strong><p class="soft">Bei Akutfällen rücke ich noch am selben Tag aus.</p></div></li>
+          <li><span class="num">4</span><div><strong>Saubere Bekämpfung</strong><p class="soft">Diskret, sicher, nachhaltig. Sie werden den Schädling nicht mehr sehen.</p></div></li>
+        </ol>
+      </div>
+      <div class="ph" style="aspect-ratio: 4/5" data-tone="dark"><span>Einsatz-Foto · Profil mit Werkzeug</span></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <a href="wirkungsweise.html" class="card" style="text-decoration:none;color:inherit;display:block;padding:28px">
+          <p class="eyebrow">Fachwissen</p>
+          <h3 style="margin-top:8px;font-size:22px">Wirkungsweise von Schädlingsbekämpfungs&shy;mitteln →</h3>
+          <p class="soft" style="margin-top:8px">Was wirkt wie – und warum es Profis braucht.</p>
+        </a>
+        <a href="gesetze-normen.html" class="card" style="text-decoration:none;color:inherit;display:block;padding:28px">
+          <p class="eyebrow">Compliance</p>
+          <h3 style="margin-top:8px;font-size:22px">Gesetze, Normen &amp; ihre Folgen →</h3>
+          <p class="soft" style="margin-top:8px">EN 16636, BPV, IPM – Standards, an denen ich mitgearbeitet habe.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="wrap pricing__grid">
+      <div>
+        <p class="eyebrow">Fixpreis-Garantie</p>
+        <h2>Ein Auftrag. Ein Preis.<br />Ohne Kleingedrucktes.</h2>
+        <p style="margin-top:16px;opacity:.75;max-width:50ch">
+          Transparent gestaffelt nach Bezirk, immer inklusive An- &amp; Abfahrt, Präparate, Arbeitszeit, MwSt.
+          Den exakten Preis nenne ich Ihnen verbindlich am Telefon – bevor irgendetwas passiert.
+        </p>
+        <ul>
+          <li>Inklusive An- &amp; Abfahrt</li>
+          <li>Inklusive aller Präparate</li>
+          <li>Inklusive Arbeitszeit</li>
+          <li>Inklusive MwSt.</li>
+        </ul>
+      </div>
+      <div class="pricing__card">
+        <span class="mono">KONKRETES ANGEBOT IN 2 MINUTEN</span>
+        <h3>Beschreiben Sie Ihr Problem – Sie erhalten den Fixpreis sofort.</h3>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">Jetzt Fixpreis erfragen</a>
+          <a href="faq.html" class="btn btn-ghost" style="color:var(--dark-ink);border-color:rgba(255,255,255,0.2)">Häufige Fragen →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Akutfall?</p>
+          <h2>Same-day Service –<br />wenn's wirklich brennt.</h2>
+          <p>Bei akuten Wespennestern, plötzlichen Rattensichtungen oder Bettwanzenverdacht: einfach anrufen. Ich richte mich nach Ihrer Dringlichkeit.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp schreiben</a>
+        </div>
+      </div>
+    </div>
+  </section>

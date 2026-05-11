@@ -1,0 +1,44 @@
+<section class="page-hero" data-screen-label="About · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>Über mich</span></nav>
+      <p class="eyebrow">Über mich</p>
+      <h1>Gerhard Klosterer –<br /><em style="font-style:italic;color:var(--accent)">der, der's macht.</em></h1>
+      <p>Schädlingsbekämpfer seit 2002. Über zwei Jahrzehnte Konzernerfahrung, jetzt persönlich für Sie in Niederösterreich.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap about-grid">
+      <div class="ph" style="aspect-ratio: 3/4" data-tone="dark"><span>Portrait · Gerhard Klosterer</span></div>
+      <div>
+        <div class="about-copy">
+          <p>Ich heiße <strong>Gerhard Klosterer</strong>. Bis vor Kurzem war ich in einem der größten Schädlingsbekämpfungsunternehmen auf diesem Planeten tätig. Heute bürgt mein eigener Name für Qualität.</p>
+          <p>Mein Ziel ist einfach: Ihnen eine <strong>rasche und unkomplizierte Lösung</strong> Ihres Problems zu bieten. Sicherheit und Sauberkeit dürfen dabei nie zu kurz kommen.</p>
+          <p>Die Preisgestaltung ist <strong>klar und transparent</strong> – ohne Kleingedrucktes, ohne versteckte Kosten. Ein Auftrag = ein Fixpreis.</p>
+          <p>Ergänzend dazu biete ich <strong>Möbelmontage</strong> – eine Disziplin, die mir nicht zuletzt bei Bettwanzeneinsätzen täglich begegnet und in der ich genauso präzise arbeite.</p>
+        </div>
+        <div class="about-stats">
+          <div><span class="emoji">24+</span><strong>Jahre Erfahrung</strong><span class="soft">Ausgebildet im internationalen Konzern.</span></div>
+          <div><span class="emoji">◆</span><strong>Diskretion garantiert</strong><span class="soft">Nachbarn merken nichts. Hotels schätzen das.</span></div>
+          <div><span class="emoji">☎</span><strong>Persönlich</strong><span class="soft">Sie sprechen mit mir – nicht mit einem Callcenter.</span></div>
+          <div><span class="emoji">⌖</span><strong>Lokal verankert</strong><span class="soft">Niederösterreich kenne ich wie meine Werkzeugkiste.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Persönlich erreichbar</p>
+          <h2>Lieber direkt sprechen?</h2>
+          <p>Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Einfach anrufen – ich gehe ran.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>

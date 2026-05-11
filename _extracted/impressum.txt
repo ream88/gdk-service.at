@@ -1,0 +1,30 @@
+<section class="page-hero" data-screen-label="Impressum · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>Impressum</span></nav>
+      <h1>Impressum</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap impressum-grid">
+      <h2 style="font-size:24px;margin-bottom:20px">Angaben gem. § 5 ECG &amp; § 25 MedienG</h2>
+      <dl>
+        <dt>Firma</dt><dd>GDK Service e.U.</dd>
+        <dt>Inhaber</dt><dd>Gerhard Klosterer</dd>
+        <dt>Adresse</dt><dd>Weidengasse 11, 3041 Siegersdorf, Österreich</dd>
+        <dt>Telefon</dt><dd>+43 670 199 55 44</dd>
+        <dt>E-Mail</dt><dd>gerhard@gdk-service.at</dd>
+        <dt>UID</dt><dd>ATU00000000</dd>
+        <dt>Firmenbuch</dt><dd>FN 000000x, LG St. Pölten</dd>
+        <dt>Gewerbe</dt><dd>Schädlingsbekämpfer, Möbelmonteur</dd>
+        <dt>Aufsichtsbehörde</dt><dd>Bezirkshauptmannschaft St. Pölten</dd>
+        <dt>Kammer</dt><dd>Wirtschaftskammer Niederösterreich</dd>
+      </dl>
+
+      <h2 style="font-size:20px;margin-top:40px;margin-bottom:12px">Haftungsausschluss</h2>
+      <p class="soft" style="font-size:14px">Die Inhalte dieser Seite wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+
+      <h2 style="font-size:20px;margin-top:32px;margin-bottom:12px">Urheberrecht</h2>
+      <p class="soft" style="font-size:14px">Alle Inhalte dieser Website unterliegen dem österreichischen Urheberrecht. Jede Verwendung außerhalb der engen Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung.</p>
+    </div>
+  </section>

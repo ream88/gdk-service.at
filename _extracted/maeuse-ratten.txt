@@ -1,0 +1,81 @@
+<section class="page-hero" data-screen-label="Mäuse-Ratten · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><a href="schaedlingsbekaempfung.html">Schädlingsbekämpfung</a><span>/</span><span>Mäuse &amp; Ratten</span></nav>
+      <p class="eyebrow">Mäuse- &amp; Rattenbekämpfung</p>
+      <h1>Mäuse &amp; Ratten –<br /><em style="font-style:italic;color:var(--accent)">aufspüren, abdichten, bekämpfen.</em></h1>
+      <p>Eingeprägte Laufwege, Schmierspuren, Nagespuren – ich finde, wo die Nager eindringen, dichte ab und bekämpfe gezielt. So bleibt der Erfolg dauerhaft.</p>
+      <div class="hero__cta" style="margin-top:28px"><a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a><a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Arbeitsweise</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,36px)">Genau · Diskret · Kompetent</h2>
+      <div class="pest-principles" style="margin-top:24px">
+        <div class="card"><div class="icon-box">⏱</div><h3>Genau</h3><p class="soft">Präzise und auf das Zieltier abgestimmt – minimaler Einsatz toxischer Stoffe.</p></div>
+        <div class="card"><div class="icon-box">◆</div><h3>Diskret</h3><p class="soft">Man bemerkt mich kaum. Ich gehe erst, wenn der Schädling das auch tut.</p></div>
+        <div class="card"><div class="icon-box">✦</div><h3>Kompetent</h3><p class="soft">Laufwege, Schmierspuren, Nagespuren – richtig gedeutet, führen sie zum Erfolg.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Spezies-Vergleich</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,34px)">Hausmaus vs. Wanderratte.</h2>
+      <div class="versus">
+        <article>
+          <span class="vs-label mono">No. 01</span>
+          <h3>Hausmaus<br /><em>(Mus musculus)</em></h3>
+          <ul class="vs-stats">
+            <li><span>Körper</span><strong>7–10 cm + Schwanz</strong></li>
+            <li><span>Gewicht</span><strong>12–30 g</strong></li>
+            <li><span>Würfe/Jahr</span><strong>bis 8 (4–8 Junge)</strong></li>
+            <li><span>Suchradius</span><strong>wenige Meter</strong></li>
+          </ul>
+          <p class="soft">Klein, flink, extrem anpassungsfähig. Ursprünglich Steppen Zentralasiens, heute weltweit Begleiter des Menschen. Kommuniziert im <strong>Ultraschall</strong>, ausgezeichneter Geruchssinn, sehr <strong>neugierig (Neophilie)</strong>. Markiert mit Urin, verliert Kot beim Laufen.</p>
+          <p class="soft" style="margin-top:8px">Frisst alles. Wasserbedarf aus der Nahrung. Nistet nahe der Nahrungsquelle. Schon Öffnungen von wenigen Millimetern reichen zum Durchschlüpfen.</p>
+        </article>
+        <article>
+          <span class="vs-label mono">No. 02</span>
+          <h3>Wanderratte<br /><em>(Rattus norvegicus)</em></h3>
+          <ul class="vs-stats">
+            <li><span>Körper</span><strong>20–27 cm</strong></li>
+            <li><span>Gewicht</span><strong>200–500 g</strong></li>
+            <li><span>Würfe/Jahr</span><strong>3–6 (8–12 Junge)</strong></li>
+            <li><span>Sozial</span><strong>Rudel bis 200</strong></li>
+          </ul>
+          <p class="soft">Größer, kräftiger, oft aggressiver. Hochintelligent, komplexe soziale Strukturen. Exzellenter <strong>Schwimmer</strong>, hervorragender Gräber – findet sich an Bachläufen, im Komposter, unter Sträuchern.</p>
+          <p class="soft" style="margin-top:8px">Misstrauisch gegenüber Neuem (<strong>Neophobie</strong>) – meidet Fallen oft tagelang. Lernfähig. Bevorzugt feuchte, kühle Umgebungen, in Städten Kanalisation, Keller, Mülldeponien. Der "Vorkoster" ist ein Mythos – die zeitverzögerte Wirkung dient dem Schutz von Nichtzieltieren.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--bg-panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap" style="max-width:48rem">
+      <p class="eyebrow">Methode</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,34px)">In dieser Reihenfolge.</h2>
+      <ol class="numlist">
+        <li><span class="num">1</span><div><strong>Warum?</strong><p class="soft">Ursache finden – Nahrungsmittelreste, offene Eindringmöglichkeiten, passende Nistplätze. Gegenmaßnahmen: Nahrungsquelle weg, Eindringstellen abdichten.</p></div></li>
+        <li><span class="num">2</span><div><strong>Wieviele?</strong><p class="soft">Populationsstärke abschätzen – danach richtet sich, ob eine oder mehrere Bekämpfungen, und welche Methoden.</p></div></li>
+        <li><span class="num">3</span><div><strong>Womit?</strong><p class="soft">Lebendfallen, Schlagfallen, toxische Köder oder Kombinationen. Lebend-/Schlagfallen werden mehrmals täglich kontrolliert (oft von Ihnen).</p></div></li>
+        <li><span class="num">4</span><div><strong>Rodentizide.</strong><p class="soft">Wenn nötig: zugriffsgeschützte <strong>Köderboxen</strong> entlang der Laufwege. Köder im Inneren gegen Herausfallen gesichert. Nager nimmt auf, stirbt einige Tage später.</p></div></li>
+        <li><span class="num">5</span><div><strong>Nachbehandlung.</strong><p class="soft">Köder ergänzen oder erneuern. Nach Erfolg: Köderstellen entfernen, Reste ordnungsgemäß entsorgen. Im Wohnbereich ergänzend <strong>Desinfektion</strong>, damit Kot &amp; Urin kein Risiko darstellen.</p></div></li>
+      </ol>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Persönlich erreichbar</p>
+          <h2>Ein Anruf reicht.</h2>
+          <p>Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a>
+          <a href="kontakt.html" class="btn btn-ghost">Termin per Formular</a>
+        </div>
+      </div>
+    </div>
+  </section>

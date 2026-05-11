@@ -1,0 +1,90 @@
+<section class="page-hero" data-screen-label="Bettwanzen · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><a href="schaedlingsbekaempfung.html">Schädlingsbekämpfung</a><span>/</span><span>Bettwanzen</span></nav>
+      <p class="eyebrow">Bettwanzenbekämpfung · Hotels &amp; Privat</p>
+      <h1>Bettwanzen –<br /><em style="font-style:italic;color:var(--accent)">Feinde in Ihrem Bett.</em></h1>
+      <p>Punktgenau, Schädlings-spezifisch, mit allen verfügbaren Methoden – inkl. eigener gdk ThermoFlexBox. Schädlingsbekämpfung trifft Möbeldemontage. Alles aus einer Hand.</p>
+      <div class="hero__cta" style="margin-top:28px"><a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a><a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Arbeitsweise</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,36px)">Genau · Diskret · Kompetent</h2>
+      <div class="pest-principles" style="margin-top:24px">
+        <div class="card"><div class="icon-box">⏱</div><h3>Genau</h3><p class="soft">Bettwanzen sind nicht einfach zu bekämpfen. Punktgenau und mit allen verfügbaren Methoden.</p></div>
+        <div class="card"><div class="icon-box">◆</div><h3>Diskret</h3><p class="soft">Bei blutsaugenden Parasiten in Wohnung oder Hotel ist Diskretion höchstes Gebot.</p></div>
+        <div class="card"><div class="icon-box">✦</div><h3>Kompetent</h3><p class="soft">Verhaltensmuster und Suchraster der Bettwanze sind die Basis erfolgreicher Bekämpfung.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--bg-panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap" style="max-width:48rem">
+      <p class="eyebrow">Biologie kurz</p>
+      <h2 style="margin-top:8px;font-size:clamp(26px,3vw,34px)">Cimex lectularius – ein perfekter Mitreisender.</h2>
+      <div class="prose">
+        <p>Bettwanzen sind <strong>obligate Blutsauger</strong>. Sie begleiten den Menschen seit Jahrtausenden und haben sich perfekt an unsere mobile Lebensweise angepasst. Man findet sie in Wohnungen, Hotels, Hostels, Jugendherbergen und Berghütten.</p>
+        <p>Sie sind <strong>papierdünn, oval, ca. 4–6 mm lang</strong>. Im 1. von 5 Larvenstadien fast durchsichtig weiß und kaum erkennbar. Nach der Blutmahlzeit dunkelrot bis schwarzbraun. Die unvollständige Entwicklung dauert mehrere Wochen, abhängig von Nahrung und Temperatur.</p>
+        <p>Sie sind flugunfähig (verkümmerte Flügelansätze) und lassen sich notfalls von der Decke aufs Bett fallen. Das Weibchen legt <strong>mehrere hundert Eier</strong> ab – bis zu 5 pro Tag, geschützt und nahe am Wirt. Auf Reisen werden sie meist im Gepäck verschleppt.</p>
+        <p>Angelockt werden sie durch <strong>Körperwärme, -geruch und CO₂-Ausstoß</strong>. Lichtscheu – kommen meist nachts. Bei hoher Populationsdichte auch tagsüber. Die Stiche erfolgen <strong>in einer Reihe</strong>, bis die richtige Kapillare gefunden ist.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Bekämpfung</p>
+      <h2 style="margin-top:8px;font-size:clamp(28px,3.4vw,40px)">Der gezielte Einsatz <em style="color:var(--accent);font-style:italic">aller</em> verfügbaren Methoden.</h2>
+      <div class="prose" style="max-width:48rem;margin-top:16px">
+        <p>Bettwanzen leben <strong>in Ihrer Nähe</strong>, nicht direkt auf Ihnen. Verstecke: Steckdosen, Holzverbindungen, Bilderrahmen, am Betthaupt zwischen Stoff und Trägerplatte, hinter Sockelleisten – die Liste ist lang. Ohne Demontage keine vernünftige Bekämpfung.</p>
+        <p>Viele Bettwanzen-Stämme sind heute <strong>resistent</strong> gegen gängige Insektizide. Bekämpfung scheitert oft nicht am Wirkstoff, sondern an der mangelnden Erreichbarkeit der Verstecke. Meine Methode löst genau dieses Kernproblem – durch Integration von <strong>Handwerk und präziser Thermotechnik.</strong></p>
+      </div>
+      <div class="bw-methods">
+        <div class="bw-method"><span class="num">1</span><strong>Demontage</strong><p class="soft">Aller notwendigen Möbel und Einrichtungsgegenstände – nur was wirklich nötig ist.</p></div>
+        <div class="bw-method"><span class="num">2</span><strong>Thermische Bekämpfung</strong><p class="soft">Mit Heizkanonen oder gezielt mit der <em>gdk-ThermoFlexBox.</em> Tötet alle Stadien – als einzige Methode auch die Eier.</p></div>
+        <div class="bw-method"><span class="num">3</span><strong>Sprühbelag (Insektizid)</strong><p class="soft">Erfasst alles, was die Hitze nicht erreicht – tiefer in der Bausubstanz oder im Inneren von Stoffverkleidungen.</p></div>
+        <div class="bw-method"><span class="num">4</span><strong>Stäubebelag (Diatomeenerde)</strong><p class="soft">Dringt in Hohlräume ein, ohne toxischen Wirkstoff. Ritzt den Panzer an, fügt Wunden zu, trocknet aus.</p></div>
+        <div class="bw-method"><span class="num">5</span><strong>Heißdampf</strong><p class="soft">Aktiviert die Bettwanzen und zeigt so weitere Verstecke an.</p></div>
+        <div class="bw-method"><span class="num">6</span><strong>Abdichtung</strong><p class="soft">Spalten und Fugen verschließen – die Bettwanzen müssen längere Wege über den Insektizid-Belag nehmen.</p></div>
+        <div class="bw-method"><span class="num">7</span><strong>Wieder-Zusammenbau</strong><p class="soft">Komplette Möbel-Reassembly – ich verlasse den Raum bewohnbar.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--brand);color:var(--brand-ink)">
+    <div class="wrap" style="display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center" id="thermoflex">
+      <div>
+        <p class="eyebrow" style="color:var(--accent)">Eigenentwicklung</p>
+        <h2 style="color:var(--brand-ink);font-size:clamp(28px,3.4vw,42px);margin-top:8px">Die gdk ThermoFlexBox.</h2>
+        <p style="margin-top:16px;opacity:.85;max-width:48ch">Statt sperrige Möbel durch das ganze Haus zu schleppen (Verschleppungsgefahr!), bringe ich die Lösung <strong>direkt zum Befallsherd.</strong> Mein mobiles Hochleistungssystem ist in der Größe variabel, umschließt demontierte Möbelstücke lückenlos und garantiert durch kontrollierte Hitze die <strong>vollständige Eliminierung aller Bettwanzenstadien</strong> – diskret, chemiefrei, direkt in Ihren Räumlichkeiten.</p>
+      </div>
+      <div class="ph" style="aspect-ratio:4/5" data-tone="dark"><span>Foto · ThermoFlexBox im Einsatz</span></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap" style="max-width:48rem">
+      <p class="eyebrow">Tipps am Rande</p>
+      <h2 style="margin-top:8px;font-size:clamp(24px,2.8vw,30px)">Was Sie nicht tun sollten.</h2>
+      <ul class="tips" style="margin-top:20px">
+        <li><strong>Nicht selbst versuchen</strong> – verlieren Sie keine Zeit mit Eigenexperimenten.</li>
+        <li><strong>Niemals in ein anderes Zimmer umziehen</strong> – die Bettwanzen folgen Ihnen mit Sicherheit.</li>
+        <li>Auf Reisen: Gepäck ins <strong>Badezimmer</strong>, Lattenrost &amp; Steckdosen prüfen.</li>
+        <li>Blutspuren am Bettbezug? <strong>Hotel wechseln.</strong></li>
+        <li>Im Internet angebotene Detektoren oder DNA-Tests: <strong>funktionieren nicht.</strong> Selbst getestet.</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Persönlich erreichbar</p>
+          <h2>Ein Anruf reicht.</h2>
+          <p>Mo–Fr 8:00–17:00. In dringenden Fällen auch außerhalb. Sie sprechen mit mir – nicht mit einem Callcenter.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a>
+          <a href="kontakt.html" class="btn btn-ghost">Termin per Formular</a>
+        </div>
+      </div>
+    </div>
+  </section>

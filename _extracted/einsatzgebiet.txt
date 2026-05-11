@@ -1,0 +1,56 @@
+<section class="page-hero" data-screen-label="Areas · Hero">
+    <div class="wrap">
+      <nav class="crumbs"><a href="index.html">Start</a><span>/</span><span>Einsatzgebiet</span></nav>
+      <p class="eyebrow">Einsatzgebiet</p>
+      <h1>Ganz <em style="font-style:italic;color:var(--accent)">Niederösterreich.</em></h1>
+      <p>Sitz in Siegersdorf, unterwegs im gesamten Bundesland. Schnelle Anfahrt in den gelb markierten Kernbezirken.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap area-grid">
+      <div>
+        <p class="eyebrow">Kernbezirke (&lt; 45 min)</p>
+        <h2 style="font-size:clamp(24px,2.6vw,32px);margin-top:8px">Wien-Umland &amp; Industrieviertel</h2>
+        <ul class="area-list">
+          <li>Baden</li><li>Bruck an der Leitha</li>
+          <li>Mödling</li><li>Wiener Neustadt</li>
+          <li>Neunkirchen</li><li>Wien-Umgebung</li>
+          <li>Sankt Pölten</li><li>Tulln</li>
+        </ul>
+        <p class="eyebrow" style="margin-top:40px">Weitere Bezirke</p>
+        <div class="area-chips">
+          <span>Amstetten</span><span>Gänserndorf</span><span>Hollabrunn</span>
+          <span>Horn</span><span>Korneuburg</span><span>Krems</span>
+          <span>Lilienfeld</span><span>Melk</span><span>Mistelbach</span>
+          <span>Scheibbs</span><span>Waidhofen/Ybbs</span><span>Zwettl</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="ph" style="aspect-ratio: 4/5" data-tone="dark">
+          <span>Karte · Niederösterreich mit Pins</span>
+        </div>
+        <div class="area-note">
+          <strong>Nicht aufgeführt?</strong>
+          Rufen Sie trotzdem an – in begründeten Fällen komme ich auch über die Landesgrenze hinaus.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-block">
+        <div>
+          <p class="eyebrow" style="color:var(--accent)">Nicht sicher?</p>
+          <h2>Einfach kurz anrufen.</h2>
+          <p>Ich sage Ihnen sofort, ob ich in Ihrem Bezirk fahre und was der Fixpreis ist.</p>
+        </div>
+        <div class="actions">
+          <a href="tel:+436701995544" class="btn btn-cta btn-xl">0670 199 55 44</a>
+          <a href="https://wa.me/436701995544" class="btn btn-wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
