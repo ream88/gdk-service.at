@@ -1,5 +1,4 @@
-import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
-import { PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, ADDRESS, HOURS, COMPANY, WHATSAPP_HREF } from './SiteHeader';
+import { PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, ADDRESS, HOURS, COMPANY } from './SiteHeader';
 
 const FOOTER_GROUPS = [
   {
@@ -32,7 +31,7 @@ const UL   = 'm-0 flex list-none flex-col gap-2.5 p-0 text-sm';
 export function SiteFooter() {
   return (
     <footer
-      className="mt-20 bg-[linear-gradient(180deg,var(--dark)_0%,color-mix(in_oklch,var(--dark)_92%,black)_100%)] pb-[120px] pt-[72px] text-dark-ink max-[720px]:pb-[140px]"
+      className="mt-20 bg-[linear-gradient(180deg,var(--dark)_0%,color-mix(in_oklch,var(--dark)_92%,black)_100%)] py-[72px] text-dark-ink"
     >
       <div className={WRAP}>
         <div className="grid grid-cols-[1.3fr_1fr_1fr_1fr] gap-10 max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
@@ -93,16 +92,3 @@ export function SiteFooter() {
   );
 }
 
-export function MobileSticky() {
-  return (
-    <div className="fixed inset-x-4 bottom-4 z-30 hidden gap-2.5 rounded-full border border-line bg-bg-raised p-2.5 shadow-lift max-[720px]:flex">
-      <Button href={PHONE_HREF} variant="cta" size="xl" className="flex-1 justify-center">
-        <PhoneIcon />
-        Anrufen
-      </Button>
-      <Button href={WHATSAPP_HREF} target="_blank" rel="noreferrer" variant="wa" size="xl" className="flex-1 justify-center">
-        <WhatsAppIcon /> WhatsApp
-      </Button>
-    </div>
-  );
-}

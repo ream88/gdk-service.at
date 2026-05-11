@@ -1,6 +1,6 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
-import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { SiteFooter } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
 import { Crumbs } from '@/components/ui/Primitives';
 
@@ -48,7 +48,6 @@ export default function DatenschutzPage() {
         </div>
       </Section>
       <SiteFooter />
-      <MobileSticky />
       <script src="/chrome.js" />
     </BaseLayout>
   );

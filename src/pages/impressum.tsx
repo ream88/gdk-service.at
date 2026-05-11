@@ -1,6 +1,6 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
-import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { SiteFooter } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
 import { Crumbs } from '@/components/ui/Primitives';
 
@@ -39,7 +39,6 @@ export default function ImpressumPage() {
         <p className="text-sm text-ink-soft">Alle Inhalte dieser Website unterliegen dem österreichischen Urheberrecht. Jede Verwendung außerhalb der engen Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung.</p>
       </Section>
       <SiteFooter />
-      <MobileSticky />
       <script src="/chrome.js" />
     </BaseLayout>
   );

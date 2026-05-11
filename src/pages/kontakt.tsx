@@ -1,6 +1,6 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, EMAIL, EMAIL_HREF, ADDRESS, HOURS, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
-import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { SiteFooter } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
 import { Eyebrow, Crumbs } from '@/components/ui/Primitives';
 
@@ -111,7 +111,6 @@ export default function ContactPage() {
       </Section>
 
       <SiteFooter />
-      <MobileSticky />
       <script src="/chrome.js" />
     </BaseLayout>
   );

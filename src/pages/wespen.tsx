@@ -1,6 +1,6 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader, PHONE, PHONE_HREF, WHATSAPP_HREF } from '@/components/site/SiteHeader';
-import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { SiteFooter } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
 import { Button, PhoneIcon, WhatsAppIcon } from '@/components/ui/Button';
@@ -83,7 +83,6 @@ export default function WespenPage() {
       </Section>
 
       <SiteFooter />
-      <MobileSticky />
       <script src="/chrome.js" />
     </BaseLayout>
   );

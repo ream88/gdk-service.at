@@ -1,6 +1,6 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
-import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { SiteFooter } from '@/components/site/SiteFooter';
 import { Section } from '@/components/site/Section';
 import { CTABlock } from '@/components/site/CTABlock';
 import { Faq, FaqQuestion, FaqAnswer } from '@/components/site/Faq';
@@ -107,7 +107,6 @@ export default function FaqPage() {
       </Section>
 
       <SiteFooter />
-      <MobileSticky />
       <script src="/chrome.js" />
     </BaseLayout>
   );

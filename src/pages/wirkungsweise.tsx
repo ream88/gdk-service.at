@@ -1,6 +1,6 @@
 import { BaseLayout } from '@/layouts/BaseLayout';
 import { SiteHeader } from '@/components/site/SiteHeader';
-import { SiteFooter, MobileSticky } from '@/components/site/SiteFooter';
+import { SiteFooter } from '@/components/site/SiteFooter';
 import { CTABlock } from '@/components/site/CTABlock';
 import { Section } from '@/components/site/Section';
 import { Faq, FaqQuestion, FaqAnswer } from '@/components/site/Faq';
@@ -81,7 +81,6 @@ export default function WirkungsweisePage() {
       </Section>
 
       <SiteFooter />
-      <MobileSticky />
       <script src="/chrome.js" />
     </BaseLayout>
   );
